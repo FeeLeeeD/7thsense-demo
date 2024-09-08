@@ -1,6 +1,7 @@
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "./src/chakra/theme";
+import { ChakraProvider } from "@chakra-ui/react";
+import { MainLayout } from "./src/components/main-layout";
 
 export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
@@ -33,6 +34,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
 
 export const wrapPageElement = ({ element, props }) => (
   <ChakraProvider theme={theme} {...props}>
-    {element}
+    <MainLayout>{element}</MainLayout>
   </ChakraProvider>
 );
