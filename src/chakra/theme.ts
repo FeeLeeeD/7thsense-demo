@@ -19,6 +19,10 @@ export const theme = extendTheme({
       fontSize: "16px",
       lineHeight: "24px",
     },
+    s: {
+      fontSize: "14px",
+      lineHeight: "20px",
+    },
     xs: {
       fontSize: "12px",
       lineHeight: "16px",
@@ -32,6 +36,7 @@ export const theme = extendTheme({
   space: {
     small: "8px",
     large: "16px",
+    xlarge: "24px",
     xxlarge: "32px",
   },
 

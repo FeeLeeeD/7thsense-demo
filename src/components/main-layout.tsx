@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Flex } from "@chakra-ui/react";
+import { Container, Flex, Grid } from "@chakra-ui/react";
 import { Topbar } from "./topbar";
 import { Sidebar } from "./sidebar";
 
@@ -10,13 +10,13 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
     <Flex as="main" flexDir="column" h="100vh">
       <Topbar />
 
-      <Flex flex={1}>
+      <Grid flex={1} gridTemplateColumns="auto 1fr">
         <Sidebar />
 
         <Container maxW="container.xl" px="xxlarge" py="large">
           {children}
         </Container>
-      </Flex>
+      </Grid>
     </Flex>
   );
 };
