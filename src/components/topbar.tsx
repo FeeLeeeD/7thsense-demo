@@ -9,6 +9,7 @@ import {
   MenuList,
   MenuItem,
   Text,
+  StackProps,
 } from "@chakra-ui/react";
 import { AltArrowDownIcon } from "./icons/alt-arrow-down";
 import { SeventhSenseSvg } from "./svg/seventh-sense";
@@ -16,9 +17,17 @@ import { LogoutIcon } from "./icons/logout";
 import { PlusIcon } from "./icons/plus";
 import { BrainSvg } from "./svg/brain";
 
-export const Topbar = () => {
+export const Topbar = (props: StackProps) => {
   return (
-    <HStack as="header" py="small" px="large" justify="space-between">
+    <HStack
+      as="header"
+      py="small"
+      px="large"
+      justify="space-between"
+      bg="#F8F9FC"
+      zIndex="1000"
+      {...props}
+    >
       <HStack spacing="4px">
         <BrainSvg />
         <SeventhSenseSvg />

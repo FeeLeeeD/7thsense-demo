@@ -41,12 +41,14 @@ export const Sidebar = () => {
     >
       <Stack
         as="aside"
+        pos="sticky"
+        top="68px"
         w={sidebar.isOpen ? "288px" : "100px"}
+        h="calc(100vh - 68px)"
         transition="width ease-in-out 0.3s"
         p="large"
         spacing="xlarge"
         bg="#F0F2F8"
-        h="full"
       >
         <Group
           title="Analytics"
@@ -210,6 +212,11 @@ const Group = ({ title, menu }: GroupProps) => {
                 p="small"
                 borderRadius="8px"
                 color="#4B5259"
+                bg={
+                  item.href && window.location.href.includes(item.href)
+                    ? "#D9DDEA"
+                    : "none"
+                }
                 _hover={{ bg: "#F8F9FC", color: "#343A40" }}
                 _focusVisible={{
                   bg: "#F8F9FC",

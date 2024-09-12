@@ -8,7 +8,7 @@ type MainLayoutProps = { children: React.ReactNode };
 export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <Flex as="main" flexDir="column" h="100vh">
-      <Topbar />
+      <Topbar pos="sticky" top="0" />
 
       <Grid flex={1} gridTemplateColumns="auto 1fr">
         <Sidebar />
