@@ -213,7 +213,9 @@ const Group = ({ title, menu }: GroupProps) => {
                 borderRadius="8px"
                 color="#4B5259"
                 bg={
-                  item.href && window.location.href.includes(item.href)
+                  item.href &&
+                  typeof window !== "undefined" &&
+                  window.location.href.includes(item.href)
                     ? "#D9DDEA"
                     : "none"
                 }

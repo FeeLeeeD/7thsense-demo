@@ -19,14 +19,17 @@ export function useTabs({ tabs }: UseTabsArgs): UseTabsReturn {
     );
   };
 
-  const params = new URLSearchParams(window.location.search);
-  const defaultTabIndex = tabs.findIndex(
-    (tab) => tab.key === params.get("tab")
-  );
+  const params =
+    typeof window !== "undefined"
+      ? new URLSearchParams(window.location.search)
+      : undefined;
+  const defaultTabIndex =
+    params && tabs.findIndex((tab) => tab.key === params.get("tab"));
 
   return {
     tabs,
-    defaultTabIndex: defaultTabIndex >= 0 ? defaultTabIndex : 0,
+    defaultTabIndex:
+      defaultTabIndex && defaultTabIndex >= 0 ? defaultTabIndex : 0,
     onTabChange,
   };
 }
