@@ -1,4 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
+import { buttonTheme } from "./components/button-theme";
+import { tagTheme } from "./components/tag-theme";
+import { tabsTheme } from "./components/tabs-theme";
 
 export const theme = extendTheme({
   styles: {
@@ -15,6 +18,14 @@ export const theme = extendTheme({
   },
 
   textStyles: {
+    h2: {
+      fontSize: "24px",
+      lineHeight: "33.6px",
+    },
+    l: {
+      fontSize: "18px",
+      lineHeight: "28px",
+    },
     m: {
       fontSize: "16px",
       lineHeight: "24px",
@@ -34,7 +45,9 @@ export const theme = extendTheme({
   },
 
   space: {
+    xsmall: "4px",
     small: "8px",
+    medium: "12px",
     large: "16px",
     xlarge: "24px",
     xxlarge: "32px",
@@ -48,5 +61,11 @@ export const theme = extendTheme({
         80: "#343A40",
       },
     },
+  },
+
+  components: {
+    Button: buttonTheme,
+    Tag: tagTheme,
+    Tabs: tabsTheme,
   },
 });
