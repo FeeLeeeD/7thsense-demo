@@ -2,6 +2,8 @@ import { extendTheme } from "@chakra-ui/react";
 import { buttonTheme } from "./components/button-theme";
 import { tagTheme } from "./components/tag-theme";
 import { tabsTheme } from "./components/tabs-theme";
+import { inputTheme } from "./components/input-theme";
+import { selectTheme } from "./components/select-theme";
 
 export const theme = extendTheme({
   styles: {
@@ -60,6 +62,14 @@ export const theme = extendTheme({
         60: "#4B5259",
         80: "#343A40",
       },
+
+      chart: {
+        gsuite: "#8BC1F7",
+        microsoft365: "#BDE2B9",
+        gmail: "#F9E0A2",
+        verizon: "#A2D9D9",
+        apple: "#B2B0EA",
+      },
     },
   },
 
@@ -67,5 +77,7 @@ export const theme = extendTheme({
     Button: buttonTheme,
     Tag: tagTheme,
     Tabs: tabsTheme,
+    Input: inputTheme,
+    Select: selectTheme,
   },
 });

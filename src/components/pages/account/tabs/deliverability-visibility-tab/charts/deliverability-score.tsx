@@ -4,6 +4,7 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
+import { chartColor } from "../../../../../charts/shared";
 
 export const DeliverabilityScoreChart = () => {
   const chartId = useId();
@@ -72,11 +73,15 @@ export const DeliverabilityScoreChart = () => {
     });
 
     const data = [
-      { provider: "GSuite", value: 96, color: "#8BC1F7" },
-      { provider: "Microsoft 365", value: 88, color: "#BDE2B9" },
-      { provider: "Gmail", value: 97, color: "#F9E0A2" },
-      { provider: "Verizon", value: 87, color: "#A2D9D9" },
-      { provider: "Apple", value: 100, color: "#B2B0EA" },
+      { provider: "GSuite", value: 96, color: chartColor.provider.gSuite },
+      {
+        provider: "Microsoft 365",
+        value: 88,
+        color: chartColor.provider.microsoft365,
+      },
+      { provider: "Gmail", value: 97, color: chartColor.provider.gmail },
+      { provider: "Verizon", value: 87, color: chartColor.provider.verizon },
+      { provider: "Apple", value: 100, color: chartColor.provider.apple },
     ];
 
     xAxis.data.setAll(data);
