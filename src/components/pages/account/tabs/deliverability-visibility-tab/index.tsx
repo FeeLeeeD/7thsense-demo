@@ -6,13 +6,14 @@ import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 export const DeliverabilityVisibility = () => {
   return (
     <Stack spacing="xxlarge">
-      <ChartWrapper
-        title="Deliverability score"
-        description="Here can be a short description?"
-      >
-        <DeliverabilityScoreChart />
-      </ChartWrapper>
-      <Grid gridTemplateColumns="1fr 1fr" gap="xxlarge"></Grid>
+      <Grid gridTemplateColumns="1fr 1fr" gap="xxlarge">
+        <ChartWrapper
+          title="Deliverability score"
+          description="Here can be a short description?"
+        >
+          <DeliverabilityScoreChart />
+        </ChartWrapper>
+      </Grid>
     </Stack>
   );
 };

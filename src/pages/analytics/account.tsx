@@ -15,6 +15,7 @@ import {
   TagLeftIcon,
   Wrap,
   WrapItem,
+  Text,
 } from "@chakra-ui/react";
 import { FilterPlusIcon } from "../../components/icons/filter-plus";
 import { SolidClockCircleIcon } from "../../components/icons/solid-clock-circle";
@@ -62,18 +63,23 @@ const AccountAnalyticsPage = (props: PageProps) => {
       >
         <Wrap alignSelf="center">
           <WrapItem>
+            <Text color="#707880" textStyle="s">
+              No filters active
+            </Text>
+          </WrapItem>
+          {/* <WrapItem>
             <Tag variant="filter">
               <TagLeftIcon as={SolidClockCircleIcon} />
               <TagLabel> Time: last 2 months</TagLabel>
               <TagCloseButton />
             </Tag>
-          </WrapItem>
+          </WrapItem> */}
         </Wrap>
 
         <IconButton aria-label="Filters" icon={<FilterPlusIcon />} w="48px" />
       </Grid>
 
-      <Tabs mt="xlarge" defaultIndex={defaultTabIndex} onChange={onTabChange}>
+      <Tabs mt="xlarge" defaultIndex={defaultTabIndex} onChange={onTabChange} isLazy>
         <TabList>
           {tabs.map((tab) => (
             <Tab key={tab.key}>{tab.title}</Tab>

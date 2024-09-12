@@ -265,8 +265,8 @@ export const WorldMap = () => {
     // Create polygon series for projected circles
     var circleSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
     circleSeries.mapPolygons.template.setAll({
-      fill: am5.color("#0A51EA"),
-      stroke: am5.color("#4785FF"),
+      fill: am5.color("#4785FF"),
+      stroke: am5.color("#BCDCFF"),
       strokeWidth: 1,
       templateField: "polygonTemplate",
       tooltipText: "{title}: {count}",
