@@ -50,7 +50,7 @@ function getSeries(
 
   const xyRange = {
     label: "Engagement score",
-    color: "#4785FF",
+    color: "#6699FF",
     data: xyData,
   };
 

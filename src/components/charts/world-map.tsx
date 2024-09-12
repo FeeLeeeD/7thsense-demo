@@ -265,7 +265,7 @@ export const WorldMap = () => {
     // Create polygon series for projected circles
     var circleSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
     circleSeries.mapPolygons.template.setAll({
-      fill: am5.color("#4785FF"),
+      fill: am5.color("#6699FF"),
       stroke: am5.color("#BCDCFF"),
       strokeWidth: 1,
       templateField: "polygonTemplate",
@@ -322,7 +322,7 @@ export const WorldMap = () => {
     <Box
       id={chartId}
       w="full"
-      h="600px"
+      h="400px"
       border="1px"
       borderColor="#F0F2F8"
       borderRadius="16px"
