@@ -28,6 +28,13 @@ export const DeliverabilityVisibility = () => {
       >
         <BounceRateChart />
       </ChartWrapper>
+
+      <ChartWrapper
+        title="Bounce reasons"
+        description="Here can be a short description?"
+      >
+        <b>@Guys</b>, do we want to make this table?
+      </ChartWrapper>
     </Stack>
   );
 };
