@@ -6,8 +6,8 @@ import * as am5 from "@amcharts/amcharts5";
 import { Box, Select } from "@chakra-ui/react";
 import { chartColor } from "../../../../../charts/shared";
 
+const chartId = "open-click-rate";
 export const OpenClickRateChart = () => {
-  const chartId = useId();
   const chartRef = useRef<am5xy.XYChart>();
 
   const [chart, setChart] = useState<"open" | "click">("open");

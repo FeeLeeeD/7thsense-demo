@@ -34,7 +34,7 @@ const GaugeGraph = ({
   const handDataItem = useRef<am5.DataItem<am5xy.IValueAxisDataItem>>();
 
   useEffect(() => {
-    const root = am5.Root.new(graphRef.current ?? "");
+    const root = am5.Root.new(graphRef.current ?? "gauge");
     root.setThemes([am5themes_Animated.new(root)]);
 
     const chart = am5radar.RadarChart.new(root, {

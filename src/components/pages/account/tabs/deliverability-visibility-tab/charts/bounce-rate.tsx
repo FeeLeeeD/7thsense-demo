@@ -6,8 +6,9 @@ import * as am5 from "@amcharts/amcharts5";
 import { Box, Select } from "@chakra-ui/react";
 import { chartColor } from "../../../../../charts/shared";
 
+const chartId = "bounce-rate";
+
 export const BounceRateChart = () => {
-  const chartId = useId();
   const chartRef = useRef<am5xy.XYChart>();
 
   const [period, setPeriod] = useState<"week" | "month" | "year">("year");

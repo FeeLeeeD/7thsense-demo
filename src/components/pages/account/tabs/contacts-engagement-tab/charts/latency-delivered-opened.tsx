@@ -5,8 +5,9 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
 
+const chartId = "latency-delivered-opened";
+
 export const LatencyDeliveredOpenedChart = () => {
-  const chartId = useId();
   const chartRef = useRef<am5xy.XYChart>();
 
   useLayoutEffect(() => {

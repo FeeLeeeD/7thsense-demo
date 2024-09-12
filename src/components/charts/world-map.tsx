@@ -10,9 +10,9 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { Box } from "@chakra-ui/react";
 import { data } from "./data";
 
-export const WorldMap = () => {
-  const chartId = useId();
+const chartId = "world-map";
 
+export const WorldMap = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
     root.setThemes([am5themes_Animated.new(root)]);

@@ -6,9 +6,9 @@ import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
 import { chartColor } from "../../../../../charts/shared";
 
-export const DeliverabilityScoreChart = () => {
-  const chartId = useId();
+const chartId = "deliverability-score";
 
+export const DeliverabilityScoreChart = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
     root.setThemes([
