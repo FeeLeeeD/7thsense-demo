@@ -70,6 +70,7 @@ const XY = ({
         layout: root.verticalLayout,
         panX: false,
         panY: false,
+        paddingLeft: 0,
         // wheelX: "panX"
         // wheelY: "zoomX"
       })

@@ -1,25 +1,13 @@
-import React, { useLayoutEffect, useState } from "react";
-
+import React, { useLayoutEffect } from "react";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
-import { Box, BoxProps, HStack, Radio, RadioGroup } from "@chakra-ui/react";
-import { audienceReachByEngagementData } from "~data/charts/audience-reach-by-engagement";
-import { chartColor } from "~components/charts/shared";
-
-type ChartRollupPeriod = "Monthly" | "Quarterly" | "Yearly";
-
-type AudienceReachByEngagementProps = {
-  title?: React.ReactNode;
-} & BoxProps;
+import { Box, BoxProps } from "@chakra-ui/react";
 
 const chartId = "audience-reach-by-engagement";
 
-export const AudienceReachByEngagementChart = ({
-  title,
-  ...boxProps
-}: AudienceReachByEngagementProps) => {
+export const AudienceReachByEngagementChart = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
     root.setThemes([
@@ -32,8 +20,6 @@ export const AudienceReachByEngagementChart = ({
         panX: false,
         panY: false,
         paddingLeft: 0,
-        wheelX: "panX",
-        wheelY: "zoomX",
         layout: root.verticalLayout,
       })
     );

@@ -2,7 +2,7 @@ import React from "react";
 import { WorldMap } from "~components/charts/world-map";
 import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { Stack } from "@chakra-ui/react";
-import { ContactsEngagementChart } from "./contacts-engagement-chart";
+import { ContactsEngagementChart } from "./charts/contacts-engagement";
 import { LatencyDeliveredOpenedChart } from "./charts/latency-delivered-opened";
 import { LatencyFirstHour} from "./charts/latency-first-hour";
 
