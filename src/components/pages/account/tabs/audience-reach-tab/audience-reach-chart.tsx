@@ -37,7 +37,7 @@ export const AudienceReachChart = ({
 
     const axisRenderer = am5radar.AxisRendererCircular.new(root, {
       radius: am5.percent(100),
-      minGridDistance: isClickReact ? 15 : 35,
+      minGridDistance: isClickReact ? 30 : 35,
       dy: 5,
     });
 

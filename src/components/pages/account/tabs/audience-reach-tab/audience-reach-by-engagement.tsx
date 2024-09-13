@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
+
+import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
+import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
+import * as am5xy from "@amcharts/amcharts5/xy";
+import * as am5 from "@amcharts/amcharts5";
 import { Box, BoxProps, HStack, Radio, RadioGroup } from "@chakra-ui/react";
-import XY from "../../../../charts/xy-legacy";
 import { audienceReachByEngagementData } from "~data/charts/audience-reach-by-engagement";
+import { chartColor } from "~components/charts/shared";
 
 type ChartRollupPeriod = "Monthly" | "Quarterly" | "Yearly";
 
@@ -9,147 +14,189 @@ type AudienceReachByEngagementProps = {
   title?: React.ReactNode;
 } & BoxProps;
 
+const chartId = "audience-reach-by-engagement";
+
 export const AudienceReachByEngagementChart = ({
   title,
   ...boxProps
 }: AudienceReachByEngagementProps) => {
-  const [period, setPeriod] = useState<ChartRollupPeriod>("Monthly");
+  useLayoutEffect(() => {
+    const root = am5.Root.new(chartId);
+    root.setThemes([
+      am5themes_Responsive.new(root),
+      am5themes_Animated.new(root),
+    ]);
 
-  return (
-    <Box>
-      <RadioGroup
-        my="8px"
-        value={period}
-        onChange={setPeriod as (period: ChartRollupPeriod) => void}
-      >
-        <HStack spacing="12px">
-          <Radio value="Monthly">Monthly</Radio>
-          <Radio value="Quarterly">Quarterly</Radio>
-          <Radio value="Yearly">Yearly</Radio>
-        </HStack>
-      </RadioGroup>
+    const chart = root.container.children.push(
+      am5xy.XYChart.new(root, {
+        panX: false,
+        panY: false,
+        paddingLeft: 0,
+        wheelX: "panX",
+        wheelY: "zoomX",
+        layout: root.verticalLayout,
+      })
+    );
 
-      <XY
-        series={getSeries(audienceReachByEngagementData, period)}
-        height={boxProps.h || boxProps.height ? "100%" : undefined}
-        xAxisSettings={{
-          renderer: {
-            minGridDistance: 75,
-          },
-          markUnitChange: period === "Quarterly" ? true : false,
-          baseInterval:
-            period === "Monthly"
-              ? { timeUnit: "month" }
-              : period === "Quarterly"
-              ? { timeUnit: "month", count: 3 }
-              : { timeUnit: "year" },
-          ...(period === "Quarterly" && {
-            dateFormats: { month: "'quarter' q" },
-            tooltipDateFormat: "'quarter' q, yyyy",
-          }),
-        }}
-        showLegend
-      />
-    </Box>
-  );
-};
+    const cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+    cursor.lineY.set("visible", false);
 
-function getSeries(
-  data: typeof audienceReachByEngagementData,
-  period: ChartRollupPeriod
-) {
-  const dataForPeriod = data[period];
+    const legend = chart.children.push(
+      am5.Legend.new(root, {
+        x: am5.p50,
+        centerX: am5.p50,
+      })
+    );
 
-  const colors = [
-    "#3686F1", // "state.info"
-    "#25B160", // "state.success"
-    "#F6D051", // "state.warning"
-    "#0032F5E5", // "chart.scheduled.90"
-    "#0064F5E5", // "chart.sent.80"
-    "#0096F5E5", // "chart.sent.70"
-    "#AFAF4BE5", //"chart.paused.90"
-  ];
+    legend.setAll({ paddingLeft: 20, paddingBottom: 16 });
+    legend.labels.template.setAll({
+      fontSize: 12,
+    });
 
-  const quarterMonth = {
-    1: 0,
-    2: 3,
-    3: 6,
-    4: 9,
-  };
+    const xAxis = chart.xAxes.push(
+      am5xy.DateAxis.new(root, {
+        maxDeviation: 0,
+        baseInterval: {
+          timeUnit: "month",
+          count: 1,
+        },
+        renderer: am5xy.AxisRendererX.new(root, {
+          minGridDistance: 10,
+        }),
+        dateFormats: {
+          month: "MMM",
+        },
+        tooltip: am5.Tooltip.new(root, {}),
+        paddingTop: 4,
+        paddingBottom: 16,
+      })
+    );
 
-  const ranges = dataForPeriod.map((chart, i) => ({
-    label: chart.label,
-    color: colors[i],
-    data: [] as any[],
-  }));
+    xAxis.get("renderer").labels.template.setAll({
+      fontSize: 12,
+    });
 
-  const points = dataForPeriod.flatMap((chart) =>
-    chart.points.flatMap((point) => {
-      if (point.x.__typename === "ChartMonthlyPeriod") {
-        return [
-          {
-            ...point,
-            label: chart.label,
-            date: new Date(point.x.year, point.x.month - 1, 0, 0, 0, 0, 0),
-          },
-        ];
-      }
+    const yAxis = chart.yAxes.push(
+      am5xy.ValueAxis.new(root, {
+        min: 0,
+        renderer: am5xy.AxisRendererY.new(root, {}),
+      })
+    );
 
-      if (point.x.__typename === "ChartQuarterlyPeriod") {
-        return [
-          {
-            ...point,
-            label: chart.label,
-            date: new Date(
-              point.x.year,
-              quarterMonth[point.x.quarter],
-              1,
-              0,
-              0,
-              0,
-              0
-            ),
-          },
-        ];
-      }
+    /* Series */
+    setSeries();
+    function setSeries() {
+      [
+        {
+          name: "Total sent",
+          color: "#D3D3D3",
+          data: [
+            { date: new Date(2023, 10, 0, 0, 0, 0, 0).getTime(), value: 689 },
+            { date: new Date(2023, 11, 0, 0, 0, 0, 0).getTime(), value: 922 },
+            { date: new Date(2024, 0, 0, 0, 0, 0, 0).getTime(), value: 940 },
+            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), value: 952 },
+            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), value: 744 },
+            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), value: 526 },
+            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), value: 919 },
+            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), value: 923 },
+            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), value: 944 },
+            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), value: 985 },
+            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), value: 1117 },
+            { date: new Date(2024, 9, 0, 0, 0, 0, 0).getTime(), value: 1134 },
+          ],
+        },
+        {
+          name: "Unique contacts sent",
+          color: "#6997F4",
+          data: [
+            { date: new Date(2023, 10, 0, 0, 0, 0, 0).getTime(), value: 599 },
+            { date: new Date(2023, 11, 0, 0, 0, 0, 0).getTime(), value: 787 },
+            { date: new Date(2024, 0, 0, 0, 0, 0, 0).getTime(), value: 842 },
+            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), value: 798 },
+            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), value: 642 },
+            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), value: 280 },
+            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), value: 830 },
+            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), value: 821 },
+            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), value: 888 },
+            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), value: 940 },
+            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), value: 981 },
+            { date: new Date(2024, 9, 0, 0, 0, 0, 0).getTime(), value: 1054 },
+          ],
+        },
+        {
+          name: "Unique contacts opened",
+          color: "#5ADA5A",
+          data: [
+            { date: new Date(2023, 10, 0, 0, 0, 0, 0).getTime(), value: 247 },
+            { date: new Date(2023, 11, 0, 0, 0, 0, 0).getTime(), value: 346 },
+            { date: new Date(2024, 0, 0, 0, 0, 0, 0).getTime(), value: 388 },
+            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), value: 396 },
+            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), value: 345 },
+            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), value: 147 },
+            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), value: 496 },
+            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), value: 401 },
+            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), value: 395 },
+            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), value: 479 },
+            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), value: 561 },
+            { date: new Date(2024, 9, 0, 0, 0, 0, 0).getTime(), value: 607 },
+          ],
+        },
+        {
+          name: "Unique contacts clicked",
+          color: "#008000",
+          data: [
+            { date: new Date(2023, 10, 0, 0, 0, 0, 0).getTime(), value: 41 },
+            { date: new Date(2023, 11, 0, 0, 0, 0, 0).getTime(), value: 88 },
+            { date: new Date(2024, 0, 0, 0, 0, 0, 0).getTime(), value: 91 },
+            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), value: 89 },
+            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), value: 75 },
+            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), value: 45 },
+            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), value: 134 },
+            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), value: 104 },
+            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), value: 95 },
+            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), value: 127 },
+            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), value: 149 },
+            { date: new Date(2024, 9, 0, 0, 0, 0, 0).getTime(), value: 235 },
+          ],
+        },
+      ].forEach((seriesData) => {
+        const series = chart.series.push(
+          am5xy.ColumnSeries.new(root, {
+            name: seriesData.name,
+            xAxis,
+            yAxis,
+            valueYField: "value",
+            valueXField: "date",
+            tooltip: am5.Tooltip.new(root, {
+              labelText:
+                "[fontSize: 14px]{name}: [bold, fontSize: 14px]{valueY}",
+            }),
+          })
+        );
 
-      if (point.x.__typename === "ChartYearlyPeriod") {
-        return [
-          {
-            ...point,
-            label: chart.label,
-            date: new Date(point.x.year, 0, 0, 0, 0, 0, 0),
-          },
-        ];
-      }
+        series.columns.template.setAll({
+          cornerRadiusTL: 4,
+          cornerRadiusTR: 4,
+        });
 
-      return [];
-    })
-  );
+        series.setAll({
+          stroke: am5.color(seriesData.color),
+          fill: am5.color(seriesData.color),
+        });
 
-  points.sort((a, b) => (a.date > b.date ? 1 : -1));
+        series.data.setAll(seriesData.data);
 
-  const pointsGroupedByDate = points.reduce((groups, point) => {
-    const groupIndex = groups.findIndex((g) => g.date === point.date);
-    if (groupIndex > -1) {
-      const updatedGroups = [...groups];
-      updatedGroups[groupIndex].points.push(point);
-
-      return updatedGroups;
+        series.appear(1000);
+      });
     }
 
-    return [...groups, { date: point.date, points: [point] }];
-  }, [] as { date: Date; points: AverageActiveContactsPoint[] }[]);
+    legend.data.setAll(chart.series.values);
+    chart.appear(1000, 100);
 
-  pointsGroupedByDate.forEach((group) => {
-    ranges.forEach((range) => {
-      const point = group.points.find((point) => point.label === range.label);
-      if (point) range.data.push({ value: point.y, date: group.date });
-      else range.data.push({ value: undefined, date: group.date });
-    });
-  });
+    return () => {
+      root.dispose();
+    };
+  }, []);
 
-  return ranges;
-}
-
-type AverageActiveContactsPoint = { date: Date; label: string; y: number };
+  return <Box id={chartId} pos="relative" w="full" h="400px" />;
+};

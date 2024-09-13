@@ -2,19 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Grid, Stack, Text } from "@chakra-ui/react";
 import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { AudienceReachChart } from "./audience-reach-chart";
+import { AudienceReachByEngagementChart } from "./audience-reach-by-engagement";
 
 export const AudienceReachTab = () => {
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    setTimeout(() => {
-      setValue(64);
-    }, 250);
-  }, []);
-
   return (
     <Stack spacing="xxlarge">
-      <Text>In progress...</Text>
-
       <Grid gridTemplateColumns="1fr 1fr" gridGap="xxlarge">
         <ChartWrapper title="Audience reach by open" description="This month">
           <AudienceReachChart
@@ -62,6 +54,10 @@ export const AudienceReachTab = () => {
           />
         </ChartWrapper>
       </Grid>
+
+      <ChartWrapper title="Audience reach by engagement type">
+        <AudienceReachByEngagementChart />
+      </ChartWrapper>
     </Stack>
   );
 };
