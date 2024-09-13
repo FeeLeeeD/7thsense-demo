@@ -1,7 +1,8 @@
 import React from "react";
-import { Stack } from "@chakra-ui/react";
+import { Grid, Stack } from "@chakra-ui/react";
 import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { InitiationRatesChart } from "./charts/initiation-rates";
+import { PredictedEnrollmentRateChart } from "./charts/predicted-enrollment-rate";
 
 export const AudienceAnalyticsTab = () => {
   return (
@@ -12,6 +13,12 @@ export const AudienceAnalyticsTab = () => {
       >
         <InitiationRatesChart />
       </ChartWrapper>
+
+      <Grid gridTemplateColumns="1fr 1fr" gridGap="xxlarge">
+        <ChartWrapper title="Predicted enrollment rate with recycling">
+          <PredictedEnrollmentRateChart />
+        </ChartWrapper>
+      </Grid>
     </Stack>
   );
 };
