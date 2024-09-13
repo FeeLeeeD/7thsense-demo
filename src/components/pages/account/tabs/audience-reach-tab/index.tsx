@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Grid, Stack, Text } from "@chakra-ui/react";
-import { ChartWrapper } from "../../../../charts/chart-wrapper";
+import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { AudienceReachChart } from "./audience-reach-chart";
-import { AudienceReachByEngagementChart } from "./audience-reach-by-engagement";
 
 export const AudienceReachTab = () => {
   const [value, setValue] = useState(0);

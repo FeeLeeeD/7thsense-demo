@@ -17,12 +17,12 @@ import {
   WrapItem,
   Text,
 } from "@chakra-ui/react";
-import { FilterPlusIcon } from "../../components/icons/filter-plus";
-import { SolidClockCircleIcon } from "../../components/icons/solid-clock-circle";
+import { FilterPlusIcon } from "~components/icons/filter-plus";
+import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
 import { useTabs } from "../../hooks/useTabs";
-import { DeliverabilityVisibility } from "../../components/pages/account/tabs/deliverability-visibility-tab";
-import { ContactsEngagementTab } from "../../components/pages/account/tabs/contacts-engagement-tab";
-import { AudienceReachTab } from "../../components/pages/account/tabs/audience-reach-tab";
+import { DeliverabilityVisibility } from "~components/pages/account/tabs/deliverability-visibility-tab";
+import { ContactsEngagementTab } from "~components/pages/account/tabs/contacts-engagement-tab";
+import { AudienceReachTab } from "~components/pages/account/tabs/audience-reach-tab";
 
 export const Head: HeadFC = () => <title>Account analytics</title>;
 

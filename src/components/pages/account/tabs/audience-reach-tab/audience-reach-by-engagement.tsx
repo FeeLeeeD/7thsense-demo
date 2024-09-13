@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, BoxProps, HStack, Radio, RadioGroup } from "@chakra-ui/react";
 import XY from "../../../../charts/xy-legacy";
-import { audienceReachByEngagementData } from "../../../../../data/charts/audience-reach-by-engagement";
+import { audienceReachByEngagementData } from "~data/charts/audience-reach-by-engagement";
 
 type ChartRollupPeriod = "Monthly" | "Quarterly" | "Yearly";
 

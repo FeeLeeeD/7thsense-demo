@@ -1,7 +1,7 @@
 import React from "react";
 import { BoxProps } from "@chakra-ui/react";
 import { data } from "./data";
-import XY from "../../../../charts/xy-legacy";
+import XY from "~components/charts/xy-legacy";
 
 type AllContactEngagementChartProps = {
   title?: React.ReactNode;

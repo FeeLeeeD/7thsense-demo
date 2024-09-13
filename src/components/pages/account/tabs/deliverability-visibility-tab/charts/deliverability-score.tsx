@@ -1,10 +1,10 @@
-import React, { useId, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
-import { chartColor } from "../../../../../charts/shared";
+import { chartColor } from "~components/charts/shared";
 
 const chartId = "deliverability-score";
 

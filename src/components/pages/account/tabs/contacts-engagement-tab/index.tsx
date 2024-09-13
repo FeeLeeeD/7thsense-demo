@@ -1,6 +1,6 @@
 import React from "react";
-import { WorldMap } from "../../../../charts/world-map";
-import { ChartWrapper } from "../../../../charts/chart-wrapper";
+import { WorldMap } from "~components/charts/world-map";
+import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { Stack } from "@chakra-ui/react";
 import { ContactsEngagementChart } from "./contacts-engagement-chart";
 import { LatencyDeliveredOpenedChart } from "./charts/latency-delivered-opened";

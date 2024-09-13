@@ -2,7 +2,7 @@ import React from "react";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5radar from "@amcharts/amcharts5/radar";
 import { Box, BoxProps, Text } from "@chakra-ui/react";
-import GaugeGraph, { AxisRange } from "../../../../charts/gauge-legacy";
+import GaugeGraph, { AxisRange } from "~components/charts/gauge-legacy";
 
 const CHART: Record<
   "AudienceReach" | "ClickReach",
