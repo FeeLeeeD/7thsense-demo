@@ -15,7 +15,7 @@ export const ChartWrapper = ({
   return (
     <Box as="section" bg="white" borderRadius="24px" px="xxlarge" py="large">
       <Box as="header" mb="xxlarge">
-        <Heading fontSize="24px" fontWeight="semibold">
+        <Heading fontSize="24px" fontWeight="semibold" color="#343A40">
           {title}
         </Heading>
         {description && (
