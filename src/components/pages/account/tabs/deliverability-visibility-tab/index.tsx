@@ -5,7 +5,7 @@ import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { OpenClickRateChart } from "./charts/open-click-rate";
 import { BounceRateChart } from "./charts/bounce-rate";
 
-export const DeliverabilityVisibility = () => {
+export const DeliverabilityVisibilityTab = () => {
   return (
     <Stack spacing="xxlarge">
       <ChartWrapper

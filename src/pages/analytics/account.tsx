@@ -20,9 +20,10 @@ import {
 import { FilterPlusIcon } from "~components/icons/filter-plus";
 import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
 import { useTabs } from "../../hooks/useTabs";
-import { DeliverabilityVisibility } from "~components/pages/account/tabs/deliverability-visibility-tab";
+import { DeliverabilityVisibilityTab } from "~components/pages/account/tabs/deliverability-visibility-tab";
 import { ContactsEngagementTab } from "~components/pages/account/tabs/contacts-engagement-tab";
 import { AudienceReachTab } from "~components/pages/account/tabs/audience-reach-tab";
+import { AudienceAnalyticsTab } from "~components/pages/account/tabs/audience-analytics-tab";
 
 export const Head: HeadFC = () => <title>Account analytics</title>;
 
@@ -32,7 +33,7 @@ const AccountAnalyticsPage = (props: PageProps) => {
       {
         key: "deliverability-visibility",
         title: "Deliverability visibility",
-        body: <DeliverabilityVisibility />,
+        body: <DeliverabilityVisibilityTab />,
       },
       {
         key: "audience-reach",
@@ -47,7 +48,7 @@ const AccountAnalyticsPage = (props: PageProps) => {
       {
         key: "audience-analytics",
         title: "Audience analytics",
-        body: <>Audience analytics</>,
+        body: <AudienceAnalyticsTab />,
       },
     ],
   });
@@ -79,7 +80,12 @@ const AccountAnalyticsPage = (props: PageProps) => {
         <IconButton aria-label="Filters" icon={<FilterPlusIcon />} w="48px" />
       </Grid>
 
-      <Tabs mt="xlarge" defaultIndex={defaultTabIndex} onChange={onTabChange} isLazy>
+      <Tabs
+        mt="xlarge"
+        defaultIndex={defaultTabIndex}
+        onChange={onTabChange}
+        isLazy
+      >
         <TabList>
           {tabs.map((tab) => (
             <Tab key={tab.key}>{tab.title}</Tab>
