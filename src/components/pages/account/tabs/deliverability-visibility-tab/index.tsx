@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   CircularProgress,
   CircularProgressLabel,
@@ -93,11 +93,18 @@ const BounceUnsubscribeRateBlock = () => {
 };
 
 const Score = () => {
+  const [score, setScore] = useState(0);
+  useEffect(() => {
+    setTimeout(() => {
+      setScore(93);
+    }, 250);
+  }, []);
+
   return (
     <HStack flex={1} alignItems="center">
       <CircularProgress
         size="200px"
-        value={93}
+        value={score}
         color="#78D386"
         borderRadius="32px"
         sx={{

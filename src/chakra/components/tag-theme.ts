@@ -34,6 +34,6 @@ const thick = definePartsStyle({
 export const tagTheme = defineMultiStyleConfig({
   variants: {
     filter,
-    thick: thick,
+    thick,
   },
 });

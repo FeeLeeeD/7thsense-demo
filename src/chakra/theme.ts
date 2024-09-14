@@ -4,6 +4,8 @@ import { tagTheme } from "./components/tag-theme";
 import { tabsTheme } from "./components/tabs-theme";
 import { inputTheme } from "./components/input-theme";
 import { selectTheme } from "./components/select-theme";
+import { tableTheme } from "./components/table-theme";
+import { checkboxTheme } from "./components/checkbox-theme";
 
 export const theme = extendTheme({
   styles: {
@@ -79,5 +81,7 @@ export const theme = extendTheme({
     Tabs: tabsTheme,
     Input: inputTheme,
     Select: selectTheme,
+    Table: tableTheme,
+    Checkbox: checkboxTheme,
   },
 });

@@ -9,6 +9,13 @@ const primary = defineStyle({
   _active: { bg: "#0A5BFF" },
 });
 
+const green = defineStyle({
+  background: "#0AAF23",
+  color: "#F1F3F5",
+  _hover: { bg: "#2FBB44" },
+  _active: { bg: "#09951E" },
+});
+
 const secondary = defineStyle({
   background: "#F8F9FC",
   border: "1px",
@@ -29,6 +36,6 @@ const medium = defineStyle({
 
 export const buttonTheme = defineStyleConfig({
   sizes: { medium },
-  variants: { primary, secondary },
+  variants: { primary, secondary, green },
   defaultProps: { variant: "primary", size: "medium" },
 });
