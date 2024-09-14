@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, BoxProps, Heading, Text } from "@chakra-ui/react";
+import { Box, BoxProps, Flex, Heading, Text } from "@chakra-ui/react";
 
 type ChartWrapperProps = {
   title: string;
@@ -14,8 +14,9 @@ export const ChartWrapper = ({
   ...props
 }: ChartWrapperProps) => {
   return (
-    <Box
+    <Flex
       as="section"
+      flexDir="column"
       bg="white"
       borderRadius="24px"
       px="xxlarge"
@@ -34,6 +35,6 @@ export const ChartWrapper = ({
       </Box>
 
       {children}
-    </Box>
+    </Flex>
   );
 };

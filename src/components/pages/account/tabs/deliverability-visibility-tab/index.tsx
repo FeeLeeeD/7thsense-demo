@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Grid, Select, Stack } from "@chakra-ui/react";
+import {
+  CircularProgress,
+  CircularProgressLabel,
+  Grid,
+  HStack,
+  Select,
+  Stack,
+  Tag,
+  Text,
+} from "@chakra-ui/react";
 import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { OpenClickRateChart } from "./charts/open-click-rate";
@@ -8,7 +17,7 @@ import { BounceRateChart } from "./charts/bounce-rate";
 export const DeliverabilityVisibilityTab = () => {
   return (
     <Stack spacing="xxlarge">
-      <Grid gridTemplateColumns="1fr 1fr" gridGap="xxlarge">
+      <Grid gridTemplateColumns="1fr 500px" gridGap="xxlarge">
         <ChartWrapper
           title="Deliverability rate"
           description="Here can be a short description?"
@@ -18,9 +27,9 @@ export const DeliverabilityVisibilityTab = () => {
 
         <ChartWrapper
           title="Deliverability rate"
-          description="Based on last month of data"
+          description="Here can be a short description?"
         >
-          Score
+          <Score />
         </ChartWrapper>
       </Grid>
 
@@ -80,5 +89,40 @@ const BounceUnsubscribeRateBlock = () => {
 
       <BounceRateChart />
     </ChartWrapper>
+  );
+};
+
+const Score = () => {
+  return (
+    <HStack flex={1} alignItems="center">
+      <CircularProgress
+        size="200px"
+        value={93}
+        color="#78D386"
+        borderRadius="32px"
+        sx={{
+          circle: {
+            strokeLinecap: "round",
+          },
+        }}
+      >
+        <CircularProgressLabel color="#343A40" fontFamily="monospace">
+          94%
+        </CircularProgressLabel>
+      </CircularProgress>
+
+      <Stack spacing="4px">
+        <HStack>
+          <Text textStyle="l">Your rate is</Text>
+          <Tag size="lg" colorScheme="green" borderRadius="full">
+            Great
+          </Tag>
+        </HStack>
+
+        <Text textStyle="m" color="#707880">
+          Over the previous 6 months
+        </Text>
+      </Stack>
+    </HStack>
   );
 };
