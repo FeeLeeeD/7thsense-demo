@@ -21,12 +21,55 @@ export const WorldMap = () => {
       am5map.MapChart.new(root, {
         panX: "rotateX",
         panY: "translateY",
+        wheelY: "none",
         projection: am5map.geoMercator(),
         rotationX: 95,
         rotationY: 7,
         homeZoomLevel: 4,
       })
     );
+
+    let overlay = root.container.children.push(
+      am5.Container.new(root, {
+        width: am5.p100,
+        height: am5.p100,
+        layer: 100,
+        visible: false,
+      })
+    );
+
+    let curtain = overlay.children.push(
+      am5.Rectangle.new(root, {
+        width: am5.p100,
+        height: am5.p100,
+        fill: am5.color(0x000000),
+        fillOpacity: 0.3,
+      })
+    );
+
+    let message = overlay.children.push(
+      am5.Label.new(root, {
+        text: "Use CTRL + Scroll to zoom",
+        fontSize: 30,
+        x: am5.p50,
+        y: am5.p50,
+        centerX: am5.p50,
+        centerY: am5.p50,
+      })
+    );
+
+    chart.events.on("wheel", function (ev) {
+      if (ev.originalEvent.ctrlKey) {
+        ev.originalEvent.preventDefault();
+        chart.set("wheelY", "zoom");
+      } else {
+        chart.set("wheelY", "none");
+        overlay.show();
+        overlay.setTimeout(function () {
+          overlay.hide();
+        }, 800);
+      }
+    });
 
     var zoomControl = chart.set(
       "zoomControl",

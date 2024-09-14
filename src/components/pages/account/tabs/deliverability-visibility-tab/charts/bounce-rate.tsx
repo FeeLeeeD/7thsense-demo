@@ -1,17 +1,15 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
-import { Box, Select } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { chartColor } from "~components/charts/shared";
 
 const chartId = "bounce-rate";
 
 export const BounceRateChart = () => {
   const chartRef = useRef<am5xy.XYChart>();
-
-  const [period, setPeriod] = useState<"week" | "month" | "year">("year");
 
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
@@ -58,7 +56,7 @@ export const BounceRateChart = () => {
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
         min: 0,
-        max: 100,
+        max: 1,
         renderer: am5xy.AxisRendererY.new(root, {}),
       })
     );
@@ -71,42 +69,42 @@ export const BounceRateChart = () => {
           name: "GSuite",
           color: chartColor.provider.gSuite,
           data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 56 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 47 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 45 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 39 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 27 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 20 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 15 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 14 },
+            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 0.56 },
+            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 0.47 },
+            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 0.45 },
+            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 0.39 },
+            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 0.27 },
+            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 0.20 },
+            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 0.15 },
+            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 0.14 },
           ],
         },
         {
           name: "Microsoft 365",
           color: chartColor.provider.microsoft365,
           data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 48 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 40 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 30 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 31 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 26 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 20 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 17 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 8 },
+            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 0.48 },
+            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 0.40 },
+            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 0.30 },
+            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 0.31 },
+            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 0.26 },
+            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 0.20 },
+            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 0.17 },
+            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 0.08 },
           ],
         },
         {
           name: "Overall",
           color: "#000",
           data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 52 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 44 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 38 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 35 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 26 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 20 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 16 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 11 },
+            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 0.52 },
+            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 0.44 },
+            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 0.38 },
+            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 0.35 },
+            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 0.26 },
+            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 0.20 },
+            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 0.16 },
+            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 0.11 },
           ],
         },
       ].forEach((seriesData) => {
@@ -131,6 +129,8 @@ export const BounceRateChart = () => {
 
         if (seriesData.name === "Overall") {
           series.strokes.template.setAll({ strokeWidth: 4 });
+        } else {
+          series.strokes.template.setAll({ strokeWidth: 2 });
         }
 
         series.bullets.push(function () {
@@ -160,7 +160,7 @@ export const BounceRateChart = () => {
 
     chart.appear(1000, 100);
 
-    createRange(0, 25, "#25B160", true);
+    createRange(0, 0.25, "#25B160", true);
 
     function createRange(
       lower: number,
@@ -200,20 +200,5 @@ export const BounceRateChart = () => {
     };
   }, []);
 
-  return (
-    <Box id={chartId} pos="relative" w="full" h="300px">
-      <Select
-        pos="absolute"
-        top="-80px"
-        right={0}
-        w="200px"
-        value={period}
-        onChange={(e) => setPeriod(e.currentTarget.value as typeof period)}
-      >
-        <option value="week">Last week</option>
-        <option value="month">Last month</option>
-        <option value="year">Last year</option>
-      </Select>
-    </Box>
-  );
+  return <Box id={chartId} pos="relative" w="full" h="300px" />;
 };

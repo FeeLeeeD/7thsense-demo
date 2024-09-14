@@ -10,8 +10,6 @@ const chartId = "open-click-rate";
 export const OpenClickRateChart = () => {
   const chartRef = useRef<am5xy.XYChart>();
 
-  const [chart, setChart] = useState<"open" | "click">("open");
-
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
     root.setThemes([
@@ -144,6 +142,8 @@ export const OpenClickRateChart = () => {
 
         if (seriesData.name === "Overall") {
           series.strokes.template.setAll({ strokeWidth: 4 });
+        } else {
+          series.strokes.template.setAll({ strokeWidth: 2 });
         }
 
         series.bullets.push(function () {
@@ -214,19 +214,5 @@ export const OpenClickRateChart = () => {
     };
   }, []);
 
-  return (
-    <Box id={chartId} pos="relative" w="full" h="300px">
-      <Select
-        pos="absolute"
-        top="-80px"
-        right={0}
-        w="200px"
-        value={chart}
-        onChange={(e) => setChart(e.currentTarget.value as typeof chart)}
-      >
-        <option value="open">Open rate</option>
-        <option value="click">Click rate</option>
-      </Select>
-    </Box>
-  );
+  return <Box id={chartId} pos="relative" w="full" h="300px" />;
 };

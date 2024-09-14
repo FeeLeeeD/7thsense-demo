@@ -90,6 +90,12 @@ export const LatencyDeliveredOpenedChart = () => {
     ];
     series.data.setAll(data);
 
+    series.columns.template.adapters.add("fill", (_, target) => {
+      return (target.dataItem?.dataContext as { value: number }).value > 0
+        ? am5.color("#9DDFA7")
+        : am5.color("#FF9E99");
+    });
+
     series.appear(1000);
     chart.appear(1000, 100);
 

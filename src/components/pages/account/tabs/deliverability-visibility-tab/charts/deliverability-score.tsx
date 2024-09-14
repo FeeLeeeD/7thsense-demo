@@ -16,7 +16,9 @@ export const DeliverabilityScoreChart = () => {
       am5themes_Animated.new(root),
     ]);
 
-    const chart = root.container.children.push(am5xy.XYChart.new(root, {}));
+    const chart = root.container.children.push(
+      am5xy.XYChart.new(root, { paddingLeft: 0 })
+    );
 
     const cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
     cursor.lineY.set("visible", false);
@@ -33,11 +35,14 @@ export const DeliverabilityScoreChart = () => {
       })
     );
 
+    xAxis.get("renderer").labels.template.setAll({ fontSize: 12 });
+
     var yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
         maxDeviation: 0.3,
         min: 0,
         max: 100,
+        numberFormat: "0'%'",
         renderer: am5xy.AxisRendererY.new(root, {
           strokeOpacity: 0.1,
         }),
