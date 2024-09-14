@@ -64,9 +64,9 @@ export const Sidebar = () => {
               label: "Emails",
             },
             {
-              href: "/analytics/leads",
+              href: "/analytics/people",
               icon: <UsersGroupTwoRoundedIcon />,
-              label: "Leads",
+              label: "People",
             },
           ]}
         />

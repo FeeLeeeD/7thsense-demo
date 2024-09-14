@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { navigate } from "gatsby";
 import {
   Box,
-  Checkbox,
   CircularProgress,
   HStack,
   IconButton,
@@ -23,41 +22,9 @@ import { ArrowLeftIcon } from "~components/icons/arrow-left";
 import { ArrowRightIcon } from "~components/icons/arrow-right";
 import { data } from "./data";
 
-export const EmailsTable = ({
-  onChosenEmailsChange,
-  ...props
-}: {
-  onChosenEmailsChange: (states: boolean[]) => void;
-} & TableContainerProps) => {
-  const [states, setStates] = useState<boolean[]>([
-    ...new Array(11).fill(false),
-  ]);
-
-  const onCheck = (checked: boolean, index: number) => {
-    if (index === 0) {
-      setStates((states) => {
-        const newStates = states.map(() => checked);
-
-        onChosenEmailsChange(newStates);
-        return newStates;
-      });
-    } else {
-      setStates((states) => {
-        const newStates = [...states];
-        newStates[index] = checked;
-
-        if (newStates[0] === true) {
-          newStates[0] = false;
-        }
-
-        onChosenEmailsChange(newStates);
-        return newStates;
-      });
-    }
-  };
-
-  const openEmailStatistics = () => {
-    navigate("/email");
+export const PeopleTable = ({ ...props }: TableContainerProps) => {
+  const openLeadStatistics = () => {
+    navigate("/people");
   };
 
   return (
@@ -73,35 +40,23 @@ export const EmailsTable = ({
         >
           <Thead>
             <Tr>
-              <Th>
-                <Checkbox
-                  isChecked={states[0]}
-                  onChange={(e) => onCheck(e.currentTarget.checked, 0)}
-                />
-              </Th>
-              <Th>ID</Th>
               <Th>Name</Th>
-              <Th>Campaign name</Th>
+              <Th>Email</Th>
+              <Th>Subscription date</Th>
+              <Th>Location</Th>
               <Th>Tags</Th>
-              <Th>Sent date</Th>
-              <Th textAlign="end">Progress (delivered)</Th>
+              <Th>Engagement</Th>
+              <Th>Latency</Th>
             </Tr>
           </Thead>
           <Tbody>
-            {data.map((item, i) => (
+            {data.map((item) => (
               <Tr key={item.id}>
-                <Td>
-                  <Checkbox
-                    isChecked={states.at(i + 1)}
-                    onChange={(e) => onCheck(e.currentTarget.checked, i + 1)}
-                  />
-                </Td>
-                <Td isNumeric onClick={openEmailStatistics}>
-                  {item.id}
-                </Td>
-                <Td onClick={openEmailStatistics}>{item.name}</Td>
-                <Td onClick={openEmailStatistics}>{item.campaignName}</Td>
-                <Td onClick={openEmailStatistics}>
+                <Td onClick={openLeadStatistics}>{item.name}</Td>
+                <Td onClick={openLeadStatistics}>{item.email}</Td>
+                <Td onClick={openLeadStatistics}>{item.subscriptionDate}</Td>
+                <Td onClick={openLeadStatistics}>{item.location}</Td>
+                <Td onClick={openLeadStatistics}>
                   <HStack>
                     {item.tags.map((tag) => (
                       <Tag key={tag} borderRadius="full">
@@ -110,10 +65,8 @@ export const EmailsTable = ({
                     ))}
                   </HStack>
                 </Td>
-                <Td onClick={openEmailStatistics}>{item.sentDate}</Td>
-                <Td onClick={openEmailStatistics}>
-                  <ProgressCell progress={item.progress} />
-                </Td>
+                <Td onClick={openLeadStatistics}>{item.engagement}</Td>
+                <Td onClick={openLeadStatistics}>{item.art}</Td>
               </Tr>
             ))}
           </Tbody>
@@ -141,7 +94,7 @@ export const EmailsTable = ({
           aria-label="next page"
         />
         <Text>
-          Page <b>1</b> of 127
+          Page <b>1</b> of 13489
         </Text>
 
         <Spacer />
@@ -152,7 +105,7 @@ export const EmailsTable = ({
           <option value="50">50</option>
           <option value="100">100</option>
         </Select>
-        <Text>Number of emails: 1270</Text>
+        <Text>Number of emails: 134889</Text>
       </HStack>
     </Box>
   );
