@@ -43,6 +43,7 @@ export const Sidebar = () => {
         as="aside"
         pos="sticky"
         top="68px"
+        flexShrink={0}
         w={sidebar.isOpen ? "288px" : "100px"}
         h="calc(100vh - 68px)"
         transition="width ease-in-out 0.3s"

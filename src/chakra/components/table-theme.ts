@@ -46,7 +46,7 @@ const primary = definePartsStyle((props) => {
       borderColor: "#BEC4DC",
       py: "small",
       px: "large",
-      textStyle: "m",
+      textStyle: "s",
       color: "#343A40",
 
       "&[data-is-numeric=true]": {
