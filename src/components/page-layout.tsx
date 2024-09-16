@@ -1,15 +1,21 @@
 import React from "react";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import { AltArrowDownIcon } from "./icons/alt-arrow-down";
 import { Link } from "./link";
 
 type PageLayoutProps = {
   title: string;
+  description?: string;
   children: React.ReactNode;
   back?: boolean;
 };
 
-export const PageLayout = ({ title, back, children }: PageLayoutProps) => {
+export const PageLayout = ({
+  title,
+  description,
+  back,
+  children,
+}: PageLayoutProps) => {
   return (
     <>
       {back && (
@@ -31,6 +37,12 @@ export const PageLayout = ({ title, back, children }: PageLayoutProps) => {
       >
         {title}
       </Heading>
+
+      {description && (
+        <Text mt="xsmall" fontSize="20px" lineHeight="28px" color="#4B5259">
+          {description}
+        </Text>
+      )}
 
       <Box mt="xlarge">{children}</Box>
     </>

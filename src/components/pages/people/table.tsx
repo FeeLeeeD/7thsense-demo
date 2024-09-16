@@ -24,7 +24,7 @@ import { data } from "./data";
 
 export const PeopleTable = ({ ...props }: TableContainerProps) => {
   const openLeadStatistics = () => {
-    navigate("/people");
+    navigate("/analytics/people/lead");
   };
 
   return (
