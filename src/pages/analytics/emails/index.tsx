@@ -38,7 +38,7 @@ const EmailsAnalyticsPage = (props: PageProps) => {
       <HStack bg="white" p="xlarge" borderRadius="24px" spacing="large">
         <Fade in={checkboxesStates.filter(Boolean).length > 1}>
           <HStack spacing="xlarge">
-            <Button as={Link} variant="green" to="/">
+            <Button as={Link} variant="green" to="/analytics/emails/email">
               Statistics for emails
             </Button>
 
