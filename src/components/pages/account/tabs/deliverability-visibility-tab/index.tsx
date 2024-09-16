@@ -19,15 +19,15 @@ export const DeliverabilityVisibilityTab = () => {
     <Stack spacing="xxlarge">
       <Grid gridTemplateColumns="1fr 500px" gridGap="xxlarge">
         <ChartWrapper
-          title="Deliverability rate"
-          description="Here can be a short description?"
+          title="Deliverability rate by email provider"
+          description=" This chart shows the percentage of successfully delivered emails for each provider, calculated as (Delivered Emails / Sent Emails) × 100"
         >
           <DeliverabilityScoreChart />
         </ChartWrapper>
 
         <ChartWrapper
-          title="Deliverability rate"
-          description="Here can be a short description?"
+          title="Overall deliverability rate"
+          description="Displays the overall deliverability rate, calculated by dividing the total number of delivered emails by the total number of sent emails, multiplied by 100"
         >
           <Score />
         </ChartWrapper>
@@ -45,8 +45,9 @@ const OpenClickRateBlock = () => {
 
   return (
     <ChartWrapper
-      title={`${chart} rate per Inbox provider`}
-      description="Here can be a short description?"
+      title={`${chart} rate by Inbox provider`}
+      description="A line chart showing the percentage of opened (clicked) emails per provider each month, calculated as (Opened (Clicked) Emails / Delivered Emails) × 100"
+      descriptionProps={{ maxW: "60%" }}
       pos="relative"
     >
       <Select
@@ -71,8 +72,8 @@ const BounceUnsubscribeRateBlock = () => {
 
   return (
     <ChartWrapper
-      title={`${chart} rate`}
-      description="Here can be a short description?"
+      title={`${chart} by Inbox provider`}
+      description="A line chart tracking the percentage of bounced emails (unsubscribes) per provider each month"
       pos="relative"
     >
       <Select

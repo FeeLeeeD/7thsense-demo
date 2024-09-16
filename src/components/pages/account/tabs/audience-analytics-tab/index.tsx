@@ -10,17 +10,23 @@ export const AudienceAnalyticsTab = () => {
     <Stack spacing="xxlarge">
       <ChartWrapper
         title="Initiation rates"
-        description="How likely is a recipient to open an email after receiving nth emails"
+        description="The likelihood that a recipient will open an email, given that they have not opened any previous emails"
       >
         <InitiationRatesChart />
       </ChartWrapper>
 
       <Grid gridTemplateColumns="1fr 1fr" gridGap="xxlarge">
-        <ChartWrapper title="Predicted enrollment rate with recycling">
+        <ChartWrapper
+          title="Predicted enrollment rate with recycling"
+          description="This chart shows the estimated number of contacts who will be enrolled in an email campaign when using an AI algorithm to recycle contacts by targeting more engaged recipients"
+        >
           <PredictedEnrollmentRateChart />
         </ChartWrapper>
-     
-        <ChartWrapper title="Engagements segments chart">
+
+        <ChartWrapper
+          title="Engagement segments chart"
+          description="This pie chart illustrates the distribution of engagement levels within your audience"
+        >
           <EngagementSegmentsChart />
         </ChartWrapper>
       </Grid>

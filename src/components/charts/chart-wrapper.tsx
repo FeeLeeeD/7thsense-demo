@@ -1,15 +1,24 @@
 import React from "react";
-import { Box, BoxProps, Flex, Heading, Text } from "@chakra-ui/react";
+import {
+  Box,
+  BoxProps,
+  Flex,
+  Heading,
+  Text,
+  TextProps,
+} from "@chakra-ui/react";
 
 type ChartWrapperProps = {
   title: string;
   description?: string;
+  descriptionProps?: TextProps;
   children: React.ReactNode;
 } & BoxProps;
 
 export const ChartWrapper = ({
   title,
   description,
+  descriptionProps,
   children,
   ...props
 }: ChartWrapperProps) => {
@@ -28,7 +37,7 @@ export const ChartWrapper = ({
           {title}
         </Heading>
         {description && (
-          <Text mt="4px" color="#707880">
+          <Text mt="8px" color="#707880" textStyle="s" {...descriptionProps}>
             {description}
           </Text>
         )}
