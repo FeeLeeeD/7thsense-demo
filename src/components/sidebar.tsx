@@ -37,11 +37,13 @@ export const Sidebar = () => {
   const [isLessThan1000] = useMediaQuery("(max-width: 1000px)");
 
   const sidebar = useDisclosure({
-    defaultIsOpen: window.localStorage.getItem("menu-opened")
-      ? Boolean(
-          JSON.parse(window.localStorage.getItem("menu-opened") as string)
-        )
-      : true,
+    defaultIsOpen:
+      typeof window !== "undefined" &&
+      window.localStorage.getItem("menu-opened")
+        ? Boolean(
+            JSON.parse(window.localStorage.getItem("menu-opened") as string)
+          )
+        : true,
   });
 
   useLayoutEffect(() => {
