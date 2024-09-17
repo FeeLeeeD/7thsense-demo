@@ -33,13 +33,25 @@ const SidebarContext = createContext<SidebarContent>({
 const useSidebarContext = () => useContext<SidebarContent>(SidebarContext);
 
 export const Sidebar = () => {
-  const sidebar = useDisclosure({ defaultIsOpen: true });
+  const sidebar = useDisclosure({
+    defaultIsOpen: window.localStorage.getItem("menu-opened")
+      ? Boolean(
+          JSON.parse(window.localStorage.getItem("menu-opened") as string)
+        )
+      : true,
+  });
+
+  const onToggle = () => {
+    window.localStorage.setItem("menu-opened", JSON.stringify(!sidebar.isOpen));
+    sidebar.onToggle();
+  };
 
   return (
     <SidebarContext.Provider
-      value={{ sidebarOpened: sidebar.isOpen, toggleSidebar: sidebar.onToggle }}
+      value={{ sidebarOpened: sidebar.isOpen, toggleSidebar: onToggle }}
     >
       <Stack
+        zIndex="1000"
         as="aside"
         pos="sticky"
         top="68px"
@@ -153,7 +165,7 @@ export const Sidebar = () => {
               borderRadius="8px"
               _hover={{ bg: "#F8F9FC" }}
               _focusVisible={{ bg: "#F0F2F8" }}
-              onClick={sidebar.onToggle}
+              onClick={onToggle}
             >
               {sidebar.isOpen ? "Hide" : "Open"} sidebar
             </MenuItem>

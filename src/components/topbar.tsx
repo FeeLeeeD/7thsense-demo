@@ -61,6 +61,7 @@ export const Topbar = (props: StackProps) => {
 
             <MenuList
               bg="white"
+              mt="4px"
               py="24px"
               px="16px"
               border="none"

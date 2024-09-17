@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Flex, Grid } from "@chakra-ui/react";
+import { Box, Container, Flex } from "@chakra-ui/react";
 import { Topbar } from "./topbar";
 import { Sidebar } from "./sidebar";
 
