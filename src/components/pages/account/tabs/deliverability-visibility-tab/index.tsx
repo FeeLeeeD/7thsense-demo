@@ -51,7 +51,9 @@ const OpenClickRateBlock = () => {
   return (
     <ChartWrapper
       title={`${chart} rate by Inbox provider`}
-      description="A line chart showing the percentage of opened (clicked) emails per provider each month, calculated as (Opened (Clicked) Emails / Delivered Emails) × 100"
+      description={`A line chart showing the percentage of ${
+        chart === "Open" ? "opened" : "clicked"
+      } emails per provider each month, calculated as (Opened (Clicked) Emails / Delivered Emails) × 100`}
       descriptionProps={{ maxW: "60%" }}
       pos="relative"
     >
@@ -78,7 +80,9 @@ const BounceUnsubscribeRateBlock = () => {
   return (
     <ChartWrapper
       title={`${chart} by Inbox provider`}
-      description="A line chart tracking the percentage of bounced emails (unsubscribes) per provider each month"
+      description={`A line chart tracking the percentage of ${
+        chart === "Bounce" ? "bounced emails" : "unsubscribes"
+      } per provider each month`}
       pos="relative"
     >
       <Select
