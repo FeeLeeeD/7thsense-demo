@@ -69,7 +69,7 @@ export const Sidebar = () => {
         top="68px"
         flexShrink={0}
         w={sidebar.isOpen ? "288px" : "100px"}
-        h="calc(100vh - 68px)"
+        h="calc(100dvh - 68px)"
         transition="width ease-in-out 0.3s"
         p="large"
         spacing="xlarge"
