@@ -41,8 +41,8 @@ const AccountAnalyticsPage = (props: PageProps) => {
         body: <AudienceReachTab />,
       },
       {
-        key: "contacts-engagement",
-        title: "Contacts engagement",
+        key: "individual-engagement",
+        title: "Individual Engagement",
         body: <ContactsEngagementTab />,
       },
       {

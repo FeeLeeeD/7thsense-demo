@@ -24,7 +24,7 @@ export const AudienceAnalyticsTab = () => {
         </ChartWrapper>
 
         <ChartWrapper
-          title="Engagement segments chart"
+          title="Distribution by Engagement Segment"
           description="This pie chart illustrates the distribution of engagement levels within your audience"
         >
           <EngagementSegmentsChart />

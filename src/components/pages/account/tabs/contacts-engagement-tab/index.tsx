@@ -10,14 +10,14 @@ export const ContactsEngagementTab = () => {
   return (
     <Stack spacing="xxlarge">
       <ChartWrapper
-        title="People engagement by time"
+        title="Engagement over time"
         description="This chart displays your email engagement scores, based on a proprietary scoring system, for every hour of the week. It highlights how likely your contacts are to engage with emails at different times"
       >
         <ContactsEngagementChart />
       </ChartWrapper>
 
       <ChartWrapper
-        title="People engagement by place"
+        title="Engagement by location"
         description="This map highlights regions where recipients are clicking links and opening emails, providing a visual representation of engagement levels by location"
       >
         <WorldMap />

@@ -1,5 +1,5 @@
 import React from "react";
-import { type HeadFC, type PageProps } from "gatsby";
+import { navigate, type HeadFC, type PageProps } from "gatsby";
 import { PageLayout } from "~components/page-layout";
 import {
   Box,
@@ -34,14 +34,14 @@ const LeadPage = (props: PageProps) => {
   return (
     <PageLayout
       title="Sarah Johnson, Virginia, USA"
-      description="Lead statistics"
+      description="Individual engagement statistics"
       back
     >
       <Grid gridTemplateColumns="1fr 1fr 1fr 228px" gridGap="xlarge">
         <StatCard
           icon={<SolidClockCircleIcon />}
           name="Subscription date"
-          value="03.01.2024"
+          value="01/03/2024"
         />
         <StatCard
           icon={<CheckCircleIcon />}
@@ -75,11 +75,10 @@ const LeadPage = (props: PageProps) => {
 
       <SentEmailsList mt="xlarge" />
 
-      <Card title="Heatmap of probability of engagement" mt="xlarge">
+      <Card title="Engagement probability over time" mt="xlarge">
         <OpenRatesHeatMap
           cumulativeMonthlyOpenRates={[
-            0.1, 0.25, 0.3, 0.32, 0.24, 0.45, 0.6, 0.47, 0.74, 0.81, 0.88,
-            0.91,
+            0.1, 0.25, 0.3, 0.32, 0.24, 0.45, 0.6, 0.47, 0.74, 0.81, 0.88, 0.91,
           ]}
         />
       </Card>
@@ -88,6 +87,10 @@ const LeadPage = (props: PageProps) => {
 };
 
 const SentEmailsList = (props: BoxProps) => {
+  const openEmailStatistics = () => {
+    navigate("/analytics/emails/email");
+  };
+
   return (
     <Box as="section" {...props}>
       <Box
@@ -98,11 +101,18 @@ const SentEmailsList = (props: BoxProps) => {
         color="#343A40"
         fontWeight="semibold"
       >
-        List of sent emails
+        Emails sent
       </Box>
 
       <TableContainer>
-        <Table>
+        <Table
+          sx={{
+            "tr:hover td": {
+              cursor: "pointer",
+              bg: "#F8F9FC",
+            },
+          }}
+        >
           <Thead>
             <Tr>
               <Th>Email subject</Th>
@@ -117,81 +127,81 @@ const SentEmailsList = (props: BoxProps) => {
               {
                 email: "Rock Revolution Playlist",
                 tag: "music",
-                date: "2024-08-01",
+                date: "01/08/2024",
                 opened: true,
                 clicked: false,
               },
               {
                 email: "Tech Trends Newsletter",
                 tag: "technology",
-                date: "2024-07-15",
+                date: "07/15/2024",
                 opened: false,
-                clicked: true,
+                clicked: false,
               },
               {
                 email: "Summer Sale Offers",
                 tag: "shopping",
-                date: "2024-06-25",
+                date: "06/25/2024",
                 opened: true,
                 clicked: true,
               },
               {
                 email: "Fitness Daily Routine",
                 tag: "health",
-                date: "2024-08-05",
+                date: "08/05/2024",
                 opened: false,
                 clicked: false,
               },
               {
                 email: "Film Festival Updates",
                 tag: "movies",
-                date: "2024-07-30",
+                date: "08/30/2024",
                 opened: true,
                 clicked: true,
               },
               {
                 email: "Travel Deals Weekly",
                 tag: "travel",
-                date: "2024-06-12",
+                date: "09/12/2024",
                 opened: true,
                 clicked: false,
               },
               {
                 email: "Fashion Week Recap",
                 tag: "fashion",
-                date: "2024-09-01",
+                date: "09/14/2024",
                 opened: false,
                 clicked: false,
               },
               {
                 email: "Cooking Tips & Tricks",
                 tag: "food",
-                date: "2024-08-10",
+                date: "09/15/2024",
                 opened: true,
                 clicked: true,
               },
               {
                 email: "Gaming Gear Updates",
                 tag: "gaming",
-                date: "2024-07-05",
+                date: "09/16/2024",
                 opened: true,
                 clicked: false,
               },
               {
                 email: "Photography Insights",
                 tag: "photography",
-                date: "2024-09-10",
+                date: "09/17/2024",
                 opened: false,
-                clicked: true,
+                clicked: false,
               },
-            ].map((item) => (
+            ].reverse().map((item) => (
               <Tr key={item.email}>
-                <Td>{item.email}</Td>
-                <Td>
+                <Td onClick={openEmailStatistics}>{item.email}</Td>
+                <Td onClick={openEmailStatistics}>
                   <Tag borderRadius="full"># {item.tag}</Tag>
                 </Td>
-                <Td>{item.date}</Td>
-                <Td w="100px">
+                <Td onClick={openEmailStatistics}>{item.date}</Td>
+                <Td w="100px" onClick={openEmailStatistics}>
                   <HStack spacing="medium">
                     <Box
                       boxSize="20px"
@@ -202,7 +212,7 @@ const SentEmailsList = (props: BoxProps) => {
                     <Text>{item.opened ? "Yes" : "No"}</Text>
                   </HStack>
                 </Td>
-                <Td w="100px">
+                <Td w="100px" onClick={openEmailStatistics}>
                   <HStack spacing="medium">
                     <Box
                       boxSize="20px"

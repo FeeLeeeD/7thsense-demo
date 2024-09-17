@@ -4,7 +4,7 @@ export const data = [
     name: "Gaming Weekend",
     campaignName: "New Game Release",
     tags: ["games", "weekend", "new"],
-    sentDate: "2024-09-01",
+    sentDate: "09/03/2024",
     progress: {
       count: 10502,
       percent: 63,
@@ -15,7 +15,7 @@ export const data = [
     name: "Tech Expo",
     campaignName: "Latest Gadgets",
     tags: ["tech", "expo", "gadgets"],
-    sentDate: "2024-09-03",
+    sentDate: "09/01/2024",
     progress: {
       count: 15678,
       percent: 75,
@@ -26,7 +26,7 @@ export const data = [
     name: "Back to School Sale",
     campaignName: "Student Deals",
     tags: ["school", "sale", "deals"],
-    sentDate: "2024-08-29",
+    sentDate: "08/29/2024",
     progress: {
       count: 13200,
       percent: 80,
@@ -37,7 +37,7 @@ export const data = [
     name: "Holiday Sale",
     campaignName: "Seasonal Discounts",
     tags: ["holiday", "sale", "discounts"],
-    sentDate: "2024-12-15",
+    sentDate: "08/15/2024",
     progress: {
       count: 9800,
       percent: 55,
@@ -48,7 +48,7 @@ export const data = [
     name: "Fitness Frenzy",
     campaignName: "Health and Wellness",
     tags: ["fitness", "health", "wellness"],
-    sentDate: "2024-10-01",
+    sentDate: "08/10/2024",
     progress: {
       count: 14200,
       percent: 68,
@@ -59,7 +59,7 @@ export const data = [
     name: "Movie Marathon",
     campaignName: "Film Releases",
     tags: ["movies", "marathon", "releases"],
-    sentDate: "2024-11-05",
+    sentDate: "08/07/2024",
     progress: {
       count: 17432,
       percent: 85,
@@ -70,7 +70,7 @@ export const data = [
     name: "Music Madness",
     campaignName: "Live Concerts",
     tags: ["music", "concerts", "live"],
-    sentDate: "2024-10-18",
+    sentDate: "08/05/2024",
     progress: {
       count: 12580,
       percent: 72,
@@ -81,7 +81,7 @@ export const data = [
     name: "Fashion Week",
     campaignName: "Designer Trends",
     tags: ["fashion", "trends", "designer"],
-    sentDate: "2024-09-25",
+    sentDate: "07/28/2024",
     progress: {
       count: 11100,
       percent: 69,
@@ -92,7 +92,7 @@ export const data = [
     name: "Book Lovers",
     campaignName: "New Arrivals",
     tags: ["books", "reading", "new"],
-    sentDate: "2024-09-12",
+    sentDate: "07/24/2024",
     progress: {
       count: 9800,
       percent: 60,
@@ -103,7 +103,7 @@ export const data = [
     name: "Travel Deals",
     campaignName: "Holiday Packages",
     tags: ["travel", "deals", "holiday"],
-    sentDate: "2024-11-20",
+    sentDate: "07/23/2024",
     progress: {
       count: 15830,
       percent: 78,

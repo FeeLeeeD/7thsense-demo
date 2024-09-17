@@ -1,5 +1,5 @@
 import React from "react";
-import { type HeadFC, type PageProps } from "gatsby";
+import { navigate, type HeadFC, type PageProps } from "gatsby";
 import { PageLayout } from "~components/page-layout";
 import {
   Box,
@@ -76,6 +76,10 @@ const EmailPage = (props: PageProps) => {
 };
 
 const TopEngagedContacts = () => {
+  const openLeadStatistics = () => {
+    navigate("/analytics/people/lead");
+  };
+
   return (
     <Box as="section">
       <Box
@@ -90,7 +94,14 @@ const TopEngagedContacts = () => {
       </Box>
 
       <TableContainer>
-        <Table>
+        <Table
+          sx={{
+            "tr:hover td": {
+              cursor: "pointer",
+              bg: "#F8F9FC",
+            },
+          }}
+        >
           <Thead>
             <Tr>
               <Th>Name</Th>
@@ -142,9 +153,14 @@ const TopEngagedContacts = () => {
               },
             ].map((item) => (
               <Tr key={item.name}>
-                <Td>{item.name}</Td>
-                <Td>{item.email}</Td>
-                <Td w="fit-content" fontFamily="monospace" textAlign="end">
+                <Td onClick={openLeadStatistics}>{item.name}</Td>
+                <Td onClick={openLeadStatistics}>{item.email}</Td>
+                <Td
+                  w="fit-content"
+                  fontFamily="monospace"
+                  textAlign="end"
+                  onClick={openLeadStatistics}
+                >
                   {item.score}
                 </Td>
               </Tr>

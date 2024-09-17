@@ -50,7 +50,7 @@ export const PeopleTable = ({ ...props }: TableContainerProps) => {
             </Tr>
           </Thead>
           <Tbody>
-            {data.map((item) => (
+            {data.reverse().map((item) => (
               <Tr key={item.id}>
                 <Td onClick={openLeadStatistics}>{item.name}</Td>
                 <Td onClick={openLeadStatistics}>{item.email}</Td>
