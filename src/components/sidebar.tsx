@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useLayoutEffect } from "react";
+import React, { createContext, useContext, useEffect } from "react";
 import { Link as GatsbyLink } from "gatsby";
 import {
   Text,
@@ -35,23 +35,16 @@ const useSidebarContext = () => useContext<SidebarContent>(SidebarContext);
 
 export const Sidebar = () => {
   const [isLessThan1000] = useMediaQuery("(max-width: 1000px)");
+  const sidebar = useDisclosure({ defaultIsOpen: false });
 
-  const sidebar = useDisclosure({
-    defaultIsOpen:
-      typeof window !== "undefined" &&
-      window.localStorage.getItem("menu-opened")
-        ? Boolean(
-            JSON.parse(window.localStorage.getItem("menu-opened") as string)
-          )
-        : true,
-  });
-
-  useLayoutEffect(() => {
-    if (isLessThan1000) {
-      window.localStorage.setItem("menu-opened", JSON.stringify(false));
-      sidebar.onClose();
-    }
-  }, [isLessThan1000]);
+  useEffect(() => {
+    setTimeout(() => {
+      const isMenuOpened = window.localStorage.getItem("menu-opened");
+      if (Boolean(isMenuOpened && JSON.parse(isMenuOpened))) {
+        sidebar.onOpen();
+      }
+    }, 250);
+  }, []);
 
   const onToggle = () => {
     window.localStorage.setItem("menu-opened", JSON.stringify(!sidebar.isOpen));
@@ -170,17 +163,19 @@ export const Sidebar = () => {
               Switch color mode
             </MenuItem>
 
-            <MenuItem
-              mt="12px"
-              px="8px"
-              py="4px"
-              borderRadius="8px"
-              _hover={{ bg: "#F8F9FC" }}
-              _focusVisible={{ bg: "#F0F2F8" }}
-              onClick={onToggle}
-            >
-              {sidebar.isOpen ? "Hide" : "Open"} sidebar
-            </MenuItem>
+            {!isLessThan1000 && (
+              <MenuItem
+                mt="12px"
+                px="8px"
+                py="4px"
+                borderRadius="8px"
+                _hover={{ bg: "#F8F9FC" }}
+                _focusVisible={{ bg: "#F0F2F8" }}
+                onClick={onToggle}
+              >
+                {sidebar.isOpen ? "Hide" : "Open"} sidebar
+              </MenuItem>
+            )}
           </MenuList>
         </Menu>
       </Stack>
