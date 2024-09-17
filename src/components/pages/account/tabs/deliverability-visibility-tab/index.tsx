@@ -8,6 +8,8 @@ import {
   Stack,
   Tag,
   Text,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
@@ -17,7 +19,10 @@ import { BounceRateChart } from "./charts/bounce-rate";
 export const DeliverabilityVisibilityTab = () => {
   return (
     <Stack spacing="xxlarge">
-      <Grid gridTemplateColumns="1fr 500px" gridGap="xxlarge">
+      <Grid
+        gridTemplateColumns={{ lg: "auto 280px", xl: "auto 440px" }}
+        gridGap="xxlarge"
+      >
         <ChartWrapper
           title="Deliverability rate by email provider"
           description=" This chart shows the percentage of successfully delivered emails for each provider, calculated as (Delivered Emails / Sent Emails) × 100"
@@ -102,9 +107,13 @@ const Score = () => {
   }, []);
 
   return (
-    <HStack flex={1} alignItems="center">
+    <HStack
+      flex={1}
+      justify="center"
+      flexDir={{ lg: "column-reverse", xl: "row" }}
+    >
       <CircularProgress
-        size="200px"
+        size={{ base: "180px", lg: "140px", xl: "180px" } as unknown as string}
         value={score}
         color="#78D386"
         borderRadius="32px"
@@ -120,12 +129,16 @@ const Score = () => {
       </CircularProgress>
 
       <Stack spacing="4px">
-        <HStack>
-          <Text textStyle="l">Your rate is</Text>
-          <Tag size="lg" colorScheme="green" borderRadius="full">
-            Great
-          </Tag>
-        </HStack>
+        <Wrap>
+          <WrapItem>
+            <Text textStyle="l">Your rate is</Text>
+          </WrapItem>
+          <WrapItem>
+            <Tag size="lg" colorScheme="green" borderRadius="full">
+              Great
+            </Tag>
+          </WrapItem>
+        </Wrap>
 
         <Text textStyle="m" color="#707880">
           Over the previous 6 months

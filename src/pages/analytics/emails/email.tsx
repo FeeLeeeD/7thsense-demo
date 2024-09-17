@@ -7,6 +7,7 @@ import {
   Grid,
   HStack,
   Stack,
+  StackProps,
   Table,
   TableContainer,
   Tbody,
@@ -33,34 +34,60 @@ export const Head: HeadFC = () => <title>Email</title>;
 
 const EmailPage = (props: PageProps) => {
   return (
-    <PageLayout title="Email statistics" back>
-      <Grid gridTemplateColumns="repeat(4, 1fr)" gridGap="xlarge">
+    <PageLayout title="Email statistics" back="/analytics/emails">
+      <Grid gridTemplateColumns={{ lg: "repeat(12, 1fr)" }} gridGap="xlarge">
         <StatCard
           icon={<SolidClockCircleIcon />}
           name="Delivered"
           value={new Intl.NumberFormat().format(56000)}
+          gridColumn="1 / 4"
         />
-        <StatCard icon={<LetterOpenedIcon />} name="Open rate" value="35%" />
-        <StatCard icon={<CursorClickIcon />} name="Click rate" value="6%" />
-        <StatCard icon={<BounceRateIcon />} name="Bounce rate" value="0.5%" />
+        <StatCard
+          icon={<LetterOpenedIcon />}
+          name="Open rate"
+          value="35%"
+          gridColumn="4 / 7"
+        />
+        <StatCard
+          icon={<CursorClickIcon />}
+          name="Click rate"
+          value="6%"
+          gridColumn="7 / 10"
+        />
+        <StatCard
+          icon={<BounceRateIcon />}
+          name="Bounce rate"
+          value="0.5%"
+          gridColumn="10 / 13"
+        />
         <StatCard
           icon={<SolidUsersGroupTwoRoundedIcon />}
           name="Unique people delivered"
           value={new Intl.NumberFormat().format(35000)}
+          gridColumn="1 / 5"
+          gridRow="2 / 3"
         />
         <StatCard
           icon={<UserPlusIcon />}
           name="Unique people open rate"
           value="51%"
+          gridColumn="5 / 9"
+          gridRow="2 / 3"
         />
         <StatCard
           icon={<UserSpeakRoundedIcon />}
           name="Unique people click rate"
           value="9%"
+          gridColumn="9 / 13"
+          gridRow="2 / 3"
         />
       </Grid>
 
-      <Grid mt="xlarge" gridTemplateColumns="1fr 1fr" gridGap="xlarge">
+      <Grid
+        mt="xlarge"
+        gridTemplateColumns={{ lg: "1fr 1fr" }}
+        gridGap="xlarge"
+      >
         <Card title="Place of engagement">
           <PlaceOfEngagementMap />
         </Card>
@@ -186,13 +213,21 @@ const StatCard = ({
   icon,
   name,
   value,
+  ...props
 }: {
   icon: React.ReactNode;
   name: string;
   value: string;
-}) => {
+} & StackProps) => {
   return (
-    <Stack bg="white" px="20px" py="10px" spacing="xsmall" borderRadius="24px">
+    <Stack
+      bg="white"
+      px="20px"
+      py="10px"
+      spacing="xsmall"
+      borderRadius="24px"
+      {...props}
+    >
       <HStack spacing="small" color="#4B5259">
         {icon}
 

@@ -7,7 +7,7 @@ type PageLayoutProps = {
   title: string;
   description?: string;
   children: React.ReactNode;
-  back?: boolean;
+  back?: string;
 };
 
 export const PageLayout = ({
@@ -20,7 +20,7 @@ export const PageLayout = ({
     <>
       {back && (
         <Link
-          to="/analytics/emails"
+          to={back}
           leftIcon={<AltArrowDownIcon transform="rotate(90deg)" />}
           mb="xsmall"
         >

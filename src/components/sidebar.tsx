@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useLayoutEffect } from "react";
 import { Link as GatsbyLink } from "gatsby";
 import {
   Text,
@@ -15,6 +15,7 @@ import {
   ListItem,
   useDisclosure,
   Box,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { UsersGroupTwoRoundedIcon } from "./icons/users-group-two-rounded";
 import { HamburgerMenuIcon } from "./icons/hamburger-menu";
@@ -33,6 +34,8 @@ const SidebarContext = createContext<SidebarContent>({
 const useSidebarContext = () => useContext<SidebarContent>(SidebarContext);
 
 export const Sidebar = () => {
+  const [isLessThan1000] = useMediaQuery("(max-width: 1000px)");
+
   const sidebar = useDisclosure({
     defaultIsOpen: window.localStorage.getItem("menu-opened")
       ? Boolean(
@@ -40,6 +43,13 @@ export const Sidebar = () => {
         )
       : true,
   });
+
+  useLayoutEffect(() => {
+    if (isLessThan1000) {
+      window.localStorage.setItem("menu-opened", JSON.stringify(false));
+      sidebar.onClose();
+    }
+  }, [isLessThan1000]);
 
   const onToggle = () => {
     window.localStorage.setItem("menu-opened", JSON.stringify(!sidebar.isOpen));

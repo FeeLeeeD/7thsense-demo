@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, Modal } from "@chakra-ui/react";
 import { buttonTheme } from "./components/button-theme";
 import { tagTheme } from "./components/tag-theme";
 import { tabsTheme } from "./components/tabs-theme";
@@ -6,6 +6,7 @@ import { inputTheme } from "./components/input-theme";
 import { selectTheme } from "./components/select-theme";
 import { tableTheme } from "./components/table-theme";
 import { checkboxTheme } from "./components/checkbox-theme";
+import { modalTheme } from "./components/modal-theme";
 
 export const theme = extendTheme({
   styles: {
@@ -83,5 +84,6 @@ export const theme = extendTheme({
     Select: selectTheme,
     Table: tableTheme,
     Checkbox: checkboxTheme,
+    Modal: modalTheme,
   },
 });

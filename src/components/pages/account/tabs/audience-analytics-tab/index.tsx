@@ -15,7 +15,7 @@ export const AudienceAnalyticsTab = () => {
         <InitiationRatesChart />
       </ChartWrapper>
 
-      <Grid gridTemplateColumns="1fr 1fr" gridGap="xxlarge">
+      <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
         <ChartWrapper
           title="Predicted enrollment rate with recycling"
           description="This chart shows the estimated number of contacts who will be enrolled in an email campaign when using an AI algorithm to recycle contacts by targeting more engaged recipients"

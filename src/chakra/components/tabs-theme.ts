@@ -7,7 +7,7 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const primary = definePartsStyle((props) => {
   return {
     tab: {
-      fontSize: "18px",
+      fontSize: { base: "14px", lg: "18px" },
       lineHeight: "28px",
       py: "xsmall",
       px: "large",

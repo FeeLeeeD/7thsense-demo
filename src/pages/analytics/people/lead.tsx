@@ -35,9 +35,12 @@ const LeadPage = (props: PageProps) => {
     <PageLayout
       title="Sarah Johnson, Virginia, USA"
       description="Individual engagement statistics"
-      back
+      back="/analytics/people"
     >
-      <Grid gridTemplateColumns="1fr 1fr 1fr 228px" gridGap="xlarge">
+      <Grid
+        gridTemplateColumns={{ base: "1fr 1fr 228px", lg: "1fr 1fr 1fr 228px" }}
+        gridGap="xlarge"
+      >
         <StatCard
           icon={<SolidClockCircleIcon />}
           name="Subscription date"
@@ -194,37 +197,39 @@ const SentEmailsList = (props: BoxProps) => {
                 opened: false,
                 clicked: false,
               },
-            ].reverse().map((item) => (
-              <Tr key={item.email}>
-                <Td onClick={openEmailStatistics}>{item.email}</Td>
-                <Td onClick={openEmailStatistics}>
-                  <Tag borderRadius="full"># {item.tag}</Tag>
-                </Td>
-                <Td onClick={openEmailStatistics}>{item.date}</Td>
-                <Td w="100px" onClick={openEmailStatistics}>
-                  <HStack spacing="medium">
-                    <Box
-                      boxSize="20px"
-                      borderRadius="full"
-                      bg={item.opened ? "green.300" : "red.300"}
-                    />
+            ]
+              .reverse()
+              .map((item) => (
+                <Tr key={item.email}>
+                  <Td onClick={openEmailStatistics}>{item.email}</Td>
+                  <Td onClick={openEmailStatistics}>
+                    <Tag borderRadius="full"># {item.tag}</Tag>
+                  </Td>
+                  <Td onClick={openEmailStatistics}>{item.date}</Td>
+                  <Td w="100px" onClick={openEmailStatistics}>
+                    <HStack spacing="medium">
+                      <Box
+                        boxSize="20px"
+                        borderRadius="full"
+                        bg={item.opened ? "green.300" : "red.300"}
+                      />
 
-                    <Text>{item.opened ? "Yes" : "No"}</Text>
-                  </HStack>
-                </Td>
-                <Td w="100px" onClick={openEmailStatistics}>
-                  <HStack spacing="medium">
-                    <Box
-                      boxSize="20px"
-                      borderRadius="full"
-                      bg={item.clicked ? "green.300" : "red.300"}
-                    />
+                      <Text>{item.opened ? "Yes" : "No"}</Text>
+                    </HStack>
+                  </Td>
+                  <Td w="100px" onClick={openEmailStatistics}>
+                    <HStack spacing="medium">
+                      <Box
+                        boxSize="20px"
+                        borderRadius="full"
+                        bg={item.clicked ? "green.300" : "red.300"}
+                      />
 
-                    <Text>{item.clicked ? "Yes" : "No"}</Text>
-                  </HStack>
-                </Td>
-              </Tr>
-            ))}
+                      <Text>{item.clicked ? "Yes" : "No"}</Text>
+                    </HStack>
+                  </Td>
+                </Tr>
+              ))}
           </Tbody>
         </Table>
       </TableContainer>
@@ -246,8 +251,8 @@ const PeakEngagementTime = () => {
   return (
     <Box
       as="section"
-      gridColumn="4/5"
-      gridRow="1/3"
+      gridColumn={{ base: "3/4", lg: "4/5" }}
+      gridRow={{ base: "1/4", lg: "1/3" }}
       bg="white"
       borderRadius="24px"
       px="20px"

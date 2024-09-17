@@ -9,13 +9,22 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
-  Tag,
-  TagCloseButton,
-  TagLabel,
-  TagLeftIcon,
   Wrap,
   WrapItem,
   Text,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  HStack,
+  useDisclosure,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
 } from "@chakra-ui/react";
 import { FilterPlusIcon } from "~components/icons/filter-plus";
 import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
@@ -24,6 +33,8 @@ import { DeliverabilityVisibilityTab } from "~components/pages/account/tabs/deli
 import { ContactsEngagementTab } from "~components/pages/account/tabs/contacts-engagement-tab";
 import { AudienceReachTab } from "~components/pages/account/tabs/audience-reach-tab";
 import { AudienceAnalyticsTab } from "~components/pages/account/tabs/audience-analytics-tab";
+import { GlobalIcon } from "~components/icons/global";
+import { SignPostIcon } from "~components/icons/sign-post";
 
 export const Head: HeadFC = () => <title>Account analytics</title>;
 
@@ -77,7 +88,7 @@ const AccountAnalyticsPage = (props: PageProps) => {
           </WrapItem> */}
         </Wrap>
 
-        <IconButton aria-label="Filters" icon={<FilterPlusIcon />} w="48px" />
+        <Filters />
       </Grid>
 
       <Tabs
@@ -99,6 +110,71 @@ const AccountAnalyticsPage = (props: PageProps) => {
         </TabPanels>
       </Tabs>
     </PageLayout>
+  );
+};
+
+const Filters = () => {
+  const dateModal = useDisclosure();
+
+  return (
+    <>
+      <Menu>
+        <MenuButton
+          as={IconButton}
+          aria-label="Filters"
+          icon={<FilterPlusIcon />}
+          w="48px"
+        />
+
+        <MenuList bg="white" p="0" borderRadius="16px" overflow="hidden">
+          {[
+            {
+              icon: <SolidClockCircleIcon />,
+              label: "Date",
+              onClick: dateModal.onOpen,
+            },
+            {
+              icon: <GlobalIcon />,
+              label: "Domains",
+              onClick: dateModal.onOpen,
+            },
+            {
+              icon: <SignPostIcon />,
+              label: "Providers",
+              onClick: dateModal.onOpen,
+            },
+          ].map((item, i) => (
+            <MenuItem
+              key={i}
+              px="medium"
+              py="10px"
+              color="#4B5259"
+              _hover={{ bg: "#F8F9FC" }}
+              _focusVisible={{ bg: "#F0F2F8" }}
+              onClick={item.onClick}
+            >
+              <HStack spacing="small" sx={{ svg: { boxSize: "20px" } }}>
+                {item.icon}
+                <Text textStyle="m">{item.label}</Text>
+              </HStack>
+            </MenuItem>
+          ))}
+        </MenuList>
+      </Menu>
+
+      {dateModal.isOpen && (
+        <Modal isOpen={dateModal.isOpen} onClose={dateModal.onClose}>
+          <ModalOverlay bg="rgba(9, 9, 9, 0.20)" />
+          <ModalContent>
+            <ModalHeader>Filter by date</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>body</ModalBody>
+
+            <ModalFooter />
+          </ModalContent>
+        </Modal>
+      )}
+    </>
   );
 };
 

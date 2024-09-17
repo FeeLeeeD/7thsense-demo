@@ -23,7 +23,10 @@ export const ContactsEngagementTab = () => {
         <WorldMap />
       </ChartWrapper>
 
-      <Grid gridTemplateColumns="1fr 1fr" gridGap="xxlarge">
+      <Grid
+        gridTemplateColumns={{ base: "1fr", xl: "1fr 1fr" }}
+        gridGap="xxlarge"
+      >
         <ChartWrapper
           title="Opened latency"
           description="This chart shows the monthly percentage change in the time it takes for recipients to open an email after it has been delivered, compared to the average latency"
