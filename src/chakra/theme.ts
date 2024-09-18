@@ -7,6 +7,7 @@ import { selectTheme } from "./components/select-theme";
 import { tableTheme } from "./components/table-theme";
 import { checkboxTheme } from "./components/checkbox-theme";
 import { modalTheme } from "./components/modal-theme";
+import { radioTheme } from "./components/radio-theme";
 
 export const theme = extendTheme({
   styles: {
@@ -85,5 +86,6 @@ export const theme = extendTheme({
     Table: tableTheme,
     Checkbox: checkboxTheme,
     Modal: modalTheme,
+    Radio: radioTheme,
   },
 });
