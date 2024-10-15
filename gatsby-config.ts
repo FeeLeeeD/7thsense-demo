@@ -4,7 +4,7 @@ import path from "path";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `7thSense Demo`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://app.theseventhsense.com/`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -16,7 +16,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/logo.png",
       },
     },
     "gatsby-plugin-sharp",

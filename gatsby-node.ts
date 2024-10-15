@@ -6,8 +6,6 @@ export const createPages: GatsbyNode["createPages"] = async ({
 }) => {
   const { createRedirect } = actions;
 
-  console.log("here");
-
   createRedirect({
     fromPath: `/`,
     toPath: `/analytics/account`,
