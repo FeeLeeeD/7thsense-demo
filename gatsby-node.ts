@@ -12,4 +12,11 @@ export const createPages: GatsbyNode["createPages"] = async ({
     redirectInBrowser: true,
     isPermanent: true,
   });
+
+  createRedirect({
+    fromPath: `/v2`,
+    toPath: `/v2/analytics/account`,
+    redirectInBrowser: true,
+    isPermanent: true,
+  });
 };

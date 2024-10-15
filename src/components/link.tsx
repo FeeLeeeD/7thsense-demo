@@ -12,6 +12,12 @@ type LinkProps = {
   children: string;
 } & CharkaLinkProps;
 
+export const getLinkPrefix = () => {
+  if (typeof window === "undefined") return;
+
+  return window.location.pathname.startsWith("/v2") ? "/v2" : "";
+};
+
 export const Link = ({
   to,
   leftIcon,
@@ -22,7 +28,7 @@ export const Link = ({
   return (
     <ChakraLink
       as={GatsbyLink}
-      to={to}
+      to={getLinkPrefix() + to}
       display="inline-block"
       color="#4B5259"
       fontSize="16px"

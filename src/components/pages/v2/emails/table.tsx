@@ -57,7 +57,7 @@ export const EmailsTable = ({
   };
 
   const openEmailStatistics = () => {
-    navigate("/analytics/emails/email");
+    navigate("/v2/analytics/emails/email");
   };
 
   return (

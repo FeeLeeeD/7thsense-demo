@@ -19,7 +19,7 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
-import { OpenRatesHeatMap } from "~components/pages/people/lead/open-rates-heatmap";
+import { OpenRatesHeatMap } from "~components/pages/v2/people/lead/open-rates-heatmap";
 import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
 import { LetterOpenedIcon } from "~components/icons/letter-opened";
 import { CursorClickIcon } from "~components/icons/cursor-click";
@@ -91,7 +91,7 @@ const LeadPage = (props: PageProps) => {
 
 const SentEmailsList = (props: BoxProps) => {
   const openEmailStatistics = () => {
-    navigate("/analytics/emails/email");
+    navigate("/v2/analytics/emails/email");
   };
 
   return (

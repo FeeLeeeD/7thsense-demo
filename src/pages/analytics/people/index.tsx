@@ -22,7 +22,7 @@ import { GlobalIcon } from "~components/icons/global";
 import { SearchIcon } from "~components/icons/search";
 import { SignPostIcon } from "~components/icons/sign-post";
 import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
-import { PeopleTable } from "~components/pages/v2/people/table";
+import { PeopleTable } from "~components/pages/v1/people/table";
 
 export const Head: HeadFC = () => <title>Leads analytics</title>;
 

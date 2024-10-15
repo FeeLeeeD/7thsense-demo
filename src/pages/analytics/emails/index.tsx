@@ -20,7 +20,7 @@ import {
 } from "@chakra-ui/react";
 import { FilterPlusIcon } from "~components/icons/filter-plus";
 import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
-import { EmailsTable } from "~components/pages/v2/emails/table";
+import { EmailsTable } from "~components/pages/v1/emails/table";
 import { ColumnsIcon } from "~components/icons/columns";
 import { SearchIcon } from "~components/icons/search";
 import { SignPostIcon } from "~components/icons/sign-post";
