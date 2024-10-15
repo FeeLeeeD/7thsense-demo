@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, type HeadFC, type PageProps } from "gatsby";
 import { PageLayout } from "~components/page-layout";
 import {
-  Grid,
   Wrap,
   WrapItem,
   Text,
@@ -21,7 +20,7 @@ import {
 } from "@chakra-ui/react";
 import { FilterPlusIcon } from "~components/icons/filter-plus";
 import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
-import { EmailsTable } from "~components/pages/emails/table";
+import { EmailsTable } from "~components/pages/v2/emails/table";
 import { ColumnsIcon } from "~components/icons/columns";
 import { SearchIcon } from "~components/icons/search";
 import { SignPostIcon } from "~components/icons/sign-post";

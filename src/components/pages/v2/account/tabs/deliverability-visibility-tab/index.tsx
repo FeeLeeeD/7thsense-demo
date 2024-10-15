@@ -15,10 +15,20 @@ import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { OpenClickRateChart } from "./charts/open-click-rate";
 import { BounceRateChart } from "./charts/bounce-rate";
+import { AllContactsInboxProvidersChart } from "./charts/all-contacts-inbox-providers";
 
 export const DeliverabilityVisibilityTab = () => {
   return (
     <Stack spacing="xxlarge">
+      <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
+        <ChartWrapper
+          title="All contacts – Inbox providers"
+          description="Do we need description?"
+        >
+          <AllContactsInboxProvidersChart />
+        </ChartWrapper>
+      </Grid>
+
       <Grid
         gridTemplateColumns={{ lg: "auto 280px", xl: "auto 440px" }}
         gridGap="xxlarge"
