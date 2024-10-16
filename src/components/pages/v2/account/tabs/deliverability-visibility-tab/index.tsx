@@ -15,11 +15,19 @@ import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { OpenClickRateChart } from "./charts/open-click-rate";
 import { BounceRateChart } from "./charts/bounce-rate";
+import { SendVolumeDeliveryRateChart } from "./charts/send-volume-delivery-rate";
 import { AllContactsInboxProvidersChart } from "./charts/all-contacts-inbox-providers";
 
 export const DeliverabilityVisibilityTab = () => {
   return (
     <Stack spacing="xxlarge">
+      <ChartWrapper
+        title="Daily send volume & Delivery rate"
+        description="Do we need description?"
+      >
+        <SendVolumeDeliveryRateChart />
+      </ChartWrapper>
+
       <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
         <ChartWrapper
           title="All contacts – Inbox providers"

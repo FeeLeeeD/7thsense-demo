@@ -1,5 +1,6 @@
 export const chartColor = {
   default: "#6699FF",
+  dark: "#22222F",
   provider: {
     gSuite: "#8BC1F7",
     microsoft365: "#BDE2B9",
