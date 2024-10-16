@@ -30,8 +30,8 @@ export const DeliverabilityVisibilityTab = () => {
 
       <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
         <ChartWrapper
-          title="All contacts – Inbox providers"
-          description="Do we need description?"
+          title="Inbox providers"
+          description="Breakdown of the major inbox providers that the people in your database use"
         >
           <AllContactsInboxProvidersChart />
         </ChartWrapper>

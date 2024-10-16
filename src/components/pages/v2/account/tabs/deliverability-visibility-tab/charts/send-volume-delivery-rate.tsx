@@ -11,113 +11,113 @@ const chartId = "send-volume-delivery-rate";
 const data = [
   {
     date: "2024-11-01",
-    GSuite: 9911,
+    "Google Workspace": 9911,
     Gmail: 3481,
-    Verizon: 1232,
+    "Verizon/AOL/Yahoo": 1232,
     "Microsoft 365": 2178,
     rate: 84,
   },
   {
     date: "2024-11-02",
-    GSuite: 4911,
+    "Google Workspace": 4911,
     Gmail: 2481,
-    Verizon: 3232,
+    "Verizon/AOL/Yahoo": 3232,
     "Microsoft 365": 1478,
     rate: 87,
   },
   {
     date: "2024-11-03",
-    GSuite: 5411,
+    "Google Workspace": 5411,
     Gmail: 2781,
-    Verizon: 8232,
+    "Verizon/AOL/Yahoo": 8232,
     "Microsoft 365": 578,
     rate: 89,
   },
   {
     date: "2024-11-04",
-    GSuite: 9911,
+    "Google Workspace": 9911,
     Gmail: 3481,
-    Verizon: 1232,
+    "Verizon/AOL/Yahoo": 1232,
     "Microsoft 365": 2178,
     rate: 94,
   },
   {
     date: "2024-11-05",
-    GSuite: 6481,
+    "Google Workspace": 6481,
     Gmail: 3681,
-    Verizon: 1749,
+    "Verizon/AOL/Yahoo": 1749,
     "Microsoft 365": 2611,
     rate: 93,
   },
   {
     date: "2024-11-06",
-    GSuite: 8960,
+    "Google Workspace": 8960,
     Gmail: 4119,
-    Verizon: 1821,
+    "Verizon/AOL/Yahoo": 1821,
     "Microsoft 365": 2918,
     rate: 96,
   },
   {
     date: "2024-11-07",
-    GSuite: 9066,
+    "Google Workspace": 9066,
     Gmail: 2178,
-    Verizon: 1568,
+    "Verizon/AOL/Yahoo": 1568,
     "Microsoft 365": 1797,
     rate: 95,
   },
   {
     date: "2024-11-08",
-    GSuite: 7925,
+    "Google Workspace": 7925,
     Gmail: 2716,
-    Verizon: 851,
+    "Verizon/AOL/Yahoo": 851,
     "Microsoft 365": 2590,
     rate: 98,
   },
   {
     date: "2024-11-09",
-    GSuite: 7495,
+    "Google Workspace": 7495,
     Gmail: 4445,
-    Verizon: 1437,
+    "Verizon/AOL/Yahoo": 1437,
     "Microsoft 365": 1096,
     rate: 99,
   },
   {
     date: "2024-11-10",
-    GSuite: 9895,
+    "Google Workspace": 9895,
     Gmail: 1913,
-    Verizon: 1628,
+    "Verizon/AOL/Yahoo": 1628,
     "Microsoft 365": 2178,
     rate: 100,
   },
   {
     date: "2024-11-11",
-    GSuite: 5185,
+    "Google Workspace": 5185,
     Gmail: 1576,
-    Verizon: 1439,
+    "Verizon/AOL/Yahoo": 1439,
     "Microsoft 365": 2814,
     rate: 98,
   },
   {
     date: "2024-11-12",
-    GSuite: 7486,
+    "Google Workspace": 7486,
     Gmail: 4982,
-    Verizon: 1676,
+    "Verizon/AOL/Yahoo": 1676,
     "Microsoft 365": 1382,
     rate: 94,
   },
   {
     date: "2024-11-13",
-    GSuite: 5066,
+    "Google Workspace": 5066,
     Gmail: 4611,
-    Verizon: 1443,
+    "Verizon/AOL/Yahoo": 1443,
     "Microsoft 365": 2995,
     rate: 96,
   },
   {
     date: "2024-11-14",
-    GSuite: 9889,
+    "Google Workspace": 9889,
     Gmail: 3694,
-    Verizon: 663,
+    "Verizon/AOL/Yahoo": 663,
     "Microsoft 365": 1174,
     rate: 99,
   },
@@ -201,60 +201,62 @@ export const SendVolumeDeliveryRateChart = () => {
       })
     );
 
-    ["GSuite", "Gmail", "Verizon", "Microsoft 365"].forEach((provider) => {
-      const providerTooltip = am5.Tooltip.new(root, {
-        labelText: `[fontSize: 14px]${provider}: {valueY} emails`,
-      });
-
-      const providerSeries = chart.series.push(
-        am5xy.ColumnSeries.new(root, {
-          name: provider,
-          xAxis: xAxis,
-          yAxis: providerAxis,
-          stacked: true,
-          valueYField: provider,
-          valueXField: "date",
-          stroke: undefined,
-          tooltip: providerTooltip,
-        })
-      );
-
-      const providerKey = new Map<string, keyof typeof chartColor.provider>([
-        ["GSuite", "gSuite"],
-        ["Gmail", "gmail"],
-        ["Verizon", "verizon"],
-        ["Microsoft 365", "microsoft365"],
-      ]);
-
-      const key = providerKey.get(provider);
-
-      if (key) {
-        providerSeries.columns.template.setAll({
-          fill: am5.color(chartColor.provider[key]),
+    ["Google Workspace", "Gmail", "Verizon/AOL/Yahoo", "Microsoft 365"].forEach(
+      (provider) => {
+        const providerTooltip = am5.Tooltip.new(root, {
+          labelText: `[fontSize: 14px]${provider}: {valueY} emails`,
         });
+
+        const providerSeries = chart.series.push(
+          am5xy.ColumnSeries.new(root, {
+            name: provider,
+            xAxis: xAxis,
+            yAxis: providerAxis,
+            stacked: true,
+            valueYField: provider,
+            valueXField: "date",
+            stroke: undefined,
+            tooltip: providerTooltip,
+          })
+        );
+
+        const providerKey = new Map<string, keyof typeof chartColor.provider>([
+          ["Google Workspace", "gSuite"],
+          ["Gmail", "gmail"],
+          ["Verizon/AOL/Yahoo", "verizon"],
+          ["Microsoft 365", "microsoft365"],
+        ]);
+
+        const key = providerKey.get(provider);
+
+        if (key) {
+          providerSeries.columns.template.setAll({
+            fill: am5.color(chartColor.provider[key]),
+          });
+        }
+        providerSeries.columns.template.setAll({
+          cornerRadiusTL: 2,
+          cornerRadiusTR: 2,
+        });
+
+        providerSeries.data.processor = am5.DataProcessor.new(root, {
+          dateFields: ["date"],
+          dateFormat: "yyyy-MM-dd",
+        });
+
+        chart.set(
+          "cursor",
+          am5xy.XYCursor.new(root, {
+            xAxis: xAxis,
+            behavior: "selectX",
+          })
+        );
+
+        providerSeries.data.setAll(data);
+        legend.data.push(providerSeries);
+        providerSeries.appear(1000);
       }
-      providerSeries.columns.template.setAll({
-        cornerRadiusTL: 2,
-        cornerRadiusTR: 2,
-      });
-
-      providerSeries.data.processor = am5.DataProcessor.new(root, {
-        dateFields: ["date"],
-        dateFormat: "yyyy-MM-dd",
-      });
-
-      chart.set(
-        "cursor",
-        am5xy.XYCursor.new(root, {
-          xAxis: xAxis,
-          behavior: "selectX",
-        })
-      );
-
-      providerSeries.data.setAll(data);
-      legend.data.push(providerSeries);
-      providerSeries.appear(1000);
-    });
+    );
 
     /* Rates */
 

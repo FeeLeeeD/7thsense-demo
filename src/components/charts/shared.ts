@@ -7,5 +7,6 @@ export const chartColor = {
     gmail: "#F9E0A2",
     verizon: "#A2D9D9",
     apple: "#B2B0EA",
+    unknown: "#808080",
   },
 };

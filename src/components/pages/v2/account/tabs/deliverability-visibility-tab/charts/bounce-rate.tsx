@@ -66,7 +66,7 @@ export const BounceRateChart = () => {
     function setSeries() {
       [
         {
-          name: "GSuite",
+          name: "Google Workspace",
           color: chartColor.provider.gSuite,
           data: [
             { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 0.56 },

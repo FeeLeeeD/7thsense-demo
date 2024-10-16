@@ -56,8 +56,8 @@ const AccountAnalyticsPage = (props: PageProps) => {
   const { tabs, defaultTabIndex, onTabChange } = useTabs({
     tabs: [
       {
-        key: "deliverability-visibility",
-        title: "Deliverability visibility",
+        key: "deliverability-insights",
+        title: "Deliverability insights",
         body: <DeliverabilityVisibilityTab />,
       },
       {

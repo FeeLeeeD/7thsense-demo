@@ -9,10 +9,11 @@ import { chartColor } from "~components/charts/shared";
 const chartId = "engagement-segments-chart";
 const data = [
   { provider: "Microsoft 365", count: 2178 },
-  { provider: "GSuite", count: 9911 },
+  { provider: "Google Workspace", count: 9911 },
   { provider: "Gmail", count: 3481 },
-  { provider: "Verizon", count: 1232 },
+  { provider: "Verizon/AOL/Yahoo", count: 1232 },
   { provider: "Apple", count: 339 },
+  { provider: "Other/Unknown", count: 47 },
 ];
 const total = data.reduce((sum, item) => sum + item.count, 0);
 
@@ -61,7 +62,9 @@ export const AllContactsInboxProvidersChart = () => {
 
     const label = container.children.push(
       am5.Label.new(root, {
-        text: `Total count of contacts: ${new Intl.NumberFormat().format(total)}`,
+        text: `Total count of contacts: ${new Intl.NumberFormat().format(
+          total
+        )}`,
         marginBottom: 60,
         x: -6,
         fontWeight: "500",
@@ -74,7 +77,7 @@ export const AllContactsInboxProvidersChart = () => {
         centerY: am5.percent(50),
         layout: root.verticalLayout,
         marginLeft: 24,
-        width: 240,
+        width: 268,
       })
     );
 
@@ -95,6 +98,7 @@ export const AllContactsInboxProvidersChart = () => {
         am5.color(chartColor.provider.gmail),
         am5.color(chartColor.provider.verizon),
         am5.color(chartColor.provider.apple),
+        am5.color(chartColor.provider.unknown),
       ]);
     series.data.setAll(data);
     legend.data.setAll(series.dataItems);
