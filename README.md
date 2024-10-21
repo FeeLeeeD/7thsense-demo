@@ -1,49 +1,44 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+  🚀 Seventh Sense demo site 
 </h1>
 
-## 🚀 Quick start
+<p>Based on Gatsby (React, Chakra-UI, TypeScript).</p>
+<p>Hosted on Netlify: https://7thsense-demo.site/.</p>
 
-1.  **Create a Gatsby site.**
+## Local development
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+1. Run `yarn` to install packages.
+2. Run `yarn develop` to start dev server: http://localhost:8000/.
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+### Conventions
 
-2.  **Start developing.**
+1. **Routing**
 
-    Navigate into your new site’s directory and start it up.
+Routing is handled by shared functions available in `src/utils/conditional-rendering.ts`.<br>
+All the routes are documented in `route` object which is located in `src/utils/routes.ts`.<br>
+<b>Please note!</b> Use only functions: `getLink` or `navigate` to handle routing in components. Otherwise, links are likely incorrect.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+2. **Conditional Component**
 
-3.  **Open the code and start customizing!**
+Use `ConditionalComponent` to render components which are different for each version. Example:
 
-    Your site is now running at http://localhost:8000!
+```Typescript
+export const DeliverabilityVisibilityTab_conditional = () =>
+  ConditionalComponent({
+    v1: <DeliverabilityVisibilityTab_v1 />,
+    v2: <DeliverabilityInsightsTab_v2 />,
+  });
+```
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+<b>Please note!</b> Use `_conditional` ending for the name of a component which renders UI depending on version.
 
-4.  **Learn more**
+## 🚀 Deployment
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+Pushing commits to `master` branch will re-deploy application on https://7thsense-demo.site/ ([Netlify project](https://app.netlify.com/sites/lucky-centaur-d89ffc/overview))
 
-## 🚀 Quick start (Netlify)
+### Process
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+1. Run `yarn build` to build static pages. All the built assets are located in `public` folder.
+2. Push the content of `public` folder to any kind of S3.
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+Node is not required. The application is completely static.
