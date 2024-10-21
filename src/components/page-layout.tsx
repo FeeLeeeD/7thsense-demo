@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { AltArrowDownIcon } from "./icons/alt-arrow-down";
-import { Link } from "./link";
+import { Link } from "./shared/link";
 
 type PageLayoutProps = {
   title: string;

@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useEffect } from "react";
 import { Link as GatsbyLink } from "gatsby";
+import { getLink } from "~utils/conditional-rendering";
 import {
   Text,
   Button,
@@ -25,7 +26,6 @@ import { SettingsIcon } from "./icons/settings";
 import { WidgetIcon } from "./icons/widget";
 import { LetterIcon } from "./icons/letter";
 import { CaseIcon } from "./icons/case";
-import { getLinkPrefix } from "./link";
 
 type SidebarContent = { sidebarOpened: boolean; toggleSidebar: () => void };
 const SidebarContext = createContext<SidebarContent>({
@@ -222,7 +222,7 @@ const Group = ({ title, menu }: GroupProps) => {
                 {...(item.href
                   ? {
                       as: GatsbyLink,
-                      to: getLinkPrefix() + item.href,
+                      to: getLink(item.href),
                     }
                   : {
                       fontWeight: "normal",

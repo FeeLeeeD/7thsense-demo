@@ -8,7 +8,14 @@ export const createPages: GatsbyNode["createPages"] = async ({
 
   createRedirect({
     fromPath: `/`,
-    toPath: `/analytics/account`,
+    toPath: `/v2/analytics/account`,
+    redirectInBrowser: true,
+    isPermanent: true,
+  });
+
+  createRedirect({
+    fromPath: `/v1`,
+    toPath: `/v1/analytics/account`,
     redirectInBrowser: true,
     isPermanent: true,
   });
