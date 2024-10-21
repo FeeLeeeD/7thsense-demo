@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { PageLayout } from "~components/page-layout";
+import { conditionalContent } from "~utils/conditional-rendering";
 import {
   Grid,
   IconButton,
@@ -54,7 +55,10 @@ export const AccountAnalyticsPage = () => {
     tabs: [
       {
         key: "deliverability-visibility",
-        title: "Deliverability visibility",
+        title: conditionalContent({
+          v1: "Deliverability visibility",
+          v2: "Deliverability insights",
+        }),
         body: <DeliverabilityVisibilityTab_conditional />,
       },
       {

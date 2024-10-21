@@ -21,19 +21,19 @@ import { AllContactsInboxProvidersChart } from "./charts/all-contacts-inbox-prov
 export const DeliverabilityInsightsTab_v2 = () => {
   return (
     <Stack spacing="xxlarge">
-      <ChartWrapper
-        title="Daily send volume & Delivery rate"
-        description="Do we need description?"
-      >
-        <SendVolumeDeliveryRateChart />
-      </ChartWrapper>
-
-      <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
+      <Grid gridTemplateColumns={{ lg: "340px auto" }} gridGap="xxlarge">
         <ChartWrapper
           title="Inbox providers"
           description="Breakdown of the major inbox providers that the people in your database use"
         >
           <AllContactsInboxProvidersChart />
+        </ChartWrapper>
+
+        <ChartWrapper
+          title="Daily send volume & Delivery rate"
+          description="Do we need description?"
+        >
+          <SendVolumeDeliveryRateChart />
         </ChartWrapper>
       </Grid>
 

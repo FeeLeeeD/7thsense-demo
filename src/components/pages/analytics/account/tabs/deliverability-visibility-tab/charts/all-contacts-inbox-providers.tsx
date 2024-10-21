@@ -28,8 +28,9 @@ export const AllContactsInboxProvidersChart = () => {
 
     const chart = root.container.children.push(
       am5percent.PieChart.new(root, {
-        layout: root.horizontalLayout,
+        layout: root.verticalLayout,
         radius: am5.percent(95),
+        paddingBottom: 24
       })
     );
 
@@ -55,8 +56,8 @@ export const AllContactsInboxProvidersChart = () => {
     const container = chart.children.push(
       am5.Container.new(root, {
         layout: root.verticalLayout,
-        y: am5.percent(50),
-        centerY: am5.percent(50),
+        x: am5.percent(50),
+        centerX: am5.percent(50),
       })
     );
 
@@ -65,7 +66,7 @@ export const AllContactsInboxProvidersChart = () => {
         text: `Total count of contacts: ${new Intl.NumberFormat().format(
           total
         )}`,
-        marginBottom: 60,
+        marginBottom: 8,
         x: -6,
         fontWeight: "500",
       })
@@ -73,10 +74,10 @@ export const AllContactsInboxProvidersChart = () => {
 
     const legend = container.children.push(
       am5.Legend.new(root, {
-        y: am5.percent(50),
-        centerY: am5.percent(50),
+        // x: am5.percent(50),
+        // centerX: am5.percent(50),
         layout: root.verticalLayout,
-        marginLeft: 24,
+        // marginLeft: 24,
         width: 268,
       })
     );
@@ -111,5 +112,5 @@ export const AllContactsInboxProvidersChart = () => {
     };
   }, []);
 
-  return <Box id={chartId} w="100%" h="280px" />;
+  return <Box id={chartId} w="100%" h="400px" />;
 };
