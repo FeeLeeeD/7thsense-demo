@@ -15,6 +15,7 @@ const data = [
     Gmail: 3481,
     "Verizon/AOL/Yahoo": 1232,
     "Microsoft 365": 2178,
+    "Other/Unknown": 124,
     rate: 84,
   },
   {
@@ -23,6 +24,7 @@ const data = [
     Gmail: 2481,
     "Verizon/AOL/Yahoo": 3232,
     "Microsoft 365": 1478,
+    "Other/Unknown": 94,
     rate: 87,
   },
   {
@@ -31,6 +33,7 @@ const data = [
     Gmail: 2781,
     "Verizon/AOL/Yahoo": 8232,
     "Microsoft 365": 578,
+    "Other/Unknown": 54,
     rate: 89,
   },
   {
@@ -39,6 +42,7 @@ const data = [
     Gmail: 3481,
     "Verizon/AOL/Yahoo": 1232,
     "Microsoft 365": 2178,
+    "Other/Unknown": 32,
     rate: 94,
   },
   {
@@ -47,6 +51,7 @@ const data = [
     Gmail: 3681,
     "Verizon/AOL/Yahoo": 1749,
     "Microsoft 365": 2611,
+    "Other/Unknown": 44,
     rate: 93,
   },
   {
@@ -55,6 +60,7 @@ const data = [
     Gmail: 4119,
     "Verizon/AOL/Yahoo": 1821,
     "Microsoft 365": 2918,
+    "Other/Unknown": 95,
     rate: 96,
   },
   {
@@ -63,6 +69,7 @@ const data = [
     Gmail: 2178,
     "Verizon/AOL/Yahoo": 1568,
     "Microsoft 365": 1797,
+    "Other/Unknown": 66,
     rate: 95,
   },
   {
@@ -71,6 +78,7 @@ const data = [
     Gmail: 2716,
     "Verizon/AOL/Yahoo": 851,
     "Microsoft 365": 2590,
+    "Other/Unknown": 56,
     rate: 98,
   },
   {
@@ -79,6 +87,7 @@ const data = [
     Gmail: 4445,
     "Verizon/AOL/Yahoo": 1437,
     "Microsoft 365": 1096,
+    "Other/Unknown": 45,
     rate: 99,
   },
   {
@@ -87,6 +96,7 @@ const data = [
     Gmail: 1913,
     "Verizon/AOL/Yahoo": 1628,
     "Microsoft 365": 2178,
+    "Other/Unknown": 82,
     rate: 100,
   },
   {
@@ -95,6 +105,7 @@ const data = [
     Gmail: 1576,
     "Verizon/AOL/Yahoo": 1439,
     "Microsoft 365": 2814,
+    "Other/Unknown": 13,
     rate: 98,
   },
   {
@@ -103,6 +114,7 @@ const data = [
     Gmail: 4982,
     "Verizon/AOL/Yahoo": 1676,
     "Microsoft 365": 1382,
+    "Other/Unknown": 68,
     rate: 94,
   },
   {
@@ -111,6 +123,7 @@ const data = [
     Gmail: 4611,
     "Verizon/AOL/Yahoo": 1443,
     "Microsoft 365": 2995,
+    "Other/Unknown": 56,
     rate: 96,
   },
   {
@@ -119,6 +132,7 @@ const data = [
     Gmail: 3694,
     "Verizon/AOL/Yahoo": 663,
     "Microsoft 365": 1174,
+    "Other/Unknown": 54,
     rate: 99,
   },
 ];
@@ -176,6 +190,10 @@ export const SendVolumeDeliveryRateChart = () => {
       })
     );
 
+    legend.itemContainers.template.setAll({
+      marginLeft: 24,
+    });
+
     legend.labels.template.setAll({
       fontSize: "14px",
     });
@@ -201,62 +219,67 @@ export const SendVolumeDeliveryRateChart = () => {
       })
     );
 
-    ["Google Workspace", "Gmail", "Verizon/AOL/Yahoo", "Microsoft 365"].forEach(
-      (provider) => {
-        const providerTooltip = am5.Tooltip.new(root, {
-          labelText: `[fontSize: 14px]${provider}: {valueY} emails`,
-        });
+    [
+      "Google Workspace",
+      "Gmail",
+      "Verizon/AOL/Yahoo",
+      "Microsoft 365",
+      "Other/Unknown",
+    ].forEach((provider) => {
+      const providerTooltip = am5.Tooltip.new(root, {
+        labelText: `[fontSize: 14px]${provider}: {valueY} emails`,
+      });
 
-        const providerSeries = chart.series.push(
-          am5xy.ColumnSeries.new(root, {
-            name: provider,
-            xAxis: xAxis,
-            yAxis: providerAxis,
-            stacked: true,
-            valueYField: provider,
-            valueXField: "date",
-            stroke: undefined,
-            tooltip: providerTooltip,
-          })
-        );
+      const providerSeries = chart.series.push(
+        am5xy.ColumnSeries.new(root, {
+          name: provider,
+          xAxis: xAxis,
+          yAxis: providerAxis,
+          stacked: true,
+          valueYField: provider,
+          valueXField: "date",
+          stroke: undefined,
+          tooltip: providerTooltip,
+        })
+      );
 
-        const providerKey = new Map<string, keyof typeof chartColor.provider>([
-          ["Google Workspace", "gSuite"],
-          ["Gmail", "gmail"],
-          ["Verizon/AOL/Yahoo", "verizon"],
-          ["Microsoft 365", "microsoft365"],
-        ]);
+      const providerKey = new Map<string, keyof typeof chartColor.provider>([
+        ["Google Workspace", "gSuite"],
+        ["Gmail", "gmail"],
+        ["Verizon/AOL/Yahoo", "verizon"],
+        ["Microsoft 365", "microsoft365"],
+        ["Other/Unknown", "unknown"],
+      ]);
 
-        const key = providerKey.get(provider);
+      const key = providerKey.get(provider);
 
-        if (key) {
-          providerSeries.columns.template.setAll({
-            fill: am5.color(chartColor.provider[key]),
-          });
-        }
+      if (key) {
         providerSeries.columns.template.setAll({
-          cornerRadiusTL: 2,
-          cornerRadiusTR: 2,
+          fill: am5.color(chartColor.provider[key]),
         });
-
-        providerSeries.data.processor = am5.DataProcessor.new(root, {
-          dateFields: ["date"],
-          dateFormat: "yyyy-MM-dd",
-        });
-
-        chart.set(
-          "cursor",
-          am5xy.XYCursor.new(root, {
-            xAxis: xAxis,
-            behavior: "selectX",
-          })
-        );
-
-        providerSeries.data.setAll(data);
-        legend.data.push(providerSeries);
-        providerSeries.appear(1000);
       }
-    );
+      providerSeries.columns.template.setAll({
+        cornerRadiusTL: 2,
+        cornerRadiusTR: 2,
+      });
+
+      providerSeries.data.processor = am5.DataProcessor.new(root, {
+        dateFields: ["date"],
+        dateFormat: "yyyy-MM-dd",
+      });
+
+      chart.set(
+        "cursor",
+        am5xy.XYCursor.new(root, {
+          xAxis: xAxis,
+          behavior: "selectX",
+        })
+      );
+
+      providerSeries.data.setAll(data);
+      legend.data.push(providerSeries);
+      providerSeries.appear(1000);
+    });
 
     /* Rates */
 
