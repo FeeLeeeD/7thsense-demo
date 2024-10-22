@@ -4,6 +4,10 @@ import {
   BoxProps,
   Flex,
   Heading,
+  HeadingProps,
+  HStack,
+  Select,
+  SelectProps,
   Text,
   TextProps,
 } from "@chakra-ui/react";
@@ -23,27 +27,114 @@ export const ChartWrapper = ({
   ...props
 }: ChartWrapperProps) => {
   return (
-    <Flex
-      as="section"
-      flexDir="column"
-      bg="white"
-      borderRadius="24px"
-      px="xxlarge"
-      py="large"
-      {...props}
-    >
-      <Box as="header" mb="xxlarge">
-        <Heading fontSize="24px" fontWeight="semibold" color="#343A40">
-          {title}
-        </Heading>
+    <Shared.WrapperBox {...props}>
+      <Shared.HeaderBox>
+        <Shared.Heading>{title}</Shared.Heading>
+
         {description && (
-          <Text mt="8px" color="#707880" textStyle="s" {...descriptionProps}>
+          <Shared.DescriptionText {...descriptionProps}>
             {description}
-          </Text>
+          </Shared.DescriptionText>
         )}
-      </Box>
+      </Shared.HeaderBox>
 
       {children}
-    </Flex>
+    </Shared.WrapperBox>
   );
+};
+
+type ChartWrapperWithDropdownProps = {
+  title?: string;
+  options: Array<{
+    title?: string;
+    description?: string;
+    value: string;
+    label: string;
+  }>;
+  optionValue: string;
+  onOptionValueChange: (value: string) => void;
+  selectProps?: SelectProps;
+  description?: string;
+  descriptionProps?: TextProps;
+  children: React.ReactNode;
+} & BoxProps;
+
+export const ChartWrapperWithDropdown = ({
+  title,
+  options,
+  optionValue,
+  onOptionValueChange,
+  selectProps,
+  description,
+  descriptionProps,
+  children,
+  ...props
+}: ChartWrapperWithDropdownProps) => {
+  const chosenOptionTitle = options.find((o) => o.value === optionValue)?.title;
+  const chosenOptionDescription = options.find(
+    (o) => o.value === optionValue
+  )?.description;
+
+  return (
+    <Shared.WrapperBox {...props}>
+      <HStack justify="space-between" align="flex-start" spacing="xxlarge">
+        <Shared.HeaderBox>
+          <Shared.Heading>{chosenOptionTitle ?? title}</Shared.Heading>
+
+          {(description || chosenOptionDescription) && (
+            <Shared.DescriptionText {...descriptionProps}>
+              {chosenOptionDescription ?? description}
+            </Shared.DescriptionText>
+          )}
+        </Shared.HeaderBox>
+
+        <Select
+          value={optionValue}
+          onChange={(e) => onOptionValueChange(e.currentTarget.value)}
+          {...selectProps}
+        >
+          {options.map((option) => (
+            <option value={option.value}>{option.label}</option>
+          ))}
+        </Select>
+      </HStack>
+
+      {children}
+    </Shared.WrapperBox>
+  );
+};
+
+const Shared = {
+  WrapperBox: (props: BoxProps) => {
+    return (
+      <Flex
+        as="section"
+        flexDir="column"
+        bg="white"
+        borderRadius="24px"
+        px="xxlarge"
+        py="large"
+        {...props}
+      />
+    );
+  },
+
+  HeaderBox: (props: BoxProps) => {
+    return <Box as="header" mb="xxlarge" {...props} />;
+  },
+
+  Heading: (props: HeadingProps) => {
+    return (
+      <Heading
+        fontSize="24px"
+        fontWeight="semibold"
+        color="#343A40"
+        {...props}
+      />
+    );
+  },
+
+  DescriptionText: (props: TextProps) => {
+    return <Text mt="8px" color="#707880" textStyle="s" {...props} />;
+  },
 };

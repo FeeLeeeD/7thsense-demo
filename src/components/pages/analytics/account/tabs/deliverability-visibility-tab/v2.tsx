@@ -11,12 +11,15 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import { ChartWrapper } from "~components/charts/chart-wrapper";
-import { DeliverabilityScoreChart } from "./charts/deliverability-score";
-import { OpenClickRateChart } from "./charts/open-click-rate";
-import { BounceRateChart } from "./charts/bounce-rate";
-import { SendVolumeDeliveryRateChart } from "./charts/send-volume-delivery-rate";
+import {
+  ChartWrapper,
+  ChartWrapperWithDropdown,
+} from "~components/charts/chart-wrapper";
 import { AllContactsInboxProvidersChart } from "./charts/all-contacts-inbox-providers";
+import { SendVolumeDeliveryRateChart } from "./charts/send-volume-delivery-rate";
+import { DeliverabilityScoreChart } from "./charts/deliverability-score";
+import { SendVolumeChart } from "./charts/trending-charts/send-volume";
+import { BounceRateChart } from "./charts/bounce-rate";
 
 export const DeliverabilityInsightsTab_v2 = () => {
   return (
@@ -42,53 +45,70 @@ export const DeliverabilityInsightsTab_v2 = () => {
         gridGap="xxlarge"
       >
         <ChartWrapper
-          title="Deliverability rate by email provider"
+          title="Delivery rate by email provider"
           description="This chart shows the percentage of successfully delivered emails for each provider, calculated as (Delivered Emails / Sent Emails) × 100"
         >
           <DeliverabilityScoreChart />
         </ChartWrapper>
 
         <ChartWrapper
-          title="Overall deliverability rate"
-          description="Displays the overall deliverability rate, calculated by dividing the total number of delivered emails by the total number of sent emails, multiplied by 100"
+          title="Overall delivery rate"
+          description="Displays the overall delivery rate, calculated by dividing the total number of delivered emails by the total number of sent emails, multiplied by 100"
         >
           <Score />
         </ChartWrapper>
       </Grid>
 
-      <OpenClickRateBlock />
+      <TrendingCharts />
 
       <BounceUnsubscribeRateBlock />
     </Stack>
   );
 };
 
-const OpenClickRateBlock = () => {
-  const [chart, setChart] = useState<"Open" | "Click">("Open");
+const TrendingCharts = () => {
+  const [option, setOption] = useState("send-volume");
 
   return (
-    <ChartWrapper
-      title={`${chart} rate by Inbox provider`}
-      description={`A line chart showing the percentage of ${
-        chart === "Open" ? "opened" : "clicked"
-      } emails per provider each month, calculated as (Opened (Clicked) Emails / Delivered Emails) × 100`}
-      descriptionProps={{ maxW: "60%" }}
-      pos="relative"
+    <ChartWrapperWithDropdown
+      options={[
+        {
+          value: "send-volume",
+          label: "Send volume",
+          title: "Send volume",
+          description: "Description for send volume?",
+        },
+        {
+          value: "delivery-rate",
+          label: "Delivery rate",
+          title: "Delivery rate",
+          description: "Description for Delivery rate?",
+        },
+        {
+          value: "open-rate",
+          label: "Open rate",
+          title: "Open rate",
+          description: "Description for Open rate?",
+        },
+        {
+          value: "click-rate",
+          label: "Click rate",
+          title: "Click rate",
+          description: "Description for Click rate?",
+        },
+        {
+          value: "click-through-rate",
+          label: "Click through rate",
+          title: "Click through rate",
+          description: "Description for Click through rate?",
+        },
+      ]}
+      optionValue={option}
+      onOptionValueChange={setOption}
+      selectProps={{ w: "200px" }}
     >
-      <Select
-        pos="absolute"
-        top="24px"
-        right="xxlarge"
-        w="200px"
-        value={chart}
-        onChange={(e) => setChart(e.currentTarget.value as typeof chart)}
-      >
-        <option value="Open">Open rate</option>
-        <option value="Click">Click rate</option>
-      </Select>
-
-      <OpenClickRateChart />
-    </ChartWrapper>
+      <SendVolumeChart />
+    </ChartWrapperWithDropdown>
   );
 };
 
