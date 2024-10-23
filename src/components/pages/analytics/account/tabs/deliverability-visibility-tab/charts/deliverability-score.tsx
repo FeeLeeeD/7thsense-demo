@@ -7,7 +7,7 @@ import { Box } from "@chakra-ui/react";
 import { data } from "~data/charts/delivery-rate-by-inbox-provider";
 import { chartColor, Provider, providerLabel } from "~data/shared";
 
-const chartId = "deliverability-score";
+const chartId = "delivery-rate-by-email-provider";
 
 export const DeliverabilityScoreChart = () => {
   useLayoutEffect(() => {

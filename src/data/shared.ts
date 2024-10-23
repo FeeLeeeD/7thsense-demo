@@ -15,6 +15,7 @@ export const providerLabel = (provider: Provider) => {
     [Provider.Microsoft365, "Microsoft 365"],
     [Provider.VerizonAndCo, "Verizon/AOL/Yahoo"],
     [Provider.Apple, "Apple"],
+    [Provider.Overall, "Overall"],
   ]);
 
   return label.get(provider) ?? "Other/Unknown";

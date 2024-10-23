@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import { data } from "~data/charts/send-volume";
+import { data } from "~data/charts/delivery-rate";
 import { chartColor, providerLabel } from "~data/shared";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
@@ -7,11 +7,16 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
 
-const chartId = "send-volume";
+const chartId = "delivery-rate";
 
-export const SendVolumeChart = () => {
+export const DeliveryRateChart = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
+
+    root.numberFormatter.setAll({
+      numberFormat: "0.0",
+      numericFields: ["valueY"],
+    });
 
     root.setThemes([
       am5themes_Responsive.new(root),
@@ -97,6 +102,7 @@ export const SendVolumeChart = () => {
           count: 1,
         },
         renderer: am5xy.AxisRendererX.new(root, {
+          minorGridEnabled: true,
           minGridDistance: 50,
         }),
         dateFormats: {
@@ -115,7 +121,7 @@ export const SendVolumeChart = () => {
         },
         tooltip: am5.Tooltip.new(root, {}),
         paddingBottom: 16,
-        minZoomCount: 31,
+        minZoomCount: 20,
       })
     );
 
@@ -128,7 +134,9 @@ export const SendVolumeChart = () => {
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
         min: 0,
+        max: 110,
         strictMinMax: true,
+        numberFormat: "0 '%'",
         renderer: am5xy.AxisRendererY.new(root, {}),
       })
     );
@@ -139,17 +147,16 @@ export const SendVolumeChart = () => {
     function setSeries() {
       data.forEach((seriesData) => {
         const series = chart.series.push(
-          am5xy.ColumnSeries.new(root, {
+          am5xy.LineSeries.new(root, {
             name: providerLabel(seriesData.provider),
             xAxis,
             yAxis,
-            stacked: true,
-            valueYField: "sendVolume",
+            valueYField: "deliveryRate",
             valueXField: "date",
-            valueYGrouped: "sum",
+            valueYGrouped: "average",
             tooltip: am5.Tooltip.new(root, {
               labelText:
-                "[fontSize: 14px]{name}: [bold, fontSize: 14px]{valueY}",
+                "[fontSize: 14px]{name}: [bold, fontSize: 14px]{valueY}%",
             }),
           })
         );
@@ -159,14 +166,19 @@ export const SendVolumeChart = () => {
           fill: am5.color(chartColor.provider[seriesData.provider]),
         });
 
-        series.columns.template.setAll({
-          cornerRadiusTL: 2,
-          cornerRadiusTR: 2,
-        });
-
         series.data.processor = am5.DataProcessor.new(root, {
           dateFields: ["date"],
           dateFormat: "yyyy-MM-dd",
+        });
+
+        series.bullets.push(function () {
+          var bulletCircle = am5.Circle.new(root, {
+            radius: 4,
+            fill: series.get("fill"),
+          });
+          return am5.Bullet.new(root, {
+            sprite: bulletCircle,
+          });
         });
 
         series.data.setAll(seriesData.data);

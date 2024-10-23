@@ -19,6 +19,7 @@ import { InboxProvidersChart } from "./charts/inbox-providers";
 import { SendVolumeDeliveryRateChart } from "./charts/send-volume-delivery-rate";
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { SendVolumeChart } from "./charts/trending-charts/send-volume";
+import { DeliveryRateChart } from "./charts/trending-charts/delivery-rate";
 import { BounceRateChart } from "./charts/bounce-rate";
 
 export const DeliverabilityInsightsTab_v2 = () => {
@@ -66,48 +67,54 @@ export const DeliverabilityInsightsTab_v2 = () => {
   );
 };
 
+const options = [
+  {
+    value: "send-volume" as const,
+    label: "Send volume",
+    title: "Send volume",
+    description: "Description for send volume?",
+  },
+  {
+    value: "delivery-rate" as const,
+    label: "Delivery rate",
+    title: "Delivery rate",
+    description: "Description for Delivery rate?",
+  },
+  {
+    value: "open-rate" as const,
+    label: "Open rate",
+    title: "Open rate",
+    description: "Description for Open rate?",
+  },
+  {
+    value: "click-rate" as const,
+    label: "Click rate",
+    title: "Click rate",
+    description: "Description for Click rate?",
+  },
+  {
+    value: "click-through-rate" as const,
+    label: "Click through rate",
+    title: "Click through rate",
+    description: "Description for Click through rate?",
+  },
+];
+
 const TrendingCharts = () => {
-  const [option, setOption] = useState("send-volume");
+  const [option, setOption] =
+    useState<(typeof options)[number]["value"]>("send-volume");
 
   return (
     <ChartWrapperWithDropdown
-      options={[
-        {
-          value: "send-volume",
-          label: "Send volume",
-          title: "Send volume",
-          description: "Description for send volume?",
-        },
-        {
-          value: "delivery-rate",
-          label: "Delivery rate",
-          title: "Delivery rate",
-          description: "Description for Delivery rate?",
-        },
-        {
-          value: "open-rate",
-          label: "Open rate",
-          title: "Open rate",
-          description: "Description for Open rate?",
-        },
-        {
-          value: "click-rate",
-          label: "Click rate",
-          title: "Click rate",
-          description: "Description for Click rate?",
-        },
-        {
-          value: "click-through-rate",
-          label: "Click through rate",
-          title: "Click through rate",
-          description: "Description for Click through rate?",
-        },
-      ]}
+      options={options}
       optionValue={option}
-      onOptionValueChange={setOption}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof options)[number]["value"])
+      }
       selectProps={{ w: "200px" }}
     >
-      <SendVolumeChart />
+      {option === "send-volume" && <SendVolumeChart />}
+      {option === "delivery-rate" && <DeliveryRateChart />}
     </ChartWrapperWithDropdown>
   );
 };
