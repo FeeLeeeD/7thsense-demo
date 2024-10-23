@@ -1,6 +1,6 @@
 import React from "react";
 import { Am5XYChart } from "~components/charts/am5-xy-chart";
-import { chartColor } from "~components/charts/shared";
+import { chartColor } from "~data/shared";
 
 export const InitiationRatesChart = () => {
   return (

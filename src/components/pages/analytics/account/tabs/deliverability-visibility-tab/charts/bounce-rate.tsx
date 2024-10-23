@@ -4,7 +4,8 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
-import { chartColor } from "~components/charts/shared";
+import { data } from "~data/charts/bounce-rate";
+import { chartColor, Provider, providerLabel } from "~data/shared";
 
 const chartId = "bounce-rate";
 
@@ -64,53 +65,10 @@ export const BounceRateChart = () => {
     /* Series */
     setSeries();
     function setSeries() {
-      [
-        {
-          name: "GSuite",
-          color: chartColor.provider.gSuite,
-          data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 0.56 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 0.47 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 0.45 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 0.39 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 0.27 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 0.20 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 0.15 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 0.14 },
-          ],
-        },
-        {
-          name: "Microsoft 365",
-          color: chartColor.provider.microsoft365,
-          data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 0.48 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 0.40 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 0.30 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 0.31 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 0.26 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 0.20 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 0.17 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 0.08 },
-          ],
-        },
-        {
-          name: "Overall",
-          color: "#000",
-          data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 0.52 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 0.44 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 0.38 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 0.35 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 0.26 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 0.20 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 0.16 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 0.11 },
-          ],
-        },
-      ].forEach((seriesData) => {
+      data.forEach((seriesData) => {
         const series = chart.series.push(
           am5xy.LineSeries.new(root, {
-            name: seriesData.name,
+            name: providerLabel(seriesData.provider),
             xAxis,
             yAxis,
             valueYField: "openRate",
@@ -123,11 +81,11 @@ export const BounceRateChart = () => {
         );
 
         series.setAll({
-          stroke: am5.color(seriesData.color),
-          fill: am5.color(seriesData.color),
+          stroke: am5.color(chartColor.provider[seriesData.provider]),
+          fill: am5.color(chartColor.provider[seriesData.provider]),
         });
 
-        if (seriesData.name === "Overall") {
+        if (seriesData.provider === Provider.Overall) {
           series.strokes.template.setAll({ strokeWidth: 4 });
         } else {
           series.strokes.template.setAll({ strokeWidth: 2 });

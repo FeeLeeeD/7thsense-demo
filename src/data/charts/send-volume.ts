@@ -1,9 +1,8 @@
-import { chartColor } from "~components/charts/shared";
+import { Provider } from "~data/shared";
 
-export const sendVolumeData = [
+export const data = [
   {
-    name: "Google Workspace",
-    color: chartColor.provider.gSuite,
+    provider: Provider.GoogleWorkspace,
     data: [
       {
         date: "2024-04-25",
@@ -728,8 +727,7 @@ export const sendVolumeData = [
     ],
   },
   {
-    name: "Gmail",
-    color: chartColor.provider.gmail,
+    provider: Provider.Gmail,
     data: [
       {
         date: "2024-04-25",
@@ -1454,8 +1452,7 @@ export const sendVolumeData = [
     ],
   },
   {
-    name: "Microsoft 365",
-    color: chartColor.provider.microsoft365,
+    provider: Provider.Microsoft365,
     data: [
       {
         date: "2024-04-25",
@@ -2180,8 +2177,7 @@ export const sendVolumeData = [
     ],
   },
   {
-    name: "Verizon/AOL/Yahoo",
-    color: chartColor.provider.verizon,
+    provider: Provider.VerizonAndCo,
     data: [
       {
         date: "2024-04-25",
@@ -2906,8 +2902,7 @@ export const sendVolumeData = [
     ],
   },
   {
-    name: "Other/Unknown",
-    color: chartColor.provider.unknown,
+    provider: Provider.Other,
     data: [
       {
         date: "2024-04-25",

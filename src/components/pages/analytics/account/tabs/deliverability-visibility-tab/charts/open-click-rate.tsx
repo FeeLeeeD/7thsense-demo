@@ -1,10 +1,11 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
-import { Box, Select } from "@chakra-ui/react";
-import { chartColor } from "~components/charts/shared";
+import { Box } from "@chakra-ui/react";
+import { data } from "~data/charts/open-click-rate";
+import { chartColor, Provider, providerLabel } from "~data/shared";
 
 const chartId = "open-click-rate";
 export const OpenClickRateChart = () => {
@@ -63,67 +64,10 @@ export const OpenClickRateChart = () => {
     /* Series */
     setSeries();
     function setSeries() {
-      [
-        {
-          name: "GSuite",
-          color: chartColor.provider.gSuite,
-          data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 8 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 14 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 16 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 20 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 32 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 44 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 38 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 49 },
-          ],
-        },
-        {
-          name: "Microsoft 365",
-          color: chartColor.provider.microsoft365,
-          data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 12 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 16 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 20 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 29 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 40 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 38 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 44 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 54 },
-          ],
-        },
-        {
-          name: "Gmail",
-          color: chartColor.provider.gmail,
-          data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 15 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 26 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 32 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 40 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 44 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 40 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 56 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 60 },
-          ],
-        },
-        {
-          name: "Overall",
-          color: "#000",
-          data: [
-            { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), openRate: 12 },
-            { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), openRate: 19 },
-            { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), openRate: 23 },
-            { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), openRate: 30 },
-            { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), openRate: 39 },
-            { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), openRate: 41 },
-            { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), openRate: 46 },
-            { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), openRate: 54 },
-          ],
-        },
-      ].forEach((seriesData) => {
+      data.forEach((seriesData) => {
         const series = chart.series.push(
           am5xy.LineSeries.new(root, {
-            name: seriesData.name,
+            name: providerLabel(seriesData.provider),
             xAxis,
             yAxis,
             valueYField: "openRate",
@@ -136,11 +80,11 @@ export const OpenClickRateChart = () => {
         );
 
         series.setAll({
-          stroke: am5.color(seriesData.color),
-          fill: am5.color(seriesData.color),
+          stroke: am5.color(chartColor.provider[seriesData.provider]),
+          fill: am5.color(chartColor.provider[seriesData.provider]),
         });
 
-        if (seriesData.name === "Overall") {
+        if (seriesData.provider === Provider.Overall) {
           series.strokes.template.setAll({ strokeWidth: 4 });
         } else {
           series.strokes.template.setAll({ strokeWidth: 2 });

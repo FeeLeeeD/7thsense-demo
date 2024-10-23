@@ -15,7 +15,7 @@ import {
   ChartWrapper,
   ChartWrapperWithDropdown,
 } from "~components/charts/chart-wrapper";
-import { AllContactsInboxProvidersChart } from "./charts/all-contacts-inbox-providers";
+import { InboxProvidersChart } from "./charts/inbox-providers";
 import { SendVolumeDeliveryRateChart } from "./charts/send-volume-delivery-rate";
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { SendVolumeChart } from "./charts/trending-charts/send-volume";
@@ -29,7 +29,7 @@ export const DeliverabilityInsightsTab_v2 = () => {
           title="Inbox providers"
           description="Breakdown of the major inbox providers that the people in your database use"
         >
-          <AllContactsInboxProvidersChart />
+          <InboxProvidersChart />
         </ChartWrapper>
 
         <ChartWrapper

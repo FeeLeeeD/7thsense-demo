@@ -4,20 +4,13 @@ import * as am5percent from "@amcharts/amcharts5/percent";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { Box } from "@chakra-ui/react";
-import { chartColor } from "~components/charts/shared";
+import { chartColor, Provider, providerLabel } from "~data/shared";
+import { data } from "~data/charts/inbox-providers";
 
 const chartId = "engagement-segments-chart";
-const data = [
-  { provider: "Google Workspace", count: 9911 },
-  { provider: "Gmail", count: 3481 },
-  { provider: "Microsoft 365", count: 2178 },
-  { provider: "Verizon/AOL/Yahoo", count: 1232 },
-  { provider: "Apple", count: 339 },
-  { provider: "Other/Unknown", count: 47 },
-];
 const total = data.reduce((sum, item) => sum + item.count, 0);
 
-export const AllContactsInboxProvidersChart = () => {
+export const InboxProvidersChart = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
 
@@ -30,7 +23,7 @@ export const AllContactsInboxProvidersChart = () => {
       am5percent.PieChart.new(root, {
         layout: root.verticalLayout,
         radius: am5.percent(95),
-        paddingBottom: 24
+        paddingBottom: 24,
       })
     );
 
@@ -94,14 +87,16 @@ export const AllContactsInboxProvidersChart = () => {
     series
       .get("colors")
       ?.set("colors", [
-        am5.color(chartColor.provider.gSuite),
-        am5.color(chartColor.provider.gmail),
-        am5.color(chartColor.provider.microsoft365),
-        am5.color(chartColor.provider.verizon),
-        am5.color(chartColor.provider.apple),
-        am5.color(chartColor.provider.unknown),
+        am5.color(chartColor.provider[Provider.GoogleWorkspace]),
+        am5.color(chartColor.provider[Provider.Gmail]),
+        am5.color(chartColor.provider[Provider.Microsoft365]),
+        am5.color(chartColor.provider[Provider.VerizonAndCo]),
+        am5.color(chartColor.provider[Provider.Apple]),
+        am5.color(chartColor.provider[Provider.Other]),
       ]);
-    series.data.setAll(data);
+    series.data.setAll(
+      data.map((item) => ({ ...item, provider: providerLabel(item.provider) }))
+    );
     legend.data.setAll(series.dataItems);
 
     series.appear(1000, 0);
