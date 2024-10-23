@@ -8,9 +8,9 @@ import { chartColor } from "~components/charts/shared";
 
 const chartId = "engagement-segments-chart";
 const data = [
-  { provider: "Microsoft 365", count: 2178 },
   { provider: "Google Workspace", count: 9911 },
   { provider: "Gmail", count: 3481 },
+  { provider: "Microsoft 365", count: 2178 },
   { provider: "Verizon/AOL/Yahoo", count: 1232 },
   { provider: "Apple", count: 339 },
   { provider: "Other/Unknown", count: 47 },
@@ -94,9 +94,9 @@ export const AllContactsInboxProvidersChart = () => {
     series
       .get("colors")
       ?.set("colors", [
-        am5.color(chartColor.provider.microsoft365),
         am5.color(chartColor.provider.gSuite),
         am5.color(chartColor.provider.gmail),
+        am5.color(chartColor.provider.microsoft365),
         am5.color(chartColor.provider.verizon),
         am5.color(chartColor.provider.apple),
         am5.color(chartColor.provider.unknown),

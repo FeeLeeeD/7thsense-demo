@@ -222,8 +222,8 @@ export const SendVolumeDeliveryRateChart = () => {
     [
       "Google Workspace",
       "Gmail",
-      "Verizon/AOL/Yahoo",
       "Microsoft 365",
+      "Verizon/AOL/Yahoo",
       "Other/Unknown",
     ].forEach((provider) => {
       const providerTooltip = am5.Tooltip.new(root, {

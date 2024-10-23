@@ -78,13 +78,17 @@ export const DeliverabilityScoreChart = () => {
     });
 
     const data = [
-      { provider: "GSuite", value: 96, color: chartColor.provider.gSuite },
+      {
+        provider: "Google Workspace",
+        value: 96,
+        color: chartColor.provider.gSuite,
+      },
+      { provider: "Gmail", value: 97, color: chartColor.provider.gmail },
       {
         provider: "Microsoft 365",
         value: 88,
         color: chartColor.provider.microsoft365,
       },
-      { provider: "Gmail", value: 97, color: chartColor.provider.gmail },
       { provider: "Verizon", value: 87, color: chartColor.provider.verizon },
       { provider: "Apple", value: 100, color: chartColor.provider.apple },
     ];

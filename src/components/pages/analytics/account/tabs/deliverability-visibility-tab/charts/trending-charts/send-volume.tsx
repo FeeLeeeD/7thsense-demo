@@ -20,7 +20,7 @@ export const SendVolumeChart = () => {
     const chart = root.container.children.push(
       am5xy.XYChart.new(root, {
         wheelX: "panX",
-        wheelY: "zoomX",
+        wheelY: "none",
         pinchZoomX: true,
         paddingLeft: 0,
         paddingTop: 0,
