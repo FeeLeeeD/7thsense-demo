@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import { data } from "~data/charts/delivery-rate";
-import { chartColor, providerLabel } from "~data/shared";
+import { chartColor, Provider, providerLabel } from "~data/shared";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
@@ -133,13 +133,22 @@ export const DeliveryRateChart = () => {
 
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
-        min: 0,
-        max: 110,
-        strictMinMax: true,
+        extraMax: 0.5,
+        extraMin: 0.5,
         numberFormat: "0 '%'",
         renderer: am5xy.AxisRendererY.new(root, {}),
       })
     );
+
+    yAxis
+      .get("renderer")
+      .labels.template.adapters.add("visible", (isVisible, target) => {
+        const value = target.dataItem?.get("value" as unknown as "visible") as
+          | number
+          | undefined;
+
+        return value ? value <= 100 : false;
+      });
 
     /* Series */
 
@@ -165,6 +174,10 @@ export const DeliveryRateChart = () => {
           stroke: am5.color(chartColor.provider[seriesData.provider]),
           fill: am5.color(chartColor.provider[seriesData.provider]),
         });
+
+        if (seriesData.provider === Provider.Overall) {
+          series.strokes.template.setAll({ strokeWidth: 2 });
+        }
 
         series.data.processor = am5.DataProcessor.new(root, {
           dateFields: ["date"],
