@@ -4,7 +4,6 @@ import {
   CircularProgressLabel,
   Grid,
   HStack,
-  Select,
   Stack,
   Tag,
   Text,
@@ -20,12 +19,13 @@ import { SendVolumeDeliveryRateChart } from "./charts/send-volume-delivery-rate"
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { SendVolumeChart } from "./charts/trending-charts/send-volume";
 import { DeliveryRateChart } from "./charts/trending-charts/delivery-rate";
-import { BounceRateV1Chart } from "./charts/bounce-rate-v1";
 import { OpenRateChart } from "./charts/trending-charts/open-rate";
 import { ClickRateChart } from "./charts/trending-charts/click-rate";
 import { ClickThroughRateChart } from "./charts/trending-charts/click-through-rate";
 import { BounceRateChart } from "./charts/trending-charts/bounce-rate";
 import { UnsubscribeRateChart } from "./charts/trending-charts/unsubscribe-rate";
+import { AudienceReachByOpenChart } from "./charts/audience-reach-by-open";
+import { AudienceReachByClickChart } from "./charts/audience-reach-by-click";
 
 export const DeliverabilityInsightsTab_v2 = () => {
   return (
@@ -68,9 +68,13 @@ export const DeliverabilityInsightsTab_v2 = () => {
       <TrendingCharts />
 
       <BounceUnsubscribeRateBlock />
+
+      <AudienceReachCharts />
     </Stack>
   );
 };
+
+/* Trending charts */
 
 const trending_options = [
   {
@@ -127,6 +131,8 @@ const TrendingCharts = () => {
   );
 };
 
+/* Bounce/unsubscribe charts */
+
 const bounce_options = [
   {
     value: "bounce-rate" as const,
@@ -159,6 +165,43 @@ const BounceUnsubscribeRateBlock = () => {
     >
       {option === "bounce-rate" && <BounceRateChart />}
       {option === "unsubscribe-rate" && <UnsubscribeRateChart />}
+    </ChartWrapperWithDropdown>
+  );
+};
+
+/* Audience reach */
+
+const audience_options = [
+  {
+    value: "audience-reach-by-open" as const,
+    label: "By open",
+    title: "Audience reach by open",
+    description: "Description?",
+  },
+  {
+    value: "audience-reach-by-click" as const,
+    label: "By click",
+    title: "Audience reach by click",
+    description: "Description?",
+  },
+];
+
+const AudienceReachCharts = () => {
+  const [option, setOption] = useState<
+    (typeof audience_options)[number]["value"]
+  >("audience-reach-by-open");
+
+  return (
+    <ChartWrapperWithDropdown
+      options={audience_options}
+      optionValue={option}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof audience_options)[number]["value"])
+      }
+      selectProps={{ w: "160px" }}
+    >
+      {option === "audience-reach-by-open" && <AudienceReachByOpenChart />}
+      {option === "audience-reach-by-click" && <AudienceReachByClickChart />}
     </ChartWrapperWithDropdown>
   );
 };
