@@ -14,7 +14,7 @@ import {
 import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { OpenClickRateChart } from "./charts/open-click-rate";
-import { BounceRateChart } from "./charts/bounce-rate";
+import { BounceRateV1Chart } from "./charts/bounce-rate-v1";
 
 export const DeliverabilityVisibilityTab_v1 = () => {
   return (
@@ -97,7 +97,7 @@ const BounceUnsubscribeRateBlock = () => {
         <option value="Unsubscribe">Unsubscribe rate</option>
       </Select>
 
-      <BounceRateChart />
+      <BounceRateV1Chart />
     </ChartWrapper>
   );
 };

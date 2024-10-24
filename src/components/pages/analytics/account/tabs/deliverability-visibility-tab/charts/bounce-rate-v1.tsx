@@ -4,12 +4,12 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
-import { data } from "~data/charts/bounce-rate";
+import { data } from "~data/charts/bounce-rate-v1";
 import { chartColor, Provider, providerLabel } from "~data/shared";
 
-const chartId = "bounce-rate";
+const chartId = "bounce-rate-v1";
 
-export const BounceRateChart = () => {
+export const BounceRateV1Chart = () => {
   const chartRef = useRef<am5xy.XYChart>();
 
   useLayoutEffect(() => {

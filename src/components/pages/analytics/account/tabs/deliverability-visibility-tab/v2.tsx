@@ -20,10 +20,12 @@ import { SendVolumeDeliveryRateChart } from "./charts/send-volume-delivery-rate"
 import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { SendVolumeChart } from "./charts/trending-charts/send-volume";
 import { DeliveryRateChart } from "./charts/trending-charts/delivery-rate";
-import { BounceRateChart } from "./charts/bounce-rate";
+import { BounceRateV1Chart } from "./charts/bounce-rate-v1";
 import { OpenRateChart } from "./charts/trending-charts/open-rate";
 import { ClickRateChart } from "./charts/trending-charts/click-rate";
 import { ClickThroughRateChart } from "./charts/trending-charts/click-through-rate";
+import { BounceRateChart } from "./charts/trending-charts/bounce-rate";
+import { UnsubscribeRateChart } from "./charts/trending-charts/unsubscribe-rate";
 
 export const DeliverabilityInsightsTab_v2 = () => {
   return (
@@ -70,7 +72,7 @@ export const DeliverabilityInsightsTab_v2 = () => {
   );
 };
 
-const options = [
+const trending_options = [
   {
     value: "send-volume" as const,
     label: "Send volume",
@@ -105,14 +107,14 @@ const options = [
 
 const TrendingCharts = () => {
   const [option, setOption] =
-    useState<(typeof options)[number]["value"]>("click-rate");
+    useState<(typeof trending_options)[number]["value"]>("send-volume");
 
   return (
     <ChartWrapperWithDropdown
-      options={options}
+      options={trending_options}
       optionValue={option}
       onOptionValueChange={(o) =>
-        setOption(o as (typeof options)[number]["value"])
+        setOption(o as (typeof trending_options)[number]["value"])
       }
       selectProps={{ w: "200px" }}
     >
@@ -125,31 +127,39 @@ const TrendingCharts = () => {
   );
 };
 
+const bounce_options = [
+  {
+    value: "bounce-rate" as const,
+    label: "Bounce rate",
+    title: "Bounce rate by Inbox provider",
+    description:
+      "A line chart tracking the percentage of bounced emails per provider each month",
+  },
+  {
+    value: "unsubscribe-rate" as const,
+    label: "Unsubscribe rate",
+    title: "Unsubscribe rate by Inbox provider",
+    description:
+      "A line chart tracking the percentage of unsubscribes per provider each month",
+  },
+];
+
 const BounceUnsubscribeRateBlock = () => {
-  const [chart, setChart] = useState<"Bounce" | "Unsubscribe">("Bounce");
+  const [option, setOption] =
+    useState<(typeof bounce_options)[number]["value"]>("bounce-rate");
 
   return (
-    <ChartWrapper
-      title={`${chart} by Inbox provider`}
-      description={`A line chart tracking the percentage of ${
-        chart === "Bounce" ? "bounced emails" : "unsubscribes"
-      } per provider each month`}
-      pos="relative"
+    <ChartWrapperWithDropdown
+      options={bounce_options}
+      optionValue={option}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof bounce_options)[number]["value"])
+      }
+      selectProps={{ w: "200px" }}
     >
-      <Select
-        pos="absolute"
-        top="24px"
-        right="xxlarge"
-        w="200px"
-        value={chart}
-        onChange={(e) => setChart(e.currentTarget.value as typeof chart)}
-      >
-        <option value="Bounce">Bounce rate</option>
-        <option value="Unsubscribe">Unsubscribe rate</option>
-      </Select>
-
-      <BounceRateChart />
-    </ChartWrapper>
+      {option === "bounce-rate" && <BounceRateChart />}
+      {option === "unsubscribe-rate" && <UnsubscribeRateChart />}
+    </ChartWrapperWithDropdown>
   );
 };
 
