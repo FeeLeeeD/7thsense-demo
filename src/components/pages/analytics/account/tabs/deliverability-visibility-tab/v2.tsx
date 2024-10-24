@@ -21,6 +21,7 @@ import { DeliverabilityScoreChart } from "./charts/deliverability-score";
 import { SendVolumeChart } from "./charts/trending-charts/send-volume";
 import { DeliveryRateChart } from "./charts/trending-charts/delivery-rate";
 import { BounceRateChart } from "./charts/bounce-rate";
+import { OpenRateChart } from "./charts/trending-charts/open-rate";
 
 export const DeliverabilityInsightsTab_v2 = () => {
   return (
@@ -102,7 +103,7 @@ const options = [
 
 const TrendingCharts = () => {
   const [option, setOption] =
-    useState<(typeof options)[number]["value"]>("send-volume");
+    useState<(typeof options)[number]["value"]>("open-rate");
 
   return (
     <ChartWrapperWithDropdown
@@ -115,6 +116,7 @@ const TrendingCharts = () => {
     >
       {option === "send-volume" && <SendVolumeChart />}
       {option === "delivery-rate" && <DeliveryRateChart />}
+      {option === "open-rate" && <OpenRateChart />}
     </ChartWrapperWithDropdown>
   );
 };
