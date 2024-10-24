@@ -2,12 +2,13 @@ import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { AltArrowDownIcon } from "./icons/alt-arrow-down";
 import { Link } from "./shared/link";
+import { route } from "~utils/routes";
 
 type PageLayoutProps = {
   title: string;
   description?: string;
   children: React.ReactNode;
-  back?: string;
+  back?: (r: typeof route) => string;
 };
 
 export const PageLayout = ({

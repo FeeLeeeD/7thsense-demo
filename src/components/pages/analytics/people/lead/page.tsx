@@ -33,7 +33,7 @@ export const AnalyticsLeadPage = () => {
     <PageLayout
       title="Sarah Johnson, Virginia, USA"
       description="Individual engagement statistics"
-      back="/analytics/people"
+      back={(route) => route.analytics.people.index()}
     >
       <Grid
         gridTemplateColumns={{ base: "1fr 1fr 228px", lg: "1fr 1fr 1fr 228px" }}

@@ -38,6 +38,7 @@ import {
   TagLeftIcon,
   Button,
   Collapse,
+  Skeleton,
 } from "@chakra-ui/react";
 import { FilterPlusIcon } from "~components/icons/filter-plus";
 import { SolidClockCircleIcon } from "~components/icons/solid-clock-circle";
@@ -49,15 +50,17 @@ import { AudienceAnalyticsTab } from "./tabs/audience-analytics-tab";
 import { GlobalIcon } from "~components/icons/global";
 import { SignPostIcon } from "~components/icons/sign-post";
 import { PlusIcon } from "~components/icons/plus";
+import { ConditionalComponent } from "~components/conditional-component";
 
 export const AccountAnalyticsPage = () => {
   const { tabs, defaultTabIndex, onTabChange } = useTabs({
     tabs: [
       {
         key: "deliverability-visibility",
-        title: conditionalContent({
+        title: ConditionalComponent({
           v1: "Deliverability visibility",
           v2: "Deliverability insights",
+          fallback: <Skeleton w="180px" h="18px" borderRadius="full" />,
         }),
         body: <DeliverabilityVisibilityTab_conditional />,
       },

@@ -23,14 +23,3 @@ export const navigate = async (
 ): Promise<void> => {
   await gatsbyNavigate(getLink(to), options);
 };
-
-/* Versioning */
-
-export const conditionalContent = <T1, T2>(args: { v1?: T1; v2?: T2 }) => {
-  const version = getCurrentVersion();
-
-  if (version === "v1") return args.v1;
-  if (version === "v2") return args.v2;
-
-  return undefined;
-};

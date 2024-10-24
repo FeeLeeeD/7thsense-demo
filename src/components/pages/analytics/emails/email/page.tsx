@@ -32,7 +32,10 @@ import { Card } from "~components/shared/card";
 
 export const AnalyticsEmailPage = () => {
   return (
-    <PageLayout title="Email statistics" back="/analytics/emails">
+    <PageLayout
+      title="Email statistics"
+      back={(route) => route.analytics.emails.index()}
+    >
       <Grid gridTemplateColumns={{ lg: "repeat(12, 1fr)" }} gridGap="xlarge">
         <StatCard
           icon={<SolidClockCircleIcon />}
