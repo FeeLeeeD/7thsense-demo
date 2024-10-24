@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import { data } from "~data/charts/click-rate";
+import { data } from "~data/charts/click-through-rate";
 import { chartColor, Provider, providerLabel } from "~data/shared";
 import am5themes_Responsive from "@amcharts/amcharts5/themes/Responsive";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
@@ -7,9 +7,9 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
 
-const chartId = "click-rate";
+const chartId = "click-through-rate";
 
-export const ClickRateChart = () => {
+export const ClickThroughRateChart = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
 
@@ -133,7 +133,7 @@ export const ClickRateChart = () => {
 
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
-        extraMax: 0.2,
+        extraMax: 0.25,
         extraMin: 0,
         min: 0,
         strictMinMax: true,
@@ -152,7 +152,7 @@ export const ClickRateChart = () => {
             name: providerLabel(seriesData.provider),
             xAxis,
             yAxis,
-            valueYField: "clickRate",
+            valueYField: "clickThroughRate",
             valueXField: "date",
             valueYGrouped: "average",
             tooltip: am5.Tooltip.new(root, {

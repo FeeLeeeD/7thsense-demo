@@ -23,6 +23,7 @@ import { DeliveryRateChart } from "./charts/trending-charts/delivery-rate";
 import { BounceRateChart } from "./charts/bounce-rate";
 import { OpenRateChart } from "./charts/trending-charts/open-rate";
 import { ClickRateChart } from "./charts/trending-charts/click-rate";
+import { ClickThroughRateChart } from "./charts/trending-charts/click-through-rate";
 
 export const DeliverabilityInsightsTab_v2 = () => {
   return (
@@ -74,7 +75,7 @@ const options = [
     value: "send-volume" as const,
     label: "Send volume",
     title: "Send volume",
-    description: "Description for send volume?",
+    description: "Description for Send volume?",
   },
   {
     value: "delivery-rate" as const,
@@ -119,6 +120,7 @@ const TrendingCharts = () => {
       {option === "delivery-rate" && <DeliveryRateChart />}
       {option === "open-rate" && <OpenRateChart />}
       {option === "click-rate" && <ClickRateChart />}
+      {option == "click-through-rate" && <ClickThroughRateChart />}
     </ChartWrapperWithDropdown>
   );
 };
