@@ -49,9 +49,15 @@ export const DeliveryRateChart = () => {
         groupData: true,
         groupIntervals: [{ timeUnit: "month", count: 1 }],
         baseInterval: { timeUnit: "day", count: 1 },
+        dateFormats: {
+          month: "MMM",
+        },
+        periodChangeDateFormats: {
+          month: "MMM YYYY",
+        },
         renderer: am5xy.AxisRendererX.new(root, {
           minorGridEnabled: true,
-          minGridDistance: 80,
+          minGridDistance: 60,
           opposite: false,
         }),
       })
@@ -113,7 +119,7 @@ export const DeliveryRateChart = () => {
         periodChangeDateFormats: {
           day: "MMM",
           week: "MMM",
-          month: "MMM",
+          month: "MMM YYYY",
         },
         tooltipDateFormats: {
           day: "d MMMM yyyy",
@@ -133,9 +139,10 @@ export const DeliveryRateChart = () => {
 
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
-        extraMax: 0.5,
-        extraMin: 0.5,
+        extraMax: 0.25,
+        extraMin: 0.25,
         numberFormat: "0 '%'",
+        maxPrecision: 0,
         renderer: am5xy.AxisRendererY.new(root, {}),
       })
     );
@@ -213,8 +220,8 @@ export const DeliveryRateChart = () => {
 
     chart.appear(1000, 100);
 
-    createRange(0, 14, "#F93232", true);
-    createRange(14, 24, "#FFB82E", true);
+    createRange(0, 83, "#F93232", true);
+    createRange(83, 90, "#FFB82E", true);
 
     function createRange(
       lower: number,

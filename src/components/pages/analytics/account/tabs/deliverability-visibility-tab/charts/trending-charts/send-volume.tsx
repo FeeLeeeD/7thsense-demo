@@ -44,9 +44,15 @@ export const SendVolumeChart = () => {
         groupData: true,
         groupIntervals: [{ timeUnit: "month", count: 1 }],
         baseInterval: { timeUnit: "day", count: 1 },
+        dateFormats: {
+          month: "MMM",
+        },
+        periodChangeDateFormats: {
+          month: "MMM YYYY",
+        },
         renderer: am5xy.AxisRendererX.new(root, {
           minorGridEnabled: true,
-          minGridDistance: 80,
+          minGridDistance: 60,
           opposite: false,
         }),
       })
@@ -107,7 +113,7 @@ export const SendVolumeChart = () => {
         periodChangeDateFormats: {
           day: "MMM",
           week: "MMM",
-          month: "MMM",
+          month: "MMM YYYY",
         },
         tooltipDateFormats: {
           day: "d MMMM yyyy",

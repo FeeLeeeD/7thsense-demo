@@ -49,9 +49,15 @@ export const ClickThroughRateChart = () => {
         groupData: true,
         groupIntervals: [{ timeUnit: "month", count: 1 }],
         baseInterval: { timeUnit: "day", count: 1 },
+        dateFormats: {
+          month: "MMM",
+        },
+        periodChangeDateFormats: {
+          month: "MMM YYYY",
+        },
         renderer: am5xy.AxisRendererX.new(root, {
           minorGridEnabled: true,
-          minGridDistance: 80,
+          minGridDistance: 60,
           opposite: false,
         }),
       })
@@ -113,7 +119,7 @@ export const ClickThroughRateChart = () => {
         periodChangeDateFormats: {
           day: "MMM",
           week: "MMM",
-          month: "MMM",
+          month: "MMM YYYY",
         },
         tooltipDateFormats: {
           day: "d MMMM yyyy",
@@ -205,8 +211,8 @@ export const ClickThroughRateChart = () => {
 
     chart.appear(1000, 100);
 
-    createRange(0, 2, "#F93232", true);
-    createRange(2, 4, "#FFB82E", true);
+    createRange(0, 4, "#F93232", true);
+    createRange(4, 6, "#FFB82E", true);
 
     function createRange(
       lower: number,
