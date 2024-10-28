@@ -43,10 +43,16 @@ export const AudienceReachByClickChart = () => {
       am5xy.DateAxis.new(root, {
         groupData: true,
         groupIntervals: [{ timeUnit: "month", count: 1 }],
+        dateFormats: {
+          month: "MMM",
+        },
+        periodChangeDateFormats: {
+          month: "MMM YYYY"
+        },
         baseInterval: { timeUnit: "day", count: 1 },
         renderer: am5xy.AxisRendererX.new(root, {
           minorGridEnabled: true,
-          minGridDistance: 80,
+          minGridDistance: 60,
           opposite: false,
         }),
       })
@@ -144,7 +150,7 @@ export const AudienceReachByClickChart = () => {
             xAxis,
             yAxis,
             stacked: true,
-            valueYField: "audienceReach",
+            valueYField: "audienceReachClick",
             valueXField: "date",
             valueYGrouped: "sum",
             tooltip: am5.Tooltip.new(root, {

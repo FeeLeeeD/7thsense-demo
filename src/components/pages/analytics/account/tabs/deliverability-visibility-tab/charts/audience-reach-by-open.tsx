@@ -44,9 +44,15 @@ export const AudienceReachByOpenChart = () => {
         groupData: true,
         groupIntervals: [{ timeUnit: "month", count: 1 }],
         baseInterval: { timeUnit: "day", count: 1 },
+        dateFormats: {
+          month: "MMM",
+        },
+        periodChangeDateFormats: {
+          month: "MMM YYYY",
+        },
         renderer: am5xy.AxisRendererX.new(root, {
           minorGridEnabled: true,
-          minGridDistance: 80,
+          minGridDistance: 60,
           opposite: false,
         }),
       })
@@ -144,7 +150,7 @@ export const AudienceReachByOpenChart = () => {
             xAxis,
             yAxis,
             stacked: true,
-            valueYField: "audienceReach",
+            valueYField: "audienceReachOpen",
             valueXField: "date",
             valueYGrouped: "sum",
             tooltip: am5.Tooltip.new(root, {
