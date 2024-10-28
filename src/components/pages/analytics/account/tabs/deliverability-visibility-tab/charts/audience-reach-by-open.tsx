@@ -113,7 +113,7 @@ export const AudienceReachByOpenChart = () => {
         periodChangeDateFormats: {
           day: "MMM",
           week: "MMM",
-          month: "MMM",
+          month: "MMM YYYY",
         },
         tooltipDateFormats: {
           day: "d MMMM yyyy",
