@@ -9,6 +9,7 @@ import { ConditionalComponent } from "~components/conditional-component";
 import { AudienceReachByEngagementChart_v1 } from "./charts/audience-reach-by-engagement_v1";
 import { AudienceReachByEngagementNumbers } from "./charts/audience-reach-by-engagement-numbers";
 import { AudienceReachByEngagementPercentages } from "./charts/audience-reach-by-engagement-percentages";
+import { AverageEmailsPerPerson } from "./charts/average-emails-per-person";
 
 export const AudienceReachTab = () => {
   return (
@@ -70,19 +71,34 @@ export const AudienceReachTab = () => {
         v2: <AudienceReachByEngagementType />,
         fallback: <Skeleton w="full" h="492px" borderRadius="24px" />,
       })}
+
+      {ConditionalComponent({
+        v1: <></>,
+        v2: (
+          <ChartWrapper
+            title="Average number of emails received per person"
+            description="Description?"
+          >
+            <AverageEmailsPerPerson />
+          </ChartWrapper>
+        ),
+        fallback: <Skeleton w="full" h="420px" borderRadius="24px" />,
+      })}
     </Stack>
   );
 };
 
+/* Audience reach by engagement type */
+
 const audienceReach_options = [
   {
     value: "audience-reach-by-engagement-type-numbers" as const,
-    label: "Numbers",
-    description: "Description (numbers)?",
+    label: "By counts",
+    description: "Description (counts)?",
   },
   {
     value: "audience-reach-by-engagement-type-percentages" as const,
-    label: "Percentages",
+    label: "By percentages",
     description: "Description (percentages)?",
   },
 ];
@@ -97,7 +113,7 @@ const AudienceReachByEngagementType = () => {
       title="Audience reach by engagement type"
       options={audienceReach_options}
       optionValue={option}
-      selectProps={{ w: "160px" }}
+      selectProps={{ w: "200px" }}
       onOptionValueChange={(o) =>
         setOption(o as (typeof audienceReach_options)[number]["value"])
       }

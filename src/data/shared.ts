@@ -22,7 +22,7 @@ export const providerLabel = (provider: Provider) => {
 };
 
 export const chartColor = {
-  default: "#6699FF",
+  default: "#8BC1F7",
   dark: "#22222F",
   provider: {
     [Provider.GoogleWorkspace]: "#8BC1F7",
