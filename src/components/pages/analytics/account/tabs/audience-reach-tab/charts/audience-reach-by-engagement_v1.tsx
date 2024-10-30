@@ -5,9 +5,9 @@ import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box, BoxProps } from "@chakra-ui/react";
 
-const chartId = "audience-reach-by-engagement";
+const chartId = "audience-reach-by-engagement-v1";
 
-export const AudienceReachByEngagementChart = () => {
+export const AudienceReachByEngagementChart_v1 = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
     root.setThemes([
@@ -65,6 +65,7 @@ export const AudienceReachByEngagementChart = () => {
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
         min: 0,
+        strictMinMax: true,
         renderer: am5xy.AxisRendererY.new(root, {}),
       })
     );

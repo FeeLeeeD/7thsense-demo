@@ -91,6 +91,7 @@ export const ChartWrapperWithDropdown = ({
         <Select
           value={optionValue}
           onChange={(e) => onOptionValueChange(e.currentTarget.value)}
+          w="fit-content"
           {...selectProps}
         >
           {options.map((option) => (

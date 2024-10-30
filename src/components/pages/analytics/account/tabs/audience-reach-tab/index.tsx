@@ -1,8 +1,14 @@
-import React from "react";
-import { Grid, Stack, Text } from "@chakra-ui/react";
-import { ChartWrapper } from "~components/charts/chart-wrapper";
+import React, { useState } from "react";
+import { Grid, Skeleton, Stack, Text } from "@chakra-ui/react";
+import {
+  ChartWrapper,
+  ChartWrapperWithDropdown,
+} from "~components/charts/chart-wrapper";
 import { AudienceReachChart } from "./charts/audience-reach-chart";
-import { AudienceReachByEngagementChart } from "./charts/audience-reach-by-engagement";
+import { ConditionalComponent } from "~components/conditional-component";
+import { AudienceReachByEngagementChart_v1 } from "./charts/audience-reach-by-engagement_v1";
+import { AudienceReachByEngagementNumbers } from "./charts/audience-reach-by-engagement-numbers";
+import { AudienceReachByEngagementPercentages } from "./charts/audience-reach-by-engagement-percentages";
 
 export const AudienceReachTab = () => {
   return (
@@ -55,9 +61,53 @@ export const AudienceReachTab = () => {
         </ChartWrapper>
       </Grid>
 
-      <ChartWrapper title="Audience reach by engagement type">
-        <AudienceReachByEngagementChart />
-      </ChartWrapper>
+      {ConditionalComponent({
+        v1: (
+          <ChartWrapper title="Audience reach by engagement type">
+            <AudienceReachByEngagementChart_v1 />
+          </ChartWrapper>
+        ),
+        v2: <AudienceReachByEngagementType />,
+        fallback: <Skeleton w="full" h="492px" borderRadius="24px" />,
+      })}
     </Stack>
+  );
+};
+
+const audienceReach_options = [
+  {
+    value: "audience-reach-by-engagement-type-numbers" as const,
+    label: "Numbers",
+    description: "Description (numbers)?",
+  },
+  {
+    value: "audience-reach-by-engagement-type-percentages" as const,
+    label: "Percentages",
+    description: "Description (percentages)?",
+  },
+];
+
+const AudienceReachByEngagementType = () => {
+  const [option, setOption] = useState<
+    (typeof audienceReach_options)[number]["value"]
+  >("audience-reach-by-engagement-type-numbers");
+
+  return (
+    <ChartWrapperWithDropdown
+      title="Audience reach by engagement type"
+      options={audienceReach_options}
+      optionValue={option}
+      selectProps={{ w: "160px" }}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof audienceReach_options)[number]["value"])
+      }
+    >
+      {option === "audience-reach-by-engagement-type-numbers" && (
+        <AudienceReachByEngagementNumbers />
+      )}
+      {option === "audience-reach-by-engagement-type-percentages" && (
+        <AudienceReachByEngagementPercentages />
+      )}
+    </ChartWrapperWithDropdown>
   );
 };
