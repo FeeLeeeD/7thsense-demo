@@ -2,6 +2,7 @@ import React from "react";
 import { BoxProps } from "@chakra-ui/react";
 import { data } from "./data";
 import XY from "~components/charts/xy-legacy";
+import { chartColor } from "~data/shared";
 
 type AllContactEngagementChartProps = {
   title?: React.ReactNode;
@@ -50,7 +51,7 @@ function getSeries(
 
   const xyRange = {
     label: "Engagement score",
-    color: "#6699FF",
+    color: chartColor.default,
     data: xyData,
   };
 

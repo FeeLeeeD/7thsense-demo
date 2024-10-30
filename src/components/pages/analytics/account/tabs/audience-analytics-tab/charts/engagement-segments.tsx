@@ -60,10 +60,10 @@ export const EngagementSegmentsChart = () => {
     series
       .get("colors")
       ?.set("colors", [
-        am5.color("#25b160"),
-        am5.color("#a0d9ae"),
+        am5.color("#90c4ab"),
+        am5.color("#bde2b9"),
         am5.color("#f8a6a9"),
-        am5.color("#de425b"),
+        am5.color("#f0616e"),
       ]);
     series.data.setAll([
       {

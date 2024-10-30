@@ -21,9 +21,9 @@ export const AudienceReachTab = () => {
           <AudienceReachChart
             value={43}
             ranges={[
-              { min: 0, max: 14, color: "#F93232" },
-              { min: 15, max: 24, color: "#FFB82E" },
-              { min: 25, max: 100, color: "#25B160" },
+              { min: 0, max: 14, color: "#FF9E99" },
+              { min: 15, max: 24, color: "#ffda84" },
+              { min: 25, max: 100, color: "#87ccb1" },
             ]}
           />
         </ChartWrapper>
@@ -32,9 +32,9 @@ export const AudienceReachTab = () => {
           <AudienceReachChart
             value={11}
             ranges={[
-              { min: 0, max: 14, color: "#F93232" },
-              { min: 15, max: 24, color: "#FFB82E" },
-              { min: 25, max: 100, color: "#25B160" },
+              { min: 0, max: 14, color: "#FF9E99" },
+              { min: 15, max: 24, color: "#ffda84" },
+              { min: 25, max: 100, color: "#87ccb1" },
             ]}
           />
         </ChartWrapper>
@@ -44,9 +44,9 @@ export const AudienceReachTab = () => {
             isClickReact
             value={12}
             ranges={[
-              { min: 0, max: 1, color: "#F93232" },
-              { min: 2, max: 4, color: "#FFB82E" },
-              { min: 5, max: 100, color: "#25B160" },
+              { min: 0, max: 1, color: "#FF9E99" },
+              { min: 2, max: 4, color: "#ffda84" },
+              { min: 5, max: 100, color: "#87ccb1" },
             ]}
           />
         </ChartWrapper>
@@ -56,9 +56,9 @@ export const AudienceReachTab = () => {
             isClickReact
             value={3}
             ranges={[
-              { min: 0, max: 1, color: "#F93232" },
-              { min: 2, max: 4, color: "#FFB82E" },
-              { min: 5, max: 100, color: "#25B160" },
+              { min: 0, max: 1, color: "#FF9E99" },
+              { min: 2, max: 4, color: "#ffda84" },
+              { min: 5, max: 100, color: "#87ccb1" },
             ]}
           />
         </ChartWrapper>
