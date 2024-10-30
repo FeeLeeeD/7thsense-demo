@@ -10,6 +10,8 @@ import { AudienceReachByEngagementChart_v1 } from "./charts/audience-reach-by-en
 import { AudienceReachByEngagementNumbers } from "./charts/audience-reach-by-engagement-numbers";
 import { AudienceReachByEngagementPercentages } from "./charts/audience-reach-by-engagement-percentages";
 import { AverageEmailsPerPerson } from "./charts/average-emails-per-person";
+import { EmailsReceivedNumbers } from "./charts/emails-received-numbers";
+import { EmailsReceivedPercentages } from "./charts/emails-received-percentages";
 
 export const AudienceReachTab = () => {
   return (
@@ -84,6 +86,12 @@ export const AudienceReachTab = () => {
         ),
         fallback: <Skeleton w="full" h="420px" borderRadius="24px" />,
       })}
+
+      {ConditionalComponent({
+        v1: <></>,
+        v2: <EmailsReceivedCharts />,
+        fallback: <Skeleton w="full" h="520px" borderRadius="24px" />,
+      })}
     </Stack>
   );
 };
@@ -123,6 +131,46 @@ const AudienceReachByEngagementType = () => {
       )}
       {option === "audience-reach-by-engagement-type-percentages" && (
         <AudienceReachByEngagementPercentages />
+      )}
+    </ChartWrapperWithDropdown>
+  );
+};
+
+/* Audience reach by engagement type */
+
+const emailsReceived_options = [
+  {
+    value: "emails-received-counts" as const,
+    label: "By counts",
+    description: "Description (counts)?",
+  },
+  {
+    value: "emails-received-percentages" as const,
+    label: "By percentages",
+    description: "Description (percentages)?",
+  },
+];
+
+const EmailsReceivedCharts = () => {
+  const [option, setOption] = useState<
+    (typeof emailsReceived_options)[number]["value"]
+  >("emails-received-counts");
+
+  return (
+    <ChartWrapperWithDropdown
+      title="Number of people received x emails"
+      options={emailsReceived_options}
+      optionValue={option}
+      selectProps={{ w: "200px" }}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof emailsReceived_options)[number]["value"])
+      }
+    >
+      {option === "emails-received-counts" && (
+        <EmailsReceivedNumbers />
+      )}
+      {option === "emails-received-percentages" && (
+        <EmailsReceivedPercentages />
       )}
     </ChartWrapperWithDropdown>
   );
