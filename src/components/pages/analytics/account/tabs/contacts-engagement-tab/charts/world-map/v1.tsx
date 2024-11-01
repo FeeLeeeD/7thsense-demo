@@ -1,18 +1,15 @@
-import React, { useId, useLayoutEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
 import am5geodata_worldLow from "@amcharts/amcharts5-geodata/worldLow";
 import am5geodata_usaLow from "@amcharts/amcharts5-geodata/usaLow";
-// import am5geodata_canadaLow from "@amcharts/amcharts5-geodata/canadaLow";
-// import am5geodata_ukLow from "@amcharts/amcharts5-geodata/ukLow";
-// import am5geodata_germanyLow from "@amcharts/amcharts5-geodata/germanyLow";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { Box } from "@chakra-ui/react";
-import { data } from "./data";
+import { data } from "~data/charts/world-map";
 
-const chartId = "world-map";
+const chartId = "world-map-v1";
 
-export const WorldMap = () => {
+export const WorldMap_v1 = () => {
   useLayoutEffect(() => {
     const root = am5.Root.new(chartId);
     root.setThemes([am5themes_Animated.new(root)]);

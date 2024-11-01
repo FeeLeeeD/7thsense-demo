@@ -1,5 +1,5 @@
 import React from "react";
-import { WorldMap } from "~components/charts/world-map";
+import { WorldMap_conditional } from "./charts/world-map";
 import { ChartWrapper } from "~components/charts/chart-wrapper";
 import { Grid, Stack } from "@chakra-ui/react";
 import { ContactsEngagementChart } from "./charts/contacts-engagement";
@@ -20,7 +20,7 @@ export const ContactsEngagementTab = () => {
         title="Where are people engaging with my emails?"
         description="This map highlights regions where recipients are clicking links and opening emails, providing a visual representation of engagement levels by location. Some email providers hide where their users are. We use the IP address location which may not be accurate"
       >
-        <WorldMap />
+        <WorldMap_conditional />
       </ChartWrapper>
 
       <Grid
