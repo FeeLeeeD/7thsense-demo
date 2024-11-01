@@ -39,8 +39,8 @@ export const DeliverabilityInsightsTab_v2 = () => {
         </ChartWrapper>
 
         <ChartWrapper
-          title="Daily send volume & Delivery rate"
-          description="Do we need description?"
+          title="Daily send volume & delivery rate"
+          description="The number of emails sent to each inbox provider and the associated delivery rate"
         >
           <SendVolumeDeliveryRateChart />
         </ChartWrapper>
@@ -80,32 +80,32 @@ const trending_options = [
   {
     value: "send-volume" as const,
     label: "Send volume",
-    title: "Send volume",
-    description: "Description for Send volume?",
+    description:
+      "Send volume by inbox provider - zoom in to get daily statistics",
   },
   {
     value: "delivery-rate" as const,
     label: "Delivery rate",
-    title: "Delivery rate",
-    description: "Description for Delivery rate?",
+    description:
+      "Delivery rate by inbox provider - zoom in to get daily statistics",
   },
   {
     value: "open-rate" as const,
     label: "Open rate",
-    title: "Open rate",
-    description: "Description for Open rate?",
+    description:
+      "Open rate by inbox provider - zoom in to get daily statistics",
   },
   {
     value: "click-rate" as const,
     label: "Click rate",
-    title: "Click rate",
-    description: "Description for Click rate?",
+    description:
+      "Click rate by inbox provider - zoom in to get daily statistics",
   },
   {
     value: "click-through-rate" as const,
     label: "Click through rate",
-    title: "Click through rate",
-    description: "Description for Click through rate?",
+    description:
+      "Click through rate by inbox provider - zoom in to get daily statistics",
   },
 ];
 
@@ -115,6 +115,7 @@ const TrendingCharts = () => {
 
   return (
     <ChartWrapperWithDropdown
+      title="Email metrics by inbox provider"
       options={trending_options}
       optionValue={option}
       onOptionValueChange={(o) =>
@@ -137,16 +138,14 @@ const bounce_options = [
   {
     value: "bounce-rate" as const,
     label: "Bounce rate",
-    title: "Bounce rate by Inbox provider",
     description:
-      "A line chart tracking the percentage of bounced emails per provider each month",
+      "Bounce rate by inbox provider - zoom in to get daily statistics",
   },
   {
     value: "unsubscribe-rate" as const,
     label: "Unsubscribe rate",
-    title: "Unsubscribe rate by Inbox provider",
     description:
-      "A line chart tracking the percentage of unsubscribes per provider each month",
+      "Unsubscribe rate by Inbox provider - zoom in to get daily statistics",
   },
 ];
 
@@ -156,6 +155,7 @@ const BounceUnsubscribeRateBlock = () => {
 
   return (
     <ChartWrapperWithDropdown
+      title="Negative email metrics by inbox provider"
       options={bounce_options}
       optionValue={option}
       onOptionValueChange={(o) =>
@@ -175,14 +175,14 @@ const audience_options = [
   {
     value: "audience-reach-by-open" as const,
     label: "By open",
-    title: "Audience reach by open",
-    description: "Description?",
+    description:
+      "The percentage of your audience that were sent at least one email during the specified time frame that have opened at least one email",
   },
   {
     value: "audience-reach-by-click" as const,
     label: "By click",
-    title: "Audience reach by click",
-    description: "Description?",
+    description:
+      "The percentage of your audience that were sent at least one email during the specified time frame that have clicked on at least one link",
   },
 ];
 
@@ -193,6 +193,7 @@ const AudienceReachCharts = () => {
 
   return (
     <ChartWrapperWithDropdown
+      title="Audience reach by inbox provider"
       options={audience_options}
       optionValue={option}
       onOptionValueChange={(o) =>

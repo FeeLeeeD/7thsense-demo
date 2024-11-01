@@ -58,7 +58,7 @@ export const AccountAnalyticsPage = () => {
         key: "deliverability-visibility",
         title: ConditionalComponent({
           v1: "Deliverability visibility",
-          v2: "Deliverability insights",
+          v2: "Delivery insights",
           fallback: <Skeleton w="180px" h="18px" borderRadius="full" />,
         }),
         body: <DeliverabilityVisibilityTab_conditional />,
