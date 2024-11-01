@@ -5,1444 +5,1444 @@ export const data = [
     provider: Provider.GoogleWorkspace,
     data: [
       {
-        date: "2023-10-30",
-        audienceReachOpen: 663,
-      },
-      {
-        date: "2023-10-31",
-        audienceReachOpen: 690,
-      },
-      {
-        date: "2023-11-01",
-        audienceReachOpen: 2284,
-      },
-      {
-        date: "2023-11-02",
-        audienceReachOpen: 537,
-      },
-      {
-        date: "2023-11-03",
-        audienceReachOpen: 1634,
-      },
-      {
-        date: "2023-11-04",
-        audienceReachOpen: 1366,
-      },
-      {
-        date: "2023-11-05",
-        audienceReachOpen: 2896,
-      },
-      {
         date: "2023-11-06",
-        audienceReachOpen: 2608,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-11-07",
-        audienceReachOpen: 310,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-11-08",
-        audienceReachOpen: 248,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-11-09",
-        audienceReachOpen: 1627,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-11-10",
-        audienceReachOpen: 1933,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-11-11",
-        audienceReachOpen: 736,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-12",
-        audienceReachOpen: 3154,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-11-13",
-        audienceReachOpen: 3060,
+        audienceReachOpen: 33,
       },
       {
         date: "2023-11-14",
-        audienceReachOpen: 2089,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-11-15",
-        audienceReachOpen: 3820,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-11-16",
-        audienceReachOpen: 741,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-11-17",
-        audienceReachOpen: 3445,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-11-18",
-        audienceReachOpen: 1817,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-11-19",
-        audienceReachOpen: 3821,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-11-20",
-        audienceReachOpen: 282,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-11-21",
-        audienceReachOpen: 1513,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-11-22",
-        audienceReachOpen: 1149,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-11-23",
-        audienceReachOpen: 2195,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-11-24",
-        audienceReachOpen: 1541,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-11-25",
-        audienceReachOpen: 2118,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-11-26",
-        audienceReachOpen: 2567,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-11-27",
-        audienceReachOpen: 3551,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-11-28",
-        audienceReachOpen: 1644,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-29",
-        audienceReachOpen: 3912,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-30",
-        audienceReachOpen: 1846,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-01",
-        audienceReachOpen: 3733,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-12-02",
-        audienceReachOpen: 1185,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-03",
-        audienceReachOpen: 3357,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-04",
-        audienceReachOpen: 1082,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-12-05",
-        audienceReachOpen: 2349,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-12-06",
-        audienceReachOpen: 2085,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-12-07",
-        audienceReachOpen: 1084,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-12-08",
-        audienceReachOpen: 3835,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-09",
-        audienceReachOpen: 2328,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-10",
-        audienceReachOpen: 3462,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-12-11",
-        audienceReachOpen: 1578,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-12-12",
-        audienceReachOpen: 2716,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-12-13",
-        audienceReachOpen: 3882,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-12-14",
-        audienceReachOpen: 3099,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-12-15",
-        audienceReachOpen: 2154,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-16",
-        audienceReachOpen: 227,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-12-17",
-        audienceReachOpen: 353,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-18",
-        audienceReachOpen: 1762,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-19",
-        audienceReachOpen: 1466,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-20",
-        audienceReachOpen: 2108,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-12-21",
-        audienceReachOpen: 1629,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-22",
-        audienceReachOpen: 635,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-23",
-        audienceReachOpen: 1028,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-12-24",
-        audienceReachOpen: 1947,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-12-25",
-        audienceReachOpen: 3670,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-12-26",
-        audienceReachOpen: 711,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-27",
-        audienceReachOpen: 2763,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-28",
-        audienceReachOpen: 2958,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-29",
-        audienceReachOpen: 328,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-30",
-        audienceReachOpen: 2429,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-12-31",
-        audienceReachOpen: 3540,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-01",
-        audienceReachOpen: 395,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-02",
-        audienceReachOpen: 1738,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-03",
-        audienceReachOpen: 398,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-01-04",
-        audienceReachOpen: 363,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-01-05",
-        audienceReachOpen: 1092,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-06",
-        audienceReachOpen: 3383,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-01-07",
-        audienceReachOpen: 3185,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-08",
-        audienceReachOpen: 2358,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-01-09",
-        audienceReachOpen: 1438,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-01-10",
-        audienceReachOpen: 2565,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-01-11",
-        audienceReachOpen: 2054,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-12",
-        audienceReachOpen: 857,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-01-13",
-        audienceReachOpen: 1949,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-01-14",
-        audienceReachOpen: 2268,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-01-15",
-        audienceReachOpen: 375,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-01-16",
-        audienceReachOpen: 3659,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-01-17",
-        audienceReachOpen: 2799,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-01-18",
-        audienceReachOpen: 398,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-01-19",
-        audienceReachOpen: 1885,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-20",
-        audienceReachOpen: 1950,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-01-21",
-        audienceReachOpen: 2829,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-01-22",
-        audienceReachOpen: 2815,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-01-23",
-        audienceReachOpen: 3392,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-01-24",
-        audienceReachOpen: 3476,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-01-25",
-        audienceReachOpen: 737,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-26",
-        audienceReachOpen: 1168,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-01-27",
-        audienceReachOpen: 3917,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-28",
-        audienceReachOpen: 3055,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-01-29",
-        audienceReachOpen: 398,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-01-30",
-        audienceReachOpen: 2858,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-01-31",
-        audienceReachOpen: 2222,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-02-01",
-        audienceReachOpen: 2806,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-02",
-        audienceReachOpen: 265,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-02-03",
-        audienceReachOpen: 365,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-02-04",
-        audienceReachOpen: 1108,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-05",
-        audienceReachOpen: 3613,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-02-06",
-        audienceReachOpen: 3083,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-02-07",
-        audienceReachOpen: 379,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-02-08",
-        audienceReachOpen: 3702,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-09",
-        audienceReachOpen: 234,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-02-10",
-        audienceReachOpen: 1915,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-02-11",
-        audienceReachOpen: 2442,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-02-12",
-        audienceReachOpen: 1344,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-13",
-        audienceReachOpen: 1923,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-14",
-        audienceReachOpen: 3284,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-02-15",
-        audienceReachOpen: 2713,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-02-16",
-        audienceReachOpen: 2133,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-17",
-        audienceReachOpen: 2804,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-02-18",
-        audienceReachOpen: 1685,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-02-19",
-        audienceReachOpen: 798,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-02-20",
-        audienceReachOpen: 3992,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-21",
-        audienceReachOpen: 474,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-02-22",
-        audienceReachOpen: 1326,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-23",
-        audienceReachOpen: 717,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-02-24",
-        audienceReachOpen: 748,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-02-25",
-        audienceReachOpen: 2486,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-26",
-        audienceReachOpen: 2120,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-27",
-        audienceReachOpen: 901,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-28",
-        audienceReachOpen: 848,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-02-29",
-        audienceReachOpen: 840,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-03-01",
-        audienceReachOpen: 2168,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-02",
-        audienceReachOpen: 2392,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-03-03",
-        audienceReachOpen: 898,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-04",
-        audienceReachOpen: 1258,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-03-05",
-        audienceReachOpen: 2281,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-03-06",
-        audienceReachOpen: 601,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-03-07",
-        audienceReachOpen: 3767,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-03-08",
-        audienceReachOpen: 3700,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-03-09",
-        audienceReachOpen: 645,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-03-10",
-        audienceReachOpen: 2349,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-03-11",
-        audienceReachOpen: 1739,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-03-12",
-        audienceReachOpen: 3428,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-03-13",
-        audienceReachOpen: 257,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-14",
-        audienceReachOpen: 2899,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-03-15",
-        audienceReachOpen: 2713,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-16",
-        audienceReachOpen: 3186,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-03-17",
-        audienceReachOpen: 3313,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-03-18",
-        audienceReachOpen: 3183,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-19",
-        audienceReachOpen: 571,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-20",
-        audienceReachOpen: 3210,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-03-21",
-        audienceReachOpen: 690,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-22",
-        audienceReachOpen: 1084,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-03-23",
-        audienceReachOpen: 1754,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-03-24",
-        audienceReachOpen: 459,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-03-25",
-        audienceReachOpen: 2352,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-03-26",
-        audienceReachOpen: 3562,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-03-27",
-        audienceReachOpen: 880,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-03-28",
-        audienceReachOpen: 1268,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-29",
-        audienceReachOpen: 3833,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-03-30",
-        audienceReachOpen: 2806,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-31",
-        audienceReachOpen: 1818,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-04-01",
-        audienceReachOpen: 2930,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-04-02",
-        audienceReachOpen: 1031,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-04-03",
-        audienceReachOpen: 3242,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-04-04",
-        audienceReachOpen: 1992,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-05",
-        audienceReachOpen: 3194,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-04-06",
-        audienceReachOpen: 1134,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-04-07",
-        audienceReachOpen: 1075,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-04-08",
-        audienceReachOpen: 832,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-09",
-        audienceReachOpen: 610,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-10",
-        audienceReachOpen: 1915,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-04-11",
-        audienceReachOpen: 3628,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-04-12",
-        audienceReachOpen: 2612,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-13",
-        audienceReachOpen: 982,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-04-14",
-        audienceReachOpen: 1591,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-04-15",
-        audienceReachOpen: 2214,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-04-16",
-        audienceReachOpen: 2334,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-04-17",
-        audienceReachOpen: 1479,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-18",
-        audienceReachOpen: 3184,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-04-19",
-        audienceReachOpen: 803,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-04-20",
-        audienceReachOpen: 834,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-21",
-        audienceReachOpen: 545,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-04-22",
-        audienceReachOpen: 534,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-04-23",
-        audienceReachOpen: 519,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-04-24",
-        audienceReachOpen: 329,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-25",
-        audienceReachOpen: 2691,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-04-26",
-        audienceReachOpen: 1627,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-04-27",
-        audienceReachOpen: 1494,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-04-28",
-        audienceReachOpen: 2210,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-04-29",
-        audienceReachOpen: 3293,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-04-30",
-        audienceReachOpen: 925,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-01",
-        audienceReachOpen: 541,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-05-02",
-        audienceReachOpen: 718,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-03",
-        audienceReachOpen: 1601,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-04",
-        audienceReachOpen: 3871,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-05-05",
-        audienceReachOpen: 448,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-06",
-        audienceReachOpen: 2581,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-05-07",
-        audienceReachOpen: 3458,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-05-08",
-        audienceReachOpen: 1363,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-09",
-        audienceReachOpen: 901,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-05-10",
-        audienceReachOpen: 3275,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-05-11",
-        audienceReachOpen: 614,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-05-12",
-        audienceReachOpen: 650,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-05-13",
-        audienceReachOpen: 3601,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-14",
-        audienceReachOpen: 3697,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-15",
-        audienceReachOpen: 3699,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-05-16",
-        audienceReachOpen: 3051,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-05-17",
-        audienceReachOpen: 1480,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-05-18",
-        audienceReachOpen: 425,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-19",
-        audienceReachOpen: 2373,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-05-20",
-        audienceReachOpen: 1086,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-05-21",
-        audienceReachOpen: 1429,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-05-22",
-        audienceReachOpen: 1560,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-05-23",
-        audienceReachOpen: 2201,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-24",
-        audienceReachOpen: 2497,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-25",
-        audienceReachOpen: 3185,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-05-26",
-        audienceReachOpen: 3646,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-05-27",
-        audienceReachOpen: 1419,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-28",
-        audienceReachOpen: 3714,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-29",
-        audienceReachOpen: 1426,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-05-30",
-        audienceReachOpen: 2220,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-05-31",
-        audienceReachOpen: 253,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-06-01",
-        audienceReachOpen: 3304,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-06-02",
-        audienceReachOpen: 3173,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-06-03",
-        audienceReachOpen: 3208,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-06-04",
-        audienceReachOpen: 3976,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-06-05",
-        audienceReachOpen: 460,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-06-06",
-        audienceReachOpen: 1688,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-06-07",
-        audienceReachOpen: 990,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-06-08",
-        audienceReachOpen: 794,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-09",
-        audienceReachOpen: 3215,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-06-10",
-        audienceReachOpen: 2735,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-06-11",
-        audienceReachOpen: 1787,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-12",
-        audienceReachOpen: 1215,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-13",
-        audienceReachOpen: 2748,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-06-14",
-        audienceReachOpen: 1217,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-06-15",
-        audienceReachOpen: 454,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-16",
-        audienceReachOpen: 1336,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-17",
-        audienceReachOpen: 3186,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-18",
-        audienceReachOpen: 204,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-06-19",
-        audienceReachOpen: 2118,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-20",
-        audienceReachOpen: 423,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-06-21",
-        audienceReachOpen: 692,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-22",
-        audienceReachOpen: 1182,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-23",
-        audienceReachOpen: 3562,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-06-24",
-        audienceReachOpen: 1375,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-25",
-        audienceReachOpen: 2148,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-06-26",
-        audienceReachOpen: 3255,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-06-27",
-        audienceReachOpen: 2143,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-06-28",
-        audienceReachOpen: 2257,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-06-29",
-        audienceReachOpen: 2706,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-06-30",
-        audienceReachOpen: 737,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-07-01",
-        audienceReachOpen: 1108,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-07-02",
-        audienceReachOpen: 3858,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-07-03",
-        audienceReachOpen: 451,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-04",
-        audienceReachOpen: 2862,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-07-05",
-        audienceReachOpen: 2549,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-07-06",
-        audienceReachOpen: 1775,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-07",
-        audienceReachOpen: 3214,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-07-08",
-        audienceReachOpen: 3845,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-07-09",
-        audienceReachOpen: 353,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-07-10",
-        audienceReachOpen: 2530,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-07-11",
-        audienceReachOpen: 611,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-07-12",
-        audienceReachOpen: 2713,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-13",
-        audienceReachOpen: 1430,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-07-14",
-        audienceReachOpen: 1015,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-07-15",
-        audienceReachOpen: 3970,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-07-16",
-        audienceReachOpen: 1705,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-07-17",
-        audienceReachOpen: 873,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-07-18",
-        audienceReachOpen: 419,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-19",
-        audienceReachOpen: 1115,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-07-20",
-        audienceReachOpen: 269,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-07-21",
-        audienceReachOpen: 3113,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-07-22",
-        audienceReachOpen: 2261,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-23",
-        audienceReachOpen: 2432,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-07-24",
-        audienceReachOpen: 1035,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-07-25",
-        audienceReachOpen: 3590,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-07-26",
-        audienceReachOpen: 2999,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-07-27",
-        audienceReachOpen: 3106,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-07-28",
-        audienceReachOpen: 2434,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-07-29",
-        audienceReachOpen: 228,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-07-30",
-        audienceReachOpen: 318,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-31",
-        audienceReachOpen: 1665,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-01",
-        audienceReachOpen: 1456,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-08-02",
-        audienceReachOpen: 799,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-03",
-        audienceReachOpen: 1516,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-08-04",
-        audienceReachOpen: 474,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-08-05",
-        audienceReachOpen: 2909,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-06",
-        audienceReachOpen: 3066,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-08-07",
-        audienceReachOpen: 3111,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-08-08",
-        audienceReachOpen: 1657,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-09",
-        audienceReachOpen: 1948,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-08-10",
-        audienceReachOpen: 3206,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-11",
-        audienceReachOpen: 2356,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-08-12",
-        audienceReachOpen: 2685,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-08-13",
-        audienceReachOpen: 3028,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-08-14",
-        audienceReachOpen: 1584,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-08-15",
-        audienceReachOpen: 3012,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-08-16",
-        audienceReachOpen: 3642,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-17",
-        audienceReachOpen: 1077,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-18",
-        audienceReachOpen: 2727,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-19",
-        audienceReachOpen: 1196,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-20",
-        audienceReachOpen: 3988,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-08-21",
-        audienceReachOpen: 3272,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-22",
-        audienceReachOpen: 1384,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-08-23",
-        audienceReachOpen: 1033,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-08-24",
-        audienceReachOpen: 2493,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-08-25",
-        audienceReachOpen: 2638,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-26",
-        audienceReachOpen: 687,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-27",
-        audienceReachOpen: 1854,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-28",
-        audienceReachOpen: 2851,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-08-29",
-        audienceReachOpen: 3354,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-08-30",
-        audienceReachOpen: 3428,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-08-31",
-        audienceReachOpen: 3402,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-09-01",
-        audienceReachOpen: 638,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-09-02",
-        audienceReachOpen: 3524,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-09-03",
-        audienceReachOpen: 599,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-09-04",
-        audienceReachOpen: 248,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-09-05",
-        audienceReachOpen: 795,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-09-06",
-        audienceReachOpen: 2047,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-09-07",
-        audienceReachOpen: 2717,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-08",
-        audienceReachOpen: 1387,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-09-09",
-        audienceReachOpen: 3699,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-10",
-        audienceReachOpen: 2439,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-09-11",
-        audienceReachOpen: 1193,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-12",
-        audienceReachOpen: 3298,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-13",
-        audienceReachOpen: 2229,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-14",
-        audienceReachOpen: 2210,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-09-15",
-        audienceReachOpen: 2145,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-09-16",
-        audienceReachOpen: 3673,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-09-17",
-        audienceReachOpen: 3378,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-09-18",
-        audienceReachOpen: 2996,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-09-19",
-        audienceReachOpen: 3624,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-09-20",
-        audienceReachOpen: 1435,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-09-21",
-        audienceReachOpen: 2336,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-22",
-        audienceReachOpen: 3621,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-23",
-        audienceReachOpen: 1382,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-09-24",
-        audienceReachOpen: 3961,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-25",
-        audienceReachOpen: 2668,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-09-26",
-        audienceReachOpen: 354,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-09-27",
-        audienceReachOpen: 3245,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-28",
-        audienceReachOpen: 3680,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-29",
-        audienceReachOpen: 2392,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-09-30",
-        audienceReachOpen: 3987,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-10-01",
-        audienceReachOpen: 2728,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-10-02",
-        audienceReachOpen: 3867,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-10-03",
-        audienceReachOpen: 1932,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-10-04",
-        audienceReachOpen: 425,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-10-05",
-        audienceReachOpen: 1187,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-06",
-        audienceReachOpen: 1627,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-10-07",
-        audienceReachOpen: 1978,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-10-08",
-        audienceReachOpen: 3874,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-09",
-        audienceReachOpen: 1048,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-10-10",
-        audienceReachOpen: 709,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-10-11",
-        audienceReachOpen: 2657,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-10-12",
-        audienceReachOpen: 3357,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-10-13",
-        audienceReachOpen: 2620,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-10-14",
-        audienceReachOpen: 1137,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-10-15",
-        audienceReachOpen: 3929,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-10-16",
-        audienceReachOpen: 929,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-17",
-        audienceReachOpen: 857,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-18",
-        audienceReachOpen: 307,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-10-19",
-        audienceReachOpen: 2311,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-10-20",
-        audienceReachOpen: 240,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-10-21",
-        audienceReachOpen: 2459,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-22",
-        audienceReachOpen: 2468,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-10-23",
-        audienceReachOpen: 2940,
+        audienceReachOpen: 27,
+      },
+      {
+        date: "2024-10-24",
+        audienceReachOpen: 28,
+      },
+      {
+        date: "2024-10-25",
+        audienceReachOpen: 46,
+      },
+      {
+        date: "2024-10-26",
+        audienceReachOpen: 47,
+      },
+      {
+        date: "2024-10-27",
+        audienceReachOpen: 47,
+      },
+      {
+        date: "2024-10-28",
+        audienceReachOpen: 49,
+      },
+      {
+        date: "2024-10-29",
+        audienceReachOpen: 46,
+      },
+      {
+        date: "2024-10-30",
+        audienceReachOpen: 38,
       },
     ],
   },
@@ -1450,1444 +1450,1444 @@ export const data = [
     provider: Provider.Gmail,
     data: [
       {
-        date: "2023-10-30",
-        audienceReachOpen: 2642,
-      },
-      {
-        date: "2023-10-31",
-        audienceReachOpen: 2906,
-      },
-      {
-        date: "2023-11-01",
-        audienceReachOpen: 422,
-      },
-      {
-        date: "2023-11-02",
-        audienceReachOpen: 936,
-      },
-      {
-        date: "2023-11-03",
-        audienceReachOpen: 819,
-      },
-      {
-        date: "2023-11-04",
-        audienceReachOpen: 1464,
-      },
-      {
-        date: "2023-11-05",
-        audienceReachOpen: 2256,
-      },
-      {
         date: "2023-11-06",
-        audienceReachOpen: 2145,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-07",
-        audienceReachOpen: 2131,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-11-08",
-        audienceReachOpen: 1411,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-11-09",
-        audienceReachOpen: 2920,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-11-10",
-        audienceReachOpen: 1782,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-11-11",
-        audienceReachOpen: 258,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-11-12",
-        audienceReachOpen: 3739,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-11-13",
-        audienceReachOpen: 1689,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-11-14",
-        audienceReachOpen: 3997,
+        audienceReachOpen: 29,
       },
       {
         date: "2023-11-15",
-        audienceReachOpen: 706,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-11-16",
-        audienceReachOpen: 308,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-11-17",
-        audienceReachOpen: 1801,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-11-18",
-        audienceReachOpen: 3582,
+        audienceReachOpen: 29,
       },
       {
         date: "2023-11-19",
-        audienceReachOpen: 860,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-11-20",
-        audienceReachOpen: 728,
+        audienceReachOpen: 33,
       },
       {
         date: "2023-11-21",
-        audienceReachOpen: 3982,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-11-22",
-        audienceReachOpen: 2826,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-23",
-        audienceReachOpen: 3228,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-11-24",
-        audienceReachOpen: 2446,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-11-25",
-        audienceReachOpen: 813,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-11-26",
-        audienceReachOpen: 2795,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-11-27",
-        audienceReachOpen: 3266,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-11-28",
-        audienceReachOpen: 571,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-11-29",
-        audienceReachOpen: 1227,
+        audienceReachOpen: 33,
       },
       {
         date: "2023-11-30",
-        audienceReachOpen: 563,
+        audienceReachOpen: 36,
       },
       {
         date: "2023-12-01",
-        audienceReachOpen: 1245,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-12-02",
-        audienceReachOpen: 2769,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-12-03",
-        audienceReachOpen: 1951,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-12-04",
-        audienceReachOpen: 1547,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-12-05",
-        audienceReachOpen: 625,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-06",
-        audienceReachOpen: 3622,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-12-07",
-        audienceReachOpen: 3553,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-08",
-        audienceReachOpen: 3380,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-09",
-        audienceReachOpen: 1341,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-10",
-        audienceReachOpen: 1680,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-11",
-        audienceReachOpen: 2645,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-12-12",
-        audienceReachOpen: 627,
+        audienceReachOpen: 31,
       },
       {
         date: "2023-12-13",
-        audienceReachOpen: 3313,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-12-14",
-        audienceReachOpen: 3136,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-12-15",
-        audienceReachOpen: 269,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-12-16",
-        audienceReachOpen: 2830,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-17",
-        audienceReachOpen: 1662,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-12-18",
-        audienceReachOpen: 2457,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-19",
-        audienceReachOpen: 1781,
+        audienceReachOpen: 36,
       },
       {
         date: "2023-12-20",
-        audienceReachOpen: 559,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-12-21",
-        audienceReachOpen: 1537,
+        audienceReachOpen: 31,
       },
       {
         date: "2023-12-22",
-        audienceReachOpen: 224,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-12-23",
-        audienceReachOpen: 2398,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-12-24",
-        audienceReachOpen: 2216,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-25",
-        audienceReachOpen: 3557,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-12-26",
-        audienceReachOpen: 2607,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-12-27",
-        audienceReachOpen: 3579,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-12-28",
-        audienceReachOpen: 3998,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-12-29",
-        audienceReachOpen: 908,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-12-30",
-        audienceReachOpen: 3267,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-12-31",
-        audienceReachOpen: 3199,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-01-01",
-        audienceReachOpen: 1688,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-01-02",
-        audienceReachOpen: 1037,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-01-03",
-        audienceReachOpen: 1443,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-01-04",
-        audienceReachOpen: 2119,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-01-05",
-        audienceReachOpen: 2121,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-06",
-        audienceReachOpen: 651,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-07",
-        audienceReachOpen: 816,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-01-08",
-        audienceReachOpen: 1973,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-01-09",
-        audienceReachOpen: 3274,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-01-10",
-        audienceReachOpen: 2603,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-01-11",
-        audienceReachOpen: 520,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-01-12",
-        audienceReachOpen: 1547,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-13",
-        audienceReachOpen: 1872,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-14",
-        audienceReachOpen: 1990,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-01-15",
-        audienceReachOpen: 237,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-01-16",
-        audienceReachOpen: 698,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-01-17",
-        audienceReachOpen: 2000,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-01-18",
-        audienceReachOpen: 1207,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-01-19",
-        audienceReachOpen: 609,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-20",
-        audienceReachOpen: 338,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-01-21",
-        audienceReachOpen: 2066,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-22",
-        audienceReachOpen: 1882,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-23",
-        audienceReachOpen: 1402,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-01-24",
-        audienceReachOpen: 3963,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-01-25",
-        audienceReachOpen: 3186,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-01-26",
-        audienceReachOpen: 1476,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-01-27",
-        audienceReachOpen: 3385,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-01-28",
-        audienceReachOpen: 2633,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-01-29",
-        audienceReachOpen: 2509,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-30",
-        audienceReachOpen: 2226,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-01-31",
-        audienceReachOpen: 648,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-01",
-        audienceReachOpen: 3583,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-02-02",
-        audienceReachOpen: 2692,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-02-03",
-        audienceReachOpen: 1715,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-04",
-        audienceReachOpen: 3891,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-02-05",
-        audienceReachOpen: 3675,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-02-06",
-        audienceReachOpen: 2995,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-07",
-        audienceReachOpen: 2956,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-08",
-        audienceReachOpen: 1930,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-02-09",
-        audienceReachOpen: 3031,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-02-10",
-        audienceReachOpen: 1096,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-02-11",
-        audienceReachOpen: 3189,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-02-12",
-        audienceReachOpen: 3470,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-02-13",
-        audienceReachOpen: 825,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-02-14",
-        audienceReachOpen: 2748,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-15",
-        audienceReachOpen: 3818,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-16",
-        audienceReachOpen: 3421,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-02-17",
-        audienceReachOpen: 3580,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-02-18",
-        audienceReachOpen: 1131,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-02-19",
-        audienceReachOpen: 3918,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-20",
-        audienceReachOpen: 2263,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-21",
-        audienceReachOpen: 289,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-22",
-        audienceReachOpen: 658,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-02-23",
-        audienceReachOpen: 1470,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-02-24",
-        audienceReachOpen: 1594,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-25",
-        audienceReachOpen: 741,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-26",
-        audienceReachOpen: 506,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-27",
-        audienceReachOpen: 504,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-02-28",
-        audienceReachOpen: 3004,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-29",
-        audienceReachOpen: 414,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-03-01",
-        audienceReachOpen: 238,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-03-02",
-        audienceReachOpen: 2398,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-03-03",
-        audienceReachOpen: 2065,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-03-04",
-        audienceReachOpen: 1119,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-05",
-        audienceReachOpen: 1420,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-03-06",
-        audienceReachOpen: 462,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-07",
-        audienceReachOpen: 879,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-03-08",
-        audienceReachOpen: 1286,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-03-09",
-        audienceReachOpen: 350,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-03-10",
-        audienceReachOpen: 247,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-03-11",
-        audienceReachOpen: 628,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-03-12",
-        audienceReachOpen: 1748,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-13",
-        audienceReachOpen: 2843,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-03-14",
-        audienceReachOpen: 1103,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-15",
-        audienceReachOpen: 3733,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-03-16",
-        audienceReachOpen: 307,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-17",
-        audienceReachOpen: 2784,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-03-18",
-        audienceReachOpen: 3397,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-03-19",
-        audienceReachOpen: 1374,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-20",
-        audienceReachOpen: 347,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-03-21",
-        audienceReachOpen: 3931,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-03-22",
-        audienceReachOpen: 3101,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-03-23",
-        audienceReachOpen: 1474,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-03-24",
-        audienceReachOpen: 3826,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-03-25",
-        audienceReachOpen: 2610,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-26",
-        audienceReachOpen: 2358,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-03-27",
-        audienceReachOpen: 3006,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-28",
-        audienceReachOpen: 2454,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-03-29",
-        audienceReachOpen: 999,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-03-30",
-        audienceReachOpen: 1583,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-03-31",
-        audienceReachOpen: 3404,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-04-01",
-        audienceReachOpen: 929,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-04-02",
-        audienceReachOpen: 3185,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-04-03",
-        audienceReachOpen: 3214,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-04-04",
-        audienceReachOpen: 439,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-04-05",
-        audienceReachOpen: 634,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-06",
-        audienceReachOpen: 3122,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-04-07",
-        audienceReachOpen: 2983,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-04-08",
-        audienceReachOpen: 412,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-09",
-        audienceReachOpen: 2697,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-10",
-        audienceReachOpen: 922,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-04-11",
-        audienceReachOpen: 2323,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-04-12",
-        audienceReachOpen: 3215,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-13",
-        audienceReachOpen: 3803,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-14",
-        audienceReachOpen: 1339,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-04-15",
-        audienceReachOpen: 1865,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-04-16",
-        audienceReachOpen: 3320,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-04-17",
-        audienceReachOpen: 2197,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-04-18",
-        audienceReachOpen: 553,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-04-19",
-        audienceReachOpen: 582,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-04-20",
-        audienceReachOpen: 3556,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-04-21",
-        audienceReachOpen: 471,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-04-22",
-        audienceReachOpen: 2481,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-23",
-        audienceReachOpen: 544,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-04-24",
-        audienceReachOpen: 3176,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-04-25",
-        audienceReachOpen: 2409,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-04-26",
-        audienceReachOpen: 1309,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-04-27",
-        audienceReachOpen: 1400,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-04-28",
-        audienceReachOpen: 1803,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-04-29",
-        audienceReachOpen: 3058,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-04-30",
-        audienceReachOpen: 1180,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-05-01",
-        audienceReachOpen: 2675,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-02",
-        audienceReachOpen: 2303,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-03",
-        audienceReachOpen: 3407,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-04",
-        audienceReachOpen: 2428,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-05-05",
-        audienceReachOpen: 1278,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-06",
-        audienceReachOpen: 678,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-05-07",
-        audienceReachOpen: 234,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-08",
-        audienceReachOpen: 1718,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-05-09",
-        audienceReachOpen: 642,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-05-10",
-        audienceReachOpen: 3654,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-05-11",
-        audienceReachOpen: 1722,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-05-12",
-        audienceReachOpen: 210,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-05-13",
-        audienceReachOpen: 1367,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-05-14",
-        audienceReachOpen: 3505,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-05-15",
-        audienceReachOpen: 2618,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-16",
-        audienceReachOpen: 1210,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-17",
-        audienceReachOpen: 3415,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-18",
-        audienceReachOpen: 1621,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-05-19",
-        audienceReachOpen: 2030,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-05-20",
-        audienceReachOpen: 2973,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-05-21",
-        audienceReachOpen: 2759,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-05-22",
-        audienceReachOpen: 1168,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-05-23",
-        audienceReachOpen: 3315,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-05-24",
-        audienceReachOpen: 1671,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-05-25",
-        audienceReachOpen: 2259,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-05-26",
-        audienceReachOpen: 3729,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-05-27",
-        audienceReachOpen: 2524,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-05-28",
-        audienceReachOpen: 3185,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-05-29",
-        audienceReachOpen: 3506,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-05-30",
-        audienceReachOpen: 488,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-05-31",
-        audienceReachOpen: 1059,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-06-01",
-        audienceReachOpen: 1477,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-02",
-        audienceReachOpen: 2949,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-06-03",
-        audienceReachOpen: 316,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-06-04",
-        audienceReachOpen: 1473,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-06-05",
-        audienceReachOpen: 2355,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-06-06",
-        audienceReachOpen: 3755,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-07",
-        audienceReachOpen: 3079,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-06-08",
-        audienceReachOpen: 467,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-06-09",
-        audienceReachOpen: 1382,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-10",
-        audienceReachOpen: 3526,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-11",
-        audienceReachOpen: 697,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-12",
-        audienceReachOpen: 2413,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-06-13",
-        audienceReachOpen: 312,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-14",
-        audienceReachOpen: 2696,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-06-15",
-        audienceReachOpen: 3587,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-16",
-        audienceReachOpen: 1234,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-17",
-        audienceReachOpen: 3824,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-18",
-        audienceReachOpen: 630,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-06-19",
-        audienceReachOpen: 3606,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-20",
-        audienceReachOpen: 1552,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-06-21",
-        audienceReachOpen: 2860,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-06-22",
-        audienceReachOpen: 1940,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-23",
-        audienceReachOpen: 290,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-06-24",
-        audienceReachOpen: 3524,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-25",
-        audienceReachOpen: 1543,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-06-26",
-        audienceReachOpen: 435,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-06-27",
-        audienceReachOpen: 2168,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-06-28",
-        audienceReachOpen: 1732,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-06-29",
-        audienceReachOpen: 1836,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-06-30",
-        audienceReachOpen: 236,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-01",
-        audienceReachOpen: 3015,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-07-02",
-        audienceReachOpen: 806,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-07-03",
-        audienceReachOpen: 2707,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-07-04",
-        audienceReachOpen: 3785,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-05",
-        audienceReachOpen: 1128,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-06",
-        audienceReachOpen: 3043,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-07-07",
-        audienceReachOpen: 2329,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-07-08",
-        audienceReachOpen: 3540,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-09",
-        audienceReachOpen: 1740,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-07-10",
-        audienceReachOpen: 2866,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-07-11",
-        audienceReachOpen: 3947,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-07-12",
-        audienceReachOpen: 2699,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-13",
-        audienceReachOpen: 1154,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-07-14",
-        audienceReachOpen: 412,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-07-15",
-        audienceReachOpen: 508,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-16",
-        audienceReachOpen: 3419,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-07-17",
-        audienceReachOpen: 2765,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-07-18",
-        audienceReachOpen: 3570,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-07-19",
-        audienceReachOpen: 1617,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-07-20",
-        audienceReachOpen: 1606,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-21",
-        audienceReachOpen: 1837,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-07-22",
-        audienceReachOpen: 2987,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-23",
-        audienceReachOpen: 1563,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-07-24",
-        audienceReachOpen: 989,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-07-25",
-        audienceReachOpen: 255,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-26",
-        audienceReachOpen: 345,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-07-27",
-        audienceReachOpen: 1713,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-28",
-        audienceReachOpen: 1216,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-07-29",
-        audienceReachOpen: 2554,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-07-30",
-        audienceReachOpen: 3307,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-07-31",
-        audienceReachOpen: 3492,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-08-01",
-        audienceReachOpen: 1274,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-02",
-        audienceReachOpen: 1273,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-03",
-        audienceReachOpen: 783,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-08-04",
-        audienceReachOpen: 897,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-08-05",
-        audienceReachOpen: 3662,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-06",
-        audienceReachOpen: 2466,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-07",
-        audienceReachOpen: 3971,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-08-08",
-        audienceReachOpen: 1204,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-09",
-        audienceReachOpen: 994,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-08-10",
-        audienceReachOpen: 1880,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-11",
-        audienceReachOpen: 3944,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-08-12",
-        audienceReachOpen: 334,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-08-13",
-        audienceReachOpen: 3032,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-14",
-        audienceReachOpen: 1537,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-15",
-        audienceReachOpen: 3366,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-08-16",
-        audienceReachOpen: 1342,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-17",
-        audienceReachOpen: 2425,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-18",
-        audienceReachOpen: 330,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-19",
-        audienceReachOpen: 3388,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-20",
-        audienceReachOpen: 1740,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-21",
-        audienceReachOpen: 2882,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-22",
-        audienceReachOpen: 1262,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-23",
-        audienceReachOpen: 2717,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-08-24",
-        audienceReachOpen: 3267,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-25",
-        audienceReachOpen: 3197,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-26",
-        audienceReachOpen: 3103,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-08-27",
-        audienceReachOpen: 3413,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-08-28",
-        audienceReachOpen: 3252,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-29",
-        audienceReachOpen: 686,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-08-30",
-        audienceReachOpen: 2101,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-08-31",
-        audienceReachOpen: 2915,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-01",
-        audienceReachOpen: 2339,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-02",
-        audienceReachOpen: 1542,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-09-03",
-        audienceReachOpen: 974,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-04",
-        audienceReachOpen: 2234,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-09-05",
-        audienceReachOpen: 1468,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-09-06",
-        audienceReachOpen: 784,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-09-07",
-        audienceReachOpen: 728,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-08",
-        audienceReachOpen: 2879,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-09-09",
-        audienceReachOpen: 2929,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-10",
-        audienceReachOpen: 523,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-09-11",
-        audienceReachOpen: 1545,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-09-12",
-        audienceReachOpen: 989,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-13",
-        audienceReachOpen: 283,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-09-14",
-        audienceReachOpen: 1433,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-15",
-        audienceReachOpen: 777,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-09-16",
-        audienceReachOpen: 2207,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-17",
-        audienceReachOpen: 2779,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-18",
-        audienceReachOpen: 894,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-19",
-        audienceReachOpen: 1711,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-20",
-        audienceReachOpen: 2109,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-09-21",
-        audienceReachOpen: 1917,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-09-22",
-        audienceReachOpen: 2904,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-09-23",
-        audienceReachOpen: 1683,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-24",
-        audienceReachOpen: 255,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-09-25",
-        audienceReachOpen: 3145,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-09-26",
-        audienceReachOpen: 760,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-09-27",
-        audienceReachOpen: 741,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-28",
-        audienceReachOpen: 2234,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-09-29",
-        audienceReachOpen: 922,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-30",
-        audienceReachOpen: 1387,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-10-01",
-        audienceReachOpen: 2282,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-02",
-        audienceReachOpen: 210,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-10-03",
-        audienceReachOpen: 2684,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-10-04",
-        audienceReachOpen: 3107,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-10-05",
-        audienceReachOpen: 290,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-06",
-        audienceReachOpen: 3471,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-10-07",
-        audienceReachOpen: 2350,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-08",
-        audienceReachOpen: 679,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-10-09",
-        audienceReachOpen: 2676,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-10-10",
-        audienceReachOpen: 2176,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-10-11",
-        audienceReachOpen: 1011,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-10-12",
-        audienceReachOpen: 2501,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-10-13",
-        audienceReachOpen: 3209,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-10-14",
-        audienceReachOpen: 3826,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-15",
-        audienceReachOpen: 2787,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-10-16",
-        audienceReachOpen: 687,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-17",
-        audienceReachOpen: 3061,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-10-18",
-        audienceReachOpen: 2525,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-10-19",
-        audienceReachOpen: 2493,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-10-20",
-        audienceReachOpen: 3145,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-10-21",
-        audienceReachOpen: 1135,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-10-22",
-        audienceReachOpen: 617,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-23",
-        audienceReachOpen: 232,
+        audienceReachOpen: 37,
+      },
+      {
+        date: "2024-10-24",
+        audienceReachOpen: 49,
+      },
+      {
+        date: "2024-10-25",
+        audienceReachOpen: 49,
+      },
+      {
+        date: "2024-10-26",
+        audienceReachOpen: 31,
+      },
+      {
+        date: "2024-10-27",
+        audienceReachOpen: 28,
+      },
+      {
+        date: "2024-10-28",
+        audienceReachOpen: 35,
+      },
+      {
+        date: "2024-10-29",
+        audienceReachOpen: 31,
+      },
+      {
+        date: "2024-10-30",
+        audienceReachOpen: 50,
       },
     ],
   },
@@ -2895,1444 +2895,1444 @@ export const data = [
     provider: Provider.VerizonAndCo,
     data: [
       {
-        date: "2023-10-30",
-        audienceReachOpen: 3549,
-      },
-      {
-        date: "2023-10-31",
-        audienceReachOpen: 3074,
-      },
-      {
-        date: "2023-11-01",
-        audienceReachOpen: 2436,
-      },
-      {
-        date: "2023-11-02",
-        audienceReachOpen: 1010,
-      },
-      {
-        date: "2023-11-03",
-        audienceReachOpen: 2893,
-      },
-      {
-        date: "2023-11-04",
-        audienceReachOpen: 3030,
-      },
-      {
-        date: "2023-11-05",
-        audienceReachOpen: 2564,
-      },
-      {
         date: "2023-11-06",
-        audienceReachOpen: 3642,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-11-07",
-        audienceReachOpen: 1627,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-11-08",
-        audienceReachOpen: 650,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-11-09",
-        audienceReachOpen: 384,
+        audienceReachOpen: 29,
       },
       {
         date: "2023-11-10",
-        audienceReachOpen: 2314,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-11-11",
-        audienceReachOpen: 3245,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-11-12",
-        audienceReachOpen: 1421,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-11-13",
-        audienceReachOpen: 226,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-11-14",
-        audienceReachOpen: 2014,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-11-15",
-        audienceReachOpen: 1500,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-11-16",
-        audienceReachOpen: 504,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-11-17",
-        audienceReachOpen: 3110,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-11-18",
-        audienceReachOpen: 1364,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-19",
-        audienceReachOpen: 3641,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-11-20",
-        audienceReachOpen: 3619,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-11-21",
-        audienceReachOpen: 2179,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-11-22",
-        audienceReachOpen: 3387,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-11-23",
-        audienceReachOpen: 918,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-24",
-        audienceReachOpen: 3194,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-11-25",
-        audienceReachOpen: 2637,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-11-26",
-        audienceReachOpen: 1987,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-11-27",
-        audienceReachOpen: 3618,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-11-28",
-        audienceReachOpen: 310,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-11-29",
-        audienceReachOpen: 2680,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-11-30",
-        audienceReachOpen: 2576,
+        audienceReachOpen: 29,
       },
       {
         date: "2023-12-01",
-        audienceReachOpen: 262,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-12-02",
-        audienceReachOpen: 2835,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-12-03",
-        audienceReachOpen: 2488,
+        audienceReachOpen: 31,
       },
       {
         date: "2023-12-04",
-        audienceReachOpen: 784,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-12-05",
-        audienceReachOpen: 1440,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-12-06",
-        audienceReachOpen: 3946,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-12-07",
-        audienceReachOpen: 3581,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-12-08",
-        audienceReachOpen: 1680,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-12-09",
-        audienceReachOpen: 257,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-10",
-        audienceReachOpen: 2096,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-12-11",
-        audienceReachOpen: 395,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-12-12",
-        audienceReachOpen: 1275,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-12-13",
-        audienceReachOpen: 3690,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-12-14",
-        audienceReachOpen: 230,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-12-15",
-        audienceReachOpen: 1081,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-12-16",
-        audienceReachOpen: 3798,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-12-17",
-        audienceReachOpen: 549,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-18",
-        audienceReachOpen: 524,
+        audienceReachOpen: 36,
       },
       {
         date: "2023-12-19",
-        audienceReachOpen: 2874,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-20",
-        audienceReachOpen: 2352,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-12-21",
-        audienceReachOpen: 2984,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-22",
-        audienceReachOpen: 2117,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-23",
-        audienceReachOpen: 286,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-12-24",
-        audienceReachOpen: 2894,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-12-25",
-        audienceReachOpen: 3242,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-12-26",
-        audienceReachOpen: 2910,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-27",
-        audienceReachOpen: 3828,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-12-28",
-        audienceReachOpen: 2438,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-12-29",
-        audienceReachOpen: 3263,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-12-30",
-        audienceReachOpen: 3290,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-12-31",
-        audienceReachOpen: 2470,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-01-01",
-        audienceReachOpen: 3347,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-01-02",
-        audienceReachOpen: 215,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-01-03",
-        audienceReachOpen: 2813,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-01-04",
-        audienceReachOpen: 3630,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-01-05",
-        audienceReachOpen: 1089,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-01-06",
-        audienceReachOpen: 3593,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-07",
-        audienceReachOpen: 2129,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-08",
-        audienceReachOpen: 2759,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-01-09",
-        audienceReachOpen: 717,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-01-10",
-        audienceReachOpen: 2825,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-01-11",
-        audienceReachOpen: 610,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-01-12",
-        audienceReachOpen: 3385,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-01-13",
-        audienceReachOpen: 874,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-01-14",
-        audienceReachOpen: 640,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-01-15",
-        audienceReachOpen: 3838,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-01-16",
-        audienceReachOpen: 2163,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-01-17",
-        audienceReachOpen: 2896,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-01-18",
-        audienceReachOpen: 2940,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-01-19",
-        audienceReachOpen: 2081,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-20",
-        audienceReachOpen: 3709,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-01-21",
-        audienceReachOpen: 2720,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-01-22",
-        audienceReachOpen: 2674,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-23",
-        audienceReachOpen: 1560,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-24",
-        audienceReachOpen: 1321,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-25",
-        audienceReachOpen: 2824,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-01-26",
-        audienceReachOpen: 1138,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-01-27",
-        audienceReachOpen: 316,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-01-28",
-        audienceReachOpen: 469,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-01-29",
-        audienceReachOpen: 1411,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-30",
-        audienceReachOpen: 1327,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-01-31",
-        audienceReachOpen: 3226,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-02-01",
-        audienceReachOpen: 2238,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-02",
-        audienceReachOpen: 2744,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-03",
-        audienceReachOpen: 3238,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-02-04",
-        audienceReachOpen: 1205,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-05",
-        audienceReachOpen: 1789,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-02-06",
-        audienceReachOpen: 777,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-02-07",
-        audienceReachOpen: 215,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-02-08",
-        audienceReachOpen: 733,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-09",
-        audienceReachOpen: 1934,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-02-10",
-        audienceReachOpen: 3268,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-02-11",
-        audienceReachOpen: 745,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-12",
-        audienceReachOpen: 910,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-02-13",
-        audienceReachOpen: 2950,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-02-14",
-        audienceReachOpen: 2043,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-15",
-        audienceReachOpen: 3575,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-02-16",
-        audienceReachOpen: 2238,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-02-17",
-        audienceReachOpen: 2050,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-02-18",
-        audienceReachOpen: 2891,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-02-19",
-        audienceReachOpen: 305,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-02-20",
-        audienceReachOpen: 1523,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-21",
-        audienceReachOpen: 1130,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-02-22",
-        audienceReachOpen: 2226,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-02-23",
-        audienceReachOpen: 653,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-02-24",
-        audienceReachOpen: 1801,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-02-25",
-        audienceReachOpen: 353,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-02-26",
-        audienceReachOpen: 2284,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-27",
-        audienceReachOpen: 294,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-28",
-        audienceReachOpen: 812,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-02-29",
-        audienceReachOpen: 716,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-03-01",
-        audienceReachOpen: 333,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-03-02",
-        audienceReachOpen: 1198,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-03-03",
-        audienceReachOpen: 1037,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-03-04",
-        audienceReachOpen: 1361,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-03-05",
-        audienceReachOpen: 420,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-03-06",
-        audienceReachOpen: 618,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-03-07",
-        audienceReachOpen: 3083,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-08",
-        audienceReachOpen: 3707,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-03-09",
-        audienceReachOpen: 1614,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-10",
-        audienceReachOpen: 2145,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-03-11",
-        audienceReachOpen: 2029,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-03-12",
-        audienceReachOpen: 599,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-03-13",
-        audienceReachOpen: 745,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-03-14",
-        audienceReachOpen: 3726,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-15",
-        audienceReachOpen: 1279,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-03-16",
-        audienceReachOpen: 801,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-17",
-        audienceReachOpen: 2403,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-03-18",
-        audienceReachOpen: 1745,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-03-19",
-        audienceReachOpen: 3644,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-03-20",
-        audienceReachOpen: 2014,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-03-21",
-        audienceReachOpen: 2215,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-03-22",
-        audienceReachOpen: 3111,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-03-23",
-        audienceReachOpen: 3543,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-24",
-        audienceReachOpen: 734,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-03-25",
-        audienceReachOpen: 3874,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-03-26",
-        audienceReachOpen: 250,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-03-27",
-        audienceReachOpen: 2845,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-03-28",
-        audienceReachOpen: 1160,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-03-29",
-        audienceReachOpen: 3533,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-03-30",
-        audienceReachOpen: 2332,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-31",
-        audienceReachOpen: 3737,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-01",
-        audienceReachOpen: 1104,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-02",
-        audienceReachOpen: 1411,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-04-03",
-        audienceReachOpen: 1501,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-04-04",
-        audienceReachOpen: 267,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-05",
-        audienceReachOpen: 2350,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-04-06",
-        audienceReachOpen: 759,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-04-07",
-        audienceReachOpen: 3858,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-08",
-        audienceReachOpen: 3530,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-04-09",
-        audienceReachOpen: 977,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-04-10",
-        audienceReachOpen: 3966,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-04-11",
-        audienceReachOpen: 3359,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-04-12",
-        audienceReachOpen: 3876,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-13",
-        audienceReachOpen: 2808,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-04-14",
-        audienceReachOpen: 365,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-04-15",
-        audienceReachOpen: 2196,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-04-16",
-        audienceReachOpen: 3255,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-04-17",
-        audienceReachOpen: 1280,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-04-18",
-        audienceReachOpen: 3999,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-04-19",
-        audienceReachOpen: 3545,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-04-20",
-        audienceReachOpen: 3745,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-21",
-        audienceReachOpen: 3279,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-04-22",
-        audienceReachOpen: 1218,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-04-23",
-        audienceReachOpen: 1551,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-04-24",
-        audienceReachOpen: 623,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-04-25",
-        audienceReachOpen: 1244,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-26",
-        audienceReachOpen: 3164,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-04-27",
-        audienceReachOpen: 577,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-04-28",
-        audienceReachOpen: 1080,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-04-29",
-        audienceReachOpen: 2164,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-30",
-        audienceReachOpen: 728,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-05-01",
-        audienceReachOpen: 358,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-05-02",
-        audienceReachOpen: 3648,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-05-03",
-        audienceReachOpen: 678,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-05-04",
-        audienceReachOpen: 1830,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-05-05",
-        audienceReachOpen: 999,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-05-06",
-        audienceReachOpen: 2288,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-05-07",
-        audienceReachOpen: 682,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-05-08",
-        audienceReachOpen: 3748,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-05-09",
-        audienceReachOpen: 2064,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-05-10",
-        audienceReachOpen: 3415,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-05-11",
-        audienceReachOpen: 2615,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-12",
-        audienceReachOpen: 2402,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-05-13",
-        audienceReachOpen: 3600,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-14",
-        audienceReachOpen: 1176,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-05-15",
-        audienceReachOpen: 611,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-05-16",
-        audienceReachOpen: 1648,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-17",
-        audienceReachOpen: 3956,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-18",
-        audienceReachOpen: 3699,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-19",
-        audienceReachOpen: 309,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-05-20",
-        audienceReachOpen: 881,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-05-21",
-        audienceReachOpen: 3323,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-05-22",
-        audienceReachOpen: 1223,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-05-23",
-        audienceReachOpen: 2703,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-24",
-        audienceReachOpen: 3180,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-25",
-        audienceReachOpen: 2557,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-05-26",
-        audienceReachOpen: 1843,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-27",
-        audienceReachOpen: 2136,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-05-28",
-        audienceReachOpen: 340,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-05-29",
-        audienceReachOpen: 2484,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-05-30",
-        audienceReachOpen: 3232,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-05-31",
-        audienceReachOpen: 314,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-06-01",
-        audienceReachOpen: 3549,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-02",
-        audienceReachOpen: 3585,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-06-03",
-        audienceReachOpen: 3910,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-06-04",
-        audienceReachOpen: 3856,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-06-05",
-        audienceReachOpen: 3377,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-06-06",
-        audienceReachOpen: 3136,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-06-07",
-        audienceReachOpen: 745,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-06-08",
-        audienceReachOpen: 3998,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-09",
-        audienceReachOpen: 2762,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-06-10",
-        audienceReachOpen: 1587,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-06-11",
-        audienceReachOpen: 887,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-06-12",
-        audienceReachOpen: 2393,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-13",
-        audienceReachOpen: 1903,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-06-14",
-        audienceReachOpen: 1553,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-06-15",
-        audienceReachOpen: 3108,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-06-16",
-        audienceReachOpen: 1334,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-17",
-        audienceReachOpen: 1870,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-06-18",
-        audienceReachOpen: 913,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-19",
-        audienceReachOpen: 2933,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-06-20",
-        audienceReachOpen: 213,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-06-21",
-        audienceReachOpen: 1213,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-06-22",
-        audienceReachOpen: 251,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-06-23",
-        audienceReachOpen: 543,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-06-24",
-        audienceReachOpen: 3936,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-25",
-        audienceReachOpen: 1252,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-06-26",
-        audienceReachOpen: 1223,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-06-27",
-        audienceReachOpen: 1637,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-06-28",
-        audienceReachOpen: 233,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-29",
-        audienceReachOpen: 3158,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-06-30",
-        audienceReachOpen: 918,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-07-01",
-        audienceReachOpen: 3784,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-07-02",
-        audienceReachOpen: 1670,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-07-03",
-        audienceReachOpen: 595,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-07-04",
-        audienceReachOpen: 733,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-05",
-        audienceReachOpen: 1578,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-07-06",
-        audienceReachOpen: 789,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-07-07",
-        audienceReachOpen: 2120,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-08",
-        audienceReachOpen: 2951,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-07-09",
-        audienceReachOpen: 3752,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-10",
-        audienceReachOpen: 498,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-11",
-        audienceReachOpen: 1234,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-12",
-        audienceReachOpen: 232,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-13",
-        audienceReachOpen: 3514,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-07-14",
-        audienceReachOpen: 1954,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-15",
-        audienceReachOpen: 1828,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-07-16",
-        audienceReachOpen: 3777,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-07-17",
-        audienceReachOpen: 251,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-18",
-        audienceReachOpen: 1602,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-19",
-        audienceReachOpen: 364,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-20",
-        audienceReachOpen: 3659,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-21",
-        audienceReachOpen: 2275,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-07-22",
-        audienceReachOpen: 1954,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-07-23",
-        audienceReachOpen: 3158,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-07-24",
-        audienceReachOpen: 532,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-07-25",
-        audienceReachOpen: 2015,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-07-26",
-        audienceReachOpen: 912,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-07-27",
-        audienceReachOpen: 3572,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-07-28",
-        audienceReachOpen: 2603,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-29",
-        audienceReachOpen: 834,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-30",
-        audienceReachOpen: 725,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-31",
-        audienceReachOpen: 3229,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-01",
-        audienceReachOpen: 3074,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-02",
-        audienceReachOpen: 2405,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-08-03",
-        audienceReachOpen: 2903,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-04",
-        audienceReachOpen: 3932,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-05",
-        audienceReachOpen: 1585,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-06",
-        audienceReachOpen: 2587,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-07",
-        audienceReachOpen: 3916,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-08",
-        audienceReachOpen: 2539,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-09",
-        audienceReachOpen: 2605,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-10",
-        audienceReachOpen: 1013,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-11",
-        audienceReachOpen: 503,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-12",
-        audienceReachOpen: 1508,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-13",
-        audienceReachOpen: 619,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-08-14",
-        audienceReachOpen: 1085,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-15",
-        audienceReachOpen: 1723,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-08-16",
-        audienceReachOpen: 512,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-17",
-        audienceReachOpen: 1562,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-08-18",
-        audienceReachOpen: 2876,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-19",
-        audienceReachOpen: 1084,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-08-20",
-        audienceReachOpen: 2981,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-21",
-        audienceReachOpen: 1040,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-22",
-        audienceReachOpen: 3163,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-23",
-        audienceReachOpen: 1895,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-24",
-        audienceReachOpen: 3034,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-25",
-        audienceReachOpen: 1244,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-08-26",
-        audienceReachOpen: 3839,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-08-27",
-        audienceReachOpen: 969,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-08-28",
-        audienceReachOpen: 2333,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-29",
-        audienceReachOpen: 3794,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-30",
-        audienceReachOpen: 1371,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-31",
-        audienceReachOpen: 3400,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-01",
-        audienceReachOpen: 2821,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-02",
-        audienceReachOpen: 3667,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-09-03",
-        audienceReachOpen: 3089,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-04",
-        audienceReachOpen: 1948,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-05",
-        audienceReachOpen: 2359,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-09-06",
-        audienceReachOpen: 1239,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-09-07",
-        audienceReachOpen: 1164,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-08",
-        audienceReachOpen: 884,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-09-09",
-        audienceReachOpen: 2477,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-10",
-        audienceReachOpen: 2910,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-09-11",
-        audienceReachOpen: 1571,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-09-12",
-        audienceReachOpen: 2124,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-09-13",
-        audienceReachOpen: 1893,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-09-14",
-        audienceReachOpen: 2698,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-15",
-        audienceReachOpen: 2699,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-09-16",
-        audienceReachOpen: 1424,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-09-17",
-        audienceReachOpen: 2494,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-18",
-        audienceReachOpen: 593,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-09-19",
-        audienceReachOpen: 3256,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-20",
-        audienceReachOpen: 2443,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-21",
-        audienceReachOpen: 2165,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-09-22",
-        audienceReachOpen: 596,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-09-23",
-        audienceReachOpen: 1860,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-09-24",
-        audienceReachOpen: 1797,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-09-25",
-        audienceReachOpen: 1702,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-09-26",
-        audienceReachOpen: 2284,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-09-27",
-        audienceReachOpen: 1450,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-09-28",
-        audienceReachOpen: 2113,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-09-29",
-        audienceReachOpen: 3788,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-09-30",
-        audienceReachOpen: 2535,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-10-01",
-        audienceReachOpen: 691,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-10-02",
-        audienceReachOpen: 1172,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-10-03",
-        audienceReachOpen: 1618,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-10-04",
-        audienceReachOpen: 255,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-05",
-        audienceReachOpen: 2883,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-10-06",
-        audienceReachOpen: 2029,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-10-07",
-        audienceReachOpen: 438,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-08",
-        audienceReachOpen: 3171,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-10-09",
-        audienceReachOpen: 2462,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-10-10",
-        audienceReachOpen: 712,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-10-11",
-        audienceReachOpen: 2610,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-12",
-        audienceReachOpen: 1307,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-10-13",
-        audienceReachOpen: 421,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-10-14",
-        audienceReachOpen: 2179,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-15",
-        audienceReachOpen: 3750,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-10-16",
-        audienceReachOpen: 1743,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-17",
-        audienceReachOpen: 2665,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-10-18",
-        audienceReachOpen: 2432,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-10-19",
-        audienceReachOpen: 3625,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-10-20",
-        audienceReachOpen: 3854,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-10-21",
-        audienceReachOpen: 1147,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-22",
-        audienceReachOpen: 2450,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-10-23",
-        audienceReachOpen: 1693,
+        audienceReachOpen: 35,
+      },
+      {
+        date: "2024-10-24",
+        audienceReachOpen: 39,
+      },
+      {
+        date: "2024-10-25",
+        audienceReachOpen: 30,
+      },
+      {
+        date: "2024-10-26",
+        audienceReachOpen: 39,
+      },
+      {
+        date: "2024-10-27",
+        audienceReachOpen: 26,
+      },
+      {
+        date: "2024-10-28",
+        audienceReachOpen: 28,
+      },
+      {
+        date: "2024-10-29",
+        audienceReachOpen: 36,
+      },
+      {
+        date: "2024-10-30",
+        audienceReachOpen: 27,
       },
     ],
   },
@@ -4340,1444 +4340,1444 @@ export const data = [
     provider: Provider.Microsoft365,
     data: [
       {
-        date: "2023-10-30",
-        audienceReachOpen: 754,
-      },
-      {
-        date: "2023-10-31",
-        audienceReachOpen: 2203,
-      },
-      {
-        date: "2023-11-01",
-        audienceReachOpen: 996,
-      },
-      {
-        date: "2023-11-02",
-        audienceReachOpen: 1638,
-      },
-      {
-        date: "2023-11-03",
-        audienceReachOpen: 1522,
-      },
-      {
-        date: "2023-11-04",
-        audienceReachOpen: 1376,
-      },
-      {
-        date: "2023-11-05",
-        audienceReachOpen: 2999,
-      },
-      {
         date: "2023-11-06",
-        audienceReachOpen: 3032,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-11-07",
-        audienceReachOpen: 2997,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-11-08",
-        audienceReachOpen: 3760,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-11-09",
-        audienceReachOpen: 1625,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-11-10",
-        audienceReachOpen: 3627,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-11-11",
-        audienceReachOpen: 2071,
+        audienceReachOpen: 33,
       },
       {
         date: "2023-11-12",
-        audienceReachOpen: 2665,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-11-13",
-        audienceReachOpen: 936,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-11-14",
-        audienceReachOpen: 1335,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-11-15",
-        audienceReachOpen: 3805,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-11-16",
-        audienceReachOpen: 460,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-11-17",
-        audienceReachOpen: 1443,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-11-18",
-        audienceReachOpen: 1313,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-11-19",
-        audienceReachOpen: 2377,
+        audienceReachOpen: 33,
       },
       {
         date: "2023-11-20",
-        audienceReachOpen: 2196,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-21",
-        audienceReachOpen: 3944,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-11-22",
-        audienceReachOpen: 2142,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-11-23",
-        audienceReachOpen: 2417,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-11-24",
-        audienceReachOpen: 999,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-11-25",
-        audienceReachOpen: 228,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-11-26",
-        audienceReachOpen: 203,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-11-27",
-        audienceReachOpen: 3215,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-11-28",
-        audienceReachOpen: 377,
+        audienceReachOpen: 49,
       },
       {
         date: "2023-11-29",
-        audienceReachOpen: 2774,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-11-30",
-        audienceReachOpen: 985,
+        audienceReachOpen: 33,
       },
       {
         date: "2023-12-01",
-        audienceReachOpen: 1013,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-12-02",
-        audienceReachOpen: 432,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-03",
-        audienceReachOpen: 668,
+        audienceReachOpen: 33,
       },
       {
         date: "2023-12-04",
-        audienceReachOpen: 3280,
+        audienceReachOpen: 29,
       },
       {
         date: "2023-12-05",
-        audienceReachOpen: 1343,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-12-06",
-        audienceReachOpen: 2085,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-07",
-        audienceReachOpen: 3282,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-12-08",
-        audienceReachOpen: 878,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-09",
-        audienceReachOpen: 2723,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-10",
-        audienceReachOpen: 3588,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-12-11",
-        audienceReachOpen: 2936,
+        audienceReachOpen: 36,
       },
       {
         date: "2023-12-12",
-        audienceReachOpen: 3984,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-12-13",
-        audienceReachOpen: 3651,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-14",
-        audienceReachOpen: 835,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-15",
-        audienceReachOpen: 513,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-12-16",
-        audienceReachOpen: 3415,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-12-17",
-        audienceReachOpen: 946,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-12-18",
-        audienceReachOpen: 1136,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-19",
-        audienceReachOpen: 3364,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-12-20",
-        audienceReachOpen: 1089,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-12-21",
-        audienceReachOpen: 3416,
+        audienceReachOpen: 26,
       },
       {
         date: "2023-12-22",
-        audienceReachOpen: 296,
+        audienceReachOpen: 29,
       },
       {
         date: "2023-12-23",
-        audienceReachOpen: 2642,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-24",
-        audienceReachOpen: 552,
+        audienceReachOpen: 32,
       },
       {
         date: "2023-12-25",
-        audienceReachOpen: 1199,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-26",
-        audienceReachOpen: 3848,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-27",
-        audienceReachOpen: 1406,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-28",
-        audienceReachOpen: 689,
+        audienceReachOpen: 31,
       },
       {
         date: "2023-12-29",
-        audienceReachOpen: 3941,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-30",
-        audienceReachOpen: 2791,
+        audienceReachOpen: 40,
       },
       {
         date: "2023-12-31",
-        audienceReachOpen: 1958,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-01-01",
-        audienceReachOpen: 3730,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-01-02",
-        audienceReachOpen: 3041,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-03",
-        audienceReachOpen: 2693,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-01-04",
-        audienceReachOpen: 2094,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-01-05",
-        audienceReachOpen: 483,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-01-06",
-        audienceReachOpen: 2058,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-01-07",
-        audienceReachOpen: 762,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-01-08",
-        audienceReachOpen: 3276,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-09",
-        audienceReachOpen: 1522,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-10",
-        audienceReachOpen: 2655,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-11",
-        audienceReachOpen: 228,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-01-12",
-        audienceReachOpen: 303,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-13",
-        audienceReachOpen: 3373,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-01-14",
-        audienceReachOpen: 423,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-01-15",
-        audienceReachOpen: 2556,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-16",
-        audienceReachOpen: 1936,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-01-17",
-        audienceReachOpen: 1947,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-01-18",
-        audienceReachOpen: 2955,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-01-19",
-        audienceReachOpen: 501,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-01-20",
-        audienceReachOpen: 1600,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-01-21",
-        audienceReachOpen: 1931,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-01-22",
-        audienceReachOpen: 494,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-01-23",
-        audienceReachOpen: 356,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-01-24",
-        audienceReachOpen: 3623,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-25",
-        audienceReachOpen: 399,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-01-26",
-        audienceReachOpen: 3996,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-01-27",
-        audienceReachOpen: 1977,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-01-28",
-        audienceReachOpen: 3830,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-01-29",
-        audienceReachOpen: 1693,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-01-30",
-        audienceReachOpen: 2333,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-01-31",
-        audienceReachOpen: 3099,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-02-01",
-        audienceReachOpen: 1052,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-02",
-        audienceReachOpen: 3962,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-02-03",
-        audienceReachOpen: 3744,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-02-04",
-        audienceReachOpen: 315,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-02-05",
-        audienceReachOpen: 3139,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-06",
-        audienceReachOpen: 2663,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-02-07",
-        audienceReachOpen: 1907,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-08",
-        audienceReachOpen: 1992,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-02-09",
-        audienceReachOpen: 551,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-10",
-        audienceReachOpen: 2824,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-02-11",
-        audienceReachOpen: 2114,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-02-12",
-        audienceReachOpen: 1723,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-02-13",
-        audienceReachOpen: 3080,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-14",
-        audienceReachOpen: 1303,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-15",
-        audienceReachOpen: 2647,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-02-16",
-        audienceReachOpen: 925,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-02-17",
-        audienceReachOpen: 3398,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-18",
-        audienceReachOpen: 2137,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-02-19",
-        audienceReachOpen: 217,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-02-20",
-        audienceReachOpen: 1801,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-02-21",
-        audienceReachOpen: 2975,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-02-22",
-        audienceReachOpen: 1102,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-02-23",
-        audienceReachOpen: 1057,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-02-24",
-        audienceReachOpen: 3803,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-02-25",
-        audienceReachOpen: 3135,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-02-26",
-        audienceReachOpen: 456,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-02-27",
-        audienceReachOpen: 1286,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-02-28",
-        audienceReachOpen: 3365,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-29",
-        audienceReachOpen: 3953,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-01",
-        audienceReachOpen: 672,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-03-02",
-        audienceReachOpen: 2050,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-03-03",
-        audienceReachOpen: 3587,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-04",
-        audienceReachOpen: 1552,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-03-05",
-        audienceReachOpen: 2722,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-03-06",
-        audienceReachOpen: 2492,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-03-07",
-        audienceReachOpen: 551,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-08",
-        audienceReachOpen: 1767,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-03-09",
-        audienceReachOpen: 2793,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-03-10",
-        audienceReachOpen: 2490,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-03-11",
-        audienceReachOpen: 1155,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-03-12",
-        audienceReachOpen: 1582,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-03-13",
-        audienceReachOpen: 457,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-03-14",
-        audienceReachOpen: 624,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-03-15",
-        audienceReachOpen: 946,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-03-16",
-        audienceReachOpen: 1778,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-03-17",
-        audienceReachOpen: 359,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-03-18",
-        audienceReachOpen: 3303,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-03-19",
-        audienceReachOpen: 2558,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-03-20",
-        audienceReachOpen: 3124,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-03-21",
-        audienceReachOpen: 3887,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-03-22",
-        audienceReachOpen: 1209,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-03-23",
-        audienceReachOpen: 2768,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-03-24",
-        audienceReachOpen: 1689,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-03-25",
-        audienceReachOpen: 1441,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-03-26",
-        audienceReachOpen: 832,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-03-27",
-        audienceReachOpen: 689,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-03-28",
-        audienceReachOpen: 898,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-03-29",
-        audienceReachOpen: 2524,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-03-30",
-        audienceReachOpen: 3112,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-03-31",
-        audienceReachOpen: 369,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-04-01",
-        audienceReachOpen: 3630,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-02",
-        audienceReachOpen: 3844,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-04-03",
-        audienceReachOpen: 2233,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-04",
-        audienceReachOpen: 2266,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-04-05",
-        audienceReachOpen: 3791,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-04-06",
-        audienceReachOpen: 1175,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-04-07",
-        audienceReachOpen: 3288,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-04-08",
-        audienceReachOpen: 2508,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-09",
-        audienceReachOpen: 2585,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-04-10",
-        audienceReachOpen: 259,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-11",
-        audienceReachOpen: 1924,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-04-12",
-        audienceReachOpen: 3852,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-04-13",
-        audienceReachOpen: 2230,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-04-14",
-        audienceReachOpen: 1345,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-04-15",
-        audienceReachOpen: 3833,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-04-16",
-        audienceReachOpen: 362,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-04-17",
-        audienceReachOpen: 3084,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-18",
-        audienceReachOpen: 3453,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-04-19",
-        audienceReachOpen: 1398,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-20",
-        audienceReachOpen: 3930,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-21",
-        audienceReachOpen: 3473,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-04-22",
-        audienceReachOpen: 3188,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-23",
-        audienceReachOpen: 3827,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-24",
-        audienceReachOpen: 2939,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-04-25",
-        audienceReachOpen: 2036,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-26",
-        audienceReachOpen: 1788,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-04-27",
-        audienceReachOpen: 2912,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-04-28",
-        audienceReachOpen: 2552,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-04-29",
-        audienceReachOpen: 2946,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-30",
-        audienceReachOpen: 224,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-05-01",
-        audienceReachOpen: 1983,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-05-02",
-        audienceReachOpen: 3983,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-05-03",
-        audienceReachOpen: 3834,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-04",
-        audienceReachOpen: 1227,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-05-05",
-        audienceReachOpen: 367,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-05-06",
-        audienceReachOpen: 680,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-05-07",
-        audienceReachOpen: 1369,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-05-08",
-        audienceReachOpen: 270,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-05-09",
-        audienceReachOpen: 3322,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-05-10",
-        audienceReachOpen: 3835,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-05-11",
-        audienceReachOpen: 2533,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-05-12",
-        audienceReachOpen: 3136,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-05-13",
-        audienceReachOpen: 3636,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-05-14",
-        audienceReachOpen: 1916,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-05-15",
-        audienceReachOpen: 876,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-05-16",
-        audienceReachOpen: 2898,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-17",
-        audienceReachOpen: 3604,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-05-18",
-        audienceReachOpen: 3324,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-19",
-        audienceReachOpen: 1008,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-05-20",
-        audienceReachOpen: 3500,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-21",
-        audienceReachOpen: 3895,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-05-22",
-        audienceReachOpen: 3773,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-05-23",
-        audienceReachOpen: 2095,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-05-24",
-        audienceReachOpen: 1813,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-05-25",
-        audienceReachOpen: 867,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-05-26",
-        audienceReachOpen: 584,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-27",
-        audienceReachOpen: 1613,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-05-28",
-        audienceReachOpen: 877,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-05-29",
-        audienceReachOpen: 2441,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-30",
-        audienceReachOpen: 1366,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-05-31",
-        audienceReachOpen: 976,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-06-01",
-        audienceReachOpen: 493,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-06-02",
-        audienceReachOpen: 3436,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-06-03",
-        audienceReachOpen: 3359,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-06-04",
-        audienceReachOpen: 2366,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-06-05",
-        audienceReachOpen: 461,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-06",
-        audienceReachOpen: 561,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-06-07",
-        audienceReachOpen: 1628,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-06-08",
-        audienceReachOpen: 3541,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-06-09",
-        audienceReachOpen: 1007,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-06-10",
-        audienceReachOpen: 1598,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-06-11",
-        audienceReachOpen: 859,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-06-12",
-        audienceReachOpen: 400,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-06-13",
-        audienceReachOpen: 3020,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-06-14",
-        audienceReachOpen: 720,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-06-15",
-        audienceReachOpen: 2256,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-06-16",
-        audienceReachOpen: 1918,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-06-17",
-        audienceReachOpen: 2202,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-06-18",
-        audienceReachOpen: 1928,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-06-19",
-        audienceReachOpen: 3109,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-06-20",
-        audienceReachOpen: 1565,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-06-21",
-        audienceReachOpen: 2607,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-06-22",
-        audienceReachOpen: 2901,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-06-23",
-        audienceReachOpen: 1079,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-06-24",
-        audienceReachOpen: 3511,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-06-25",
-        audienceReachOpen: 318,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-06-26",
-        audienceReachOpen: 1800,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-06-27",
-        audienceReachOpen: 2003,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-06-28",
-        audienceReachOpen: 1356,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-06-29",
-        audienceReachOpen: 2423,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-06-30",
-        audienceReachOpen: 2516,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-07-01",
-        audienceReachOpen: 3639,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-02",
-        audienceReachOpen: 2697,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-07-03",
-        audienceReachOpen: 218,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-04",
-        audienceReachOpen: 705,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-07-05",
-        audienceReachOpen: 2135,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-07-06",
-        audienceReachOpen: 3001,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-07-07",
-        audienceReachOpen: 3597,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-07-08",
-        audienceReachOpen: 3585,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-07-09",
-        audienceReachOpen: 1359,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-10",
-        audienceReachOpen: 3446,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-07-11",
-        audienceReachOpen: 3396,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-12",
-        audienceReachOpen: 1646,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-13",
-        audienceReachOpen: 3998,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-14",
-        audienceReachOpen: 3146,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-07-15",
-        audienceReachOpen: 3012,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-16",
-        audienceReachOpen: 2559,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-07-17",
-        audienceReachOpen: 2827,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-18",
-        audienceReachOpen: 266,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-19",
-        audienceReachOpen: 456,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-07-20",
-        audienceReachOpen: 1621,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-21",
-        audienceReachOpen: 3490,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-07-22",
-        audienceReachOpen: 3963,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-07-23",
-        audienceReachOpen: 2111,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-24",
-        audienceReachOpen: 2951,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-25",
-        audienceReachOpen: 2236,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-07-26",
-        audienceReachOpen: 1140,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-27",
-        audienceReachOpen: 3996,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-07-28",
-        audienceReachOpen: 238,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-07-29",
-        audienceReachOpen: 299,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-07-30",
-        audienceReachOpen: 1710,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-31",
-        audienceReachOpen: 3595,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-01",
-        audienceReachOpen: 2192,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-08-02",
-        audienceReachOpen: 2625,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-03",
-        audienceReachOpen: 418,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-08-04",
-        audienceReachOpen: 1741,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-08-05",
-        audienceReachOpen: 3139,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-06",
-        audienceReachOpen: 3279,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-07",
-        audienceReachOpen: 2712,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-08-08",
-        audienceReachOpen: 3429,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-09",
-        audienceReachOpen: 3811,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-10",
-        audienceReachOpen: 3416,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-08-11",
-        audienceReachOpen: 1759,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-08-12",
-        audienceReachOpen: 1030,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-13",
-        audienceReachOpen: 901,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-08-14",
-        audienceReachOpen: 2625,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-15",
-        audienceReachOpen: 2982,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-08-16",
-        audienceReachOpen: 1303,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-17",
-        audienceReachOpen: 3370,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-08-18",
-        audienceReachOpen: 2100,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-19",
-        audienceReachOpen: 1419,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-08-20",
-        audienceReachOpen: 3226,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-21",
-        audienceReachOpen: 2278,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-08-22",
-        audienceReachOpen: 228,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-08-23",
-        audienceReachOpen: 1069,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-24",
-        audienceReachOpen: 2163,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-08-25",
-        audienceReachOpen: 2239,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-08-26",
-        audienceReachOpen: 311,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-27",
-        audienceReachOpen: 1476,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-28",
-        audienceReachOpen: 3268,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-08-29",
-        audienceReachOpen: 2981,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-30",
-        audienceReachOpen: 444,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-31",
-        audienceReachOpen: 3024,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-09-01",
-        audienceReachOpen: 3583,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-09-02",
-        audienceReachOpen: 363,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-09-03",
-        audienceReachOpen: 2956,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-09-04",
-        audienceReachOpen: 813,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-09-05",
-        audienceReachOpen: 940,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-09-06",
-        audienceReachOpen: 2380,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-09-07",
-        audienceReachOpen: 2107,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-09-08",
-        audienceReachOpen: 1403,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-09",
-        audienceReachOpen: 850,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-10",
-        audienceReachOpen: 3738,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-09-11",
-        audienceReachOpen: 2304,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-09-12",
-        audienceReachOpen: 3156,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-13",
-        audienceReachOpen: 656,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-14",
-        audienceReachOpen: 3092,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-15",
-        audienceReachOpen: 2010,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-09-16",
-        audienceReachOpen: 217,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-09-17",
-        audienceReachOpen: 529,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-09-18",
-        audienceReachOpen: 3619,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-09-19",
-        audienceReachOpen: 3790,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-09-20",
-        audienceReachOpen: 3252,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-09-21",
-        audienceReachOpen: 1375,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-22",
-        audienceReachOpen: 3546,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-23",
-        audienceReachOpen: 2755,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-09-24",
-        audienceReachOpen: 3885,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-25",
-        audienceReachOpen: 1935,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-09-26",
-        audienceReachOpen: 494,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-27",
-        audienceReachOpen: 1279,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-09-28",
-        audienceReachOpen: 2668,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-09-29",
-        audienceReachOpen: 3883,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-09-30",
-        audienceReachOpen: 257,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-01",
-        audienceReachOpen: 1509,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-02",
-        audienceReachOpen: 1616,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-10-03",
-        audienceReachOpen: 2061,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-10-04",
-        audienceReachOpen: 2304,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-10-05",
-        audienceReachOpen: 2210,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-10-06",
-        audienceReachOpen: 309,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-10-07",
-        audienceReachOpen: 953,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-10-08",
-        audienceReachOpen: 1040,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-10-09",
-        audienceReachOpen: 3680,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-10",
-        audienceReachOpen: 1897,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-10-11",
-        audienceReachOpen: 1061,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-10-12",
-        audienceReachOpen: 2546,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-10-13",
-        audienceReachOpen: 2166,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-10-14",
-        audienceReachOpen: 3705,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-10-15",
-        audienceReachOpen: 977,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-10-16",
-        audienceReachOpen: 3976,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-10-17",
-        audienceReachOpen: 2771,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-10-18",
-        audienceReachOpen: 725,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-10-19",
-        audienceReachOpen: 309,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-20",
-        audienceReachOpen: 2361,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-10-21",
-        audienceReachOpen: 1942,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-10-22",
-        audienceReachOpen: 2954,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-10-23",
-        audienceReachOpen: 807,
+        audienceReachOpen: 47,
+      },
+      {
+        date: "2024-10-24",
+        audienceReachOpen: 46,
+      },
+      {
+        date: "2024-10-25",
+        audienceReachOpen: 38,
+      },
+      {
+        date: "2024-10-26",
+        audienceReachOpen: 46,
+      },
+      {
+        date: "2024-10-27",
+        audienceReachOpen: 28,
+      },
+      {
+        date: "2024-10-28",
+        audienceReachOpen: 25,
+      },
+      {
+        date: "2024-10-29",
+        audienceReachOpen: 45,
+      },
+      {
+        date: "2024-10-30",
+        audienceReachOpen: 38,
       },
     ],
   },
@@ -5785,1444 +5785,1444 @@ export const data = [
     provider: Provider.Other,
     data: [
       {
-        date: "2023-10-30",
-        audienceReachOpen: 1679,
-      },
-      {
-        date: "2023-10-31",
-        audienceReachOpen: 281,
-      },
-      {
-        date: "2023-11-01",
-        audienceReachOpen: 1361,
-      },
-      {
-        date: "2023-11-02",
-        audienceReachOpen: 1836,
-      },
-      {
-        date: "2023-11-03",
-        audienceReachOpen: 1900,
-      },
-      {
-        date: "2023-11-04",
-        audienceReachOpen: 1101,
-      },
-      {
-        date: "2023-11-05",
-        audienceReachOpen: 3103,
-      },
-      {
         date: "2023-11-06",
-        audienceReachOpen: 920,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-11-07",
-        audienceReachOpen: 3280,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-11-08",
-        audienceReachOpen: 591,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-11-09",
-        audienceReachOpen: 2793,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-11-10",
-        audienceReachOpen: 3711,
+        audienceReachOpen: 34,
       },
       {
         date: "2023-11-11",
-        audienceReachOpen: 3385,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-11-12",
-        audienceReachOpen: 3575,
+        audienceReachOpen: 31,
       },
       {
         date: "2023-11-13",
-        audienceReachOpen: 3007,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-11-14",
-        audienceReachOpen: 3423,
+        audienceReachOpen: 36,
       },
       {
         date: "2023-11-15",
-        audienceReachOpen: 2801,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-11-16",
-        audienceReachOpen: 1267,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-11-17",
-        audienceReachOpen: 2297,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-11-18",
-        audienceReachOpen: 2404,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-11-19",
-        audienceReachOpen: 1064,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-11-20",
-        audienceReachOpen: 1748,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-11-21",
-        audienceReachOpen: 1156,
+        audienceReachOpen: 31,
       },
       {
         date: "2023-11-22",
-        audienceReachOpen: 2897,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-11-23",
-        audienceReachOpen: 3933,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-11-24",
-        audienceReachOpen: 3674,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-11-25",
-        audienceReachOpen: 1675,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-11-26",
-        audienceReachOpen: 2805,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-11-27",
-        audienceReachOpen: 1114,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-11-28",
-        audienceReachOpen: 2955,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-11-29",
-        audienceReachOpen: 1333,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-11-30",
-        audienceReachOpen: 2732,
+        audienceReachOpen: 42,
       },
       {
         date: "2023-12-01",
-        audienceReachOpen: 2626,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-12-02",
-        audienceReachOpen: 736,
+        audienceReachOpen: 36,
       },
       {
         date: "2023-12-03",
-        audienceReachOpen: 3496,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-04",
-        audienceReachOpen: 813,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-12-05",
-        audienceReachOpen: 1391,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-06",
-        audienceReachOpen: 476,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-12-07",
-        audienceReachOpen: 3432,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-08",
-        audienceReachOpen: 2329,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-12-09",
-        audienceReachOpen: 1098,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-10",
-        audienceReachOpen: 1556,
+        audienceReachOpen: 45,
       },
       {
         date: "2023-12-11",
-        audienceReachOpen: 2487,
+        audienceReachOpen: 28,
       },
       {
         date: "2023-12-12",
-        audienceReachOpen: 3665,
+        audienceReachOpen: 25,
       },
       {
         date: "2023-12-13",
-        audienceReachOpen: 3371,
+        audienceReachOpen: 38,
       },
       {
         date: "2023-12-14",
-        audienceReachOpen: 1818,
+        audienceReachOpen: 46,
       },
       {
         date: "2023-12-15",
-        audienceReachOpen: 1396,
+        audienceReachOpen: 37,
       },
       {
         date: "2023-12-16",
-        audienceReachOpen: 1448,
+        audienceReachOpen: 41,
       },
       {
         date: "2023-12-17",
-        audienceReachOpen: 1386,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-12-18",
-        audienceReachOpen: 1251,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-19",
-        audienceReachOpen: 3402,
+        audienceReachOpen: 35,
       },
       {
         date: "2023-12-20",
-        audienceReachOpen: 1874,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-21",
-        audienceReachOpen: 608,
+        audienceReachOpen: 27,
       },
       {
         date: "2023-12-22",
-        audienceReachOpen: 807,
+        audienceReachOpen: 39,
       },
       {
         date: "2023-12-23",
-        audienceReachOpen: 3877,
+        audienceReachOpen: 47,
       },
       {
         date: "2023-12-24",
-        audienceReachOpen: 1799,
+        audienceReachOpen: 36,
       },
       {
         date: "2023-12-25",
-        audienceReachOpen: 3856,
+        audienceReachOpen: 31,
       },
       {
         date: "2023-12-26",
-        audienceReachOpen: 2489,
+        audienceReachOpen: 48,
       },
       {
         date: "2023-12-27",
-        audienceReachOpen: 1797,
+        audienceReachOpen: 44,
       },
       {
         date: "2023-12-28",
-        audienceReachOpen: 3016,
+        audienceReachOpen: 43,
       },
       {
         date: "2023-12-29",
-        audienceReachOpen: 613,
+        audienceReachOpen: 30,
       },
       {
         date: "2023-12-30",
-        audienceReachOpen: 2582,
+        audienceReachOpen: 50,
       },
       {
         date: "2023-12-31",
-        audienceReachOpen: 608,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-01-01",
-        audienceReachOpen: 3502,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-01-02",
-        audienceReachOpen: 2047,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-01-03",
-        audienceReachOpen: 1527,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-01-04",
-        audienceReachOpen: 2525,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-01-05",
-        audienceReachOpen: 737,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-01-06",
-        audienceReachOpen: 778,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-01-07",
-        audienceReachOpen: 518,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-01-08",
-        audienceReachOpen: 3768,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-01-09",
-        audienceReachOpen: 690,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-10",
-        audienceReachOpen: 2646,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-01-11",
-        audienceReachOpen: 2484,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-01-12",
-        audienceReachOpen: 2036,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-01-13",
-        audienceReachOpen: 358,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-01-14",
-        audienceReachOpen: 594,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-01-15",
-        audienceReachOpen: 3849,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-01-16",
-        audienceReachOpen: 3065,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-01-17",
-        audienceReachOpen: 1556,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-01-18",
-        audienceReachOpen: 2296,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-01-19",
-        audienceReachOpen: 1871,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-01-20",
-        audienceReachOpen: 2531,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-01-21",
-        audienceReachOpen: 448,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-01-22",
-        audienceReachOpen: 3394,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-01-23",
-        audienceReachOpen: 968,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-01-24",
-        audienceReachOpen: 1060,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-01-25",
-        audienceReachOpen: 543,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-01-26",
-        audienceReachOpen: 3904,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-01-27",
-        audienceReachOpen: 1975,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-01-28",
-        audienceReachOpen: 3606,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-01-29",
-        audienceReachOpen: 2165,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-01-30",
-        audienceReachOpen: 1085,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-01-31",
-        audienceReachOpen: 2752,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-02-01",
-        audienceReachOpen: 3202,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-02-02",
-        audienceReachOpen: 782,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-02-03",
-        audienceReachOpen: 2958,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-02-04",
-        audienceReachOpen: 741,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-02-05",
-        audienceReachOpen: 578,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-02-06",
-        audienceReachOpen: 1555,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-07",
-        audienceReachOpen: 2249,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-08",
-        audienceReachOpen: 3091,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-02-09",
-        audienceReachOpen: 888,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-02-10",
-        audienceReachOpen: 1638,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-02-11",
-        audienceReachOpen: 3915,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-02-12",
-        audienceReachOpen: 814,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-02-13",
-        audienceReachOpen: 859,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-02-14",
-        audienceReachOpen: 1498,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-15",
-        audienceReachOpen: 2268,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-02-16",
-        audienceReachOpen: 807,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-02-17",
-        audienceReachOpen: 589,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-02-18",
-        audienceReachOpen: 3084,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-02-19",
-        audienceReachOpen: 1982,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-02-20",
-        audienceReachOpen: 2783,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-21",
-        audienceReachOpen: 596,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-02-22",
-        audienceReachOpen: 2658,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-02-23",
-        audienceReachOpen: 2758,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-02-24",
-        audienceReachOpen: 2177,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-02-25",
-        audienceReachOpen: 3166,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-02-26",
-        audienceReachOpen: 232,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-02-27",
-        audienceReachOpen: 2349,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-02-28",
-        audienceReachOpen: 1276,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-02-29",
-        audienceReachOpen: 2730,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-01",
-        audienceReachOpen: 1102,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-02",
-        audienceReachOpen: 3871,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-03-03",
-        audienceReachOpen: 1708,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-04",
-        audienceReachOpen: 1198,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-03-05",
-        audienceReachOpen: 1860,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-03-06",
-        audienceReachOpen: 510,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-07",
-        audienceReachOpen: 1555,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-03-08",
-        audienceReachOpen: 2815,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-03-09",
-        audienceReachOpen: 649,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-03-10",
-        audienceReachOpen: 2656,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-03-11",
-        audienceReachOpen: 2799,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-03-12",
-        audienceReachOpen: 214,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-03-13",
-        audienceReachOpen: 235,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-03-14",
-        audienceReachOpen: 3026,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-03-15",
-        audienceReachOpen: 1484,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-16",
-        audienceReachOpen: 2411,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-17",
-        audienceReachOpen: 2415,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-03-18",
-        audienceReachOpen: 1571,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-03-19",
-        audienceReachOpen: 2363,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-03-20",
-        audienceReachOpen: 931,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-03-21",
-        audienceReachOpen: 3650,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-03-22",
-        audienceReachOpen: 1285,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-03-23",
-        audienceReachOpen: 2160,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-03-24",
-        audienceReachOpen: 423,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-03-25",
-        audienceReachOpen: 784,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-03-26",
-        audienceReachOpen: 3809,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-03-27",
-        audienceReachOpen: 3256,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-03-28",
-        audienceReachOpen: 673,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-03-29",
-        audienceReachOpen: 3033,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-03-30",
-        audienceReachOpen: 1266,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-03-31",
-        audienceReachOpen: 3946,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-01",
-        audienceReachOpen: 2474,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-02",
-        audienceReachOpen: 3337,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-03",
-        audienceReachOpen: 704,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-04",
-        audienceReachOpen: 588,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-05",
-        audienceReachOpen: 3887,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-04-06",
-        audienceReachOpen: 2970,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-04-07",
-        audienceReachOpen: 1498,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-04-08",
-        audienceReachOpen: 1888,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-04-09",
-        audienceReachOpen: 1874,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-04-10",
-        audienceReachOpen: 1597,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-04-11",
-        audienceReachOpen: 3073,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-04-12",
-        audienceReachOpen: 1947,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-04-13",
-        audienceReachOpen: 1677,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-04-14",
-        audienceReachOpen: 3712,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-04-15",
-        audienceReachOpen: 1293,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-04-16",
-        audienceReachOpen: 1819,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-04-17",
-        audienceReachOpen: 831,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-04-18",
-        audienceReachOpen: 1579,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-04-19",
-        audienceReachOpen: 1895,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-04-20",
-        audienceReachOpen: 765,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-21",
-        audienceReachOpen: 3250,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-04-22",
-        audienceReachOpen: 3574,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-23",
-        audienceReachOpen: 1796,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-24",
-        audienceReachOpen: 2986,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-04-25",
-        audienceReachOpen: 3817,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-04-26",
-        audienceReachOpen: 787,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-04-27",
-        audienceReachOpen: 3498,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-04-28",
-        audienceReachOpen: 2735,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-04-29",
-        audienceReachOpen: 2609,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-04-30",
-        audienceReachOpen: 2189,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-01",
-        audienceReachOpen: 2944,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-05-02",
-        audienceReachOpen: 2656,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-05-03",
-        audienceReachOpen: 1168,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-05-04",
-        audienceReachOpen: 2958,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-05-05",
-        audienceReachOpen: 3963,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-06",
-        audienceReachOpen: 3065,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-05-07",
-        audienceReachOpen: 3616,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-05-08",
-        audienceReachOpen: 3524,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-05-09",
-        audienceReachOpen: 2230,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-05-10",
-        audienceReachOpen: 1405,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-05-11",
-        audienceReachOpen: 1508,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-05-12",
-        audienceReachOpen: 2165,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-05-13",
-        audienceReachOpen: 299,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-05-14",
-        audienceReachOpen: 3059,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-05-15",
-        audienceReachOpen: 1689,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-05-16",
-        audienceReachOpen: 3794,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-05-17",
-        audienceReachOpen: 1302,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-05-18",
-        audienceReachOpen: 1197,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-19",
-        audienceReachOpen: 735,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-05-20",
-        audienceReachOpen: 2254,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-21",
-        audienceReachOpen: 1102,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-05-22",
-        audienceReachOpen: 506,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-05-23",
-        audienceReachOpen: 2340,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-05-24",
-        audienceReachOpen: 2383,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-05-25",
-        audienceReachOpen: 279,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-05-26",
-        audienceReachOpen: 3819,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-05-27",
-        audienceReachOpen: 3183,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-05-28",
-        audienceReachOpen: 3577,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-05-29",
-        audienceReachOpen: 2649,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-05-30",
-        audienceReachOpen: 3066,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-05-31",
-        audienceReachOpen: 1158,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-06-01",
-        audienceReachOpen: 771,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-06-02",
-        audienceReachOpen: 662,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-06-03",
-        audienceReachOpen: 266,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-06-04",
-        audienceReachOpen: 3121,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-06-05",
-        audienceReachOpen: 3232,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-06-06",
-        audienceReachOpen: 1337,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-06-07",
-        audienceReachOpen: 3847,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-06-08",
-        audienceReachOpen: 1355,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-09",
-        audienceReachOpen: 222,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-06-10",
-        audienceReachOpen: 2521,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-06-11",
-        audienceReachOpen: 617,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-06-12",
-        audienceReachOpen: 3291,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-06-13",
-        audienceReachOpen: 2113,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-06-14",
-        audienceReachOpen: 1629,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-06-15",
-        audienceReachOpen: 2064,
+        audienceReachOpen: 41,
       },
       {
         date: "2024-06-16",
-        audienceReachOpen: 3531,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-17",
-        audienceReachOpen: 1207,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-06-18",
-        audienceReachOpen: 3426,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-19",
-        audienceReachOpen: 1866,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-06-20",
-        audienceReachOpen: 1725,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-06-21",
-        audienceReachOpen: 669,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-06-22",
-        audienceReachOpen: 2778,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-23",
-        audienceReachOpen: 2568,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-24",
-        audienceReachOpen: 1685,
+        audienceReachOpen: 30,
       },
       {
         date: "2024-06-25",
-        audienceReachOpen: 2034,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-26",
-        audienceReachOpen: 2792,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-06-27",
-        audienceReachOpen: 1168,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-06-28",
-        audienceReachOpen: 975,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-06-29",
-        audienceReachOpen: 994,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-06-30",
-        audienceReachOpen: 256,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-07-01",
-        audienceReachOpen: 1494,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-07-02",
-        audienceReachOpen: 790,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-03",
-        audienceReachOpen: 779,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-07-04",
-        audienceReachOpen: 2267,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-07-05",
-        audienceReachOpen: 2857,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-07-06",
-        audienceReachOpen: 1440,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-07-07",
-        audienceReachOpen: 2048,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-07-08",
-        audienceReachOpen: 3683,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-07-09",
-        audienceReachOpen: 2695,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-07-10",
-        audienceReachOpen: 2687,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-07-11",
-        audienceReachOpen: 2725,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-07-12",
-        audienceReachOpen: 1582,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-13",
-        audienceReachOpen: 3953,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-07-14",
-        audienceReachOpen: 1453,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-07-15",
-        audienceReachOpen: 1793,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-07-16",
-        audienceReachOpen: 438,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-07-17",
-        audienceReachOpen: 3137,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-18",
-        audienceReachOpen: 351,
+        audienceReachOpen: 49,
       },
       {
         date: "2024-07-19",
-        audienceReachOpen: 2685,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-07-20",
-        audienceReachOpen: 396,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-07-21",
-        audienceReachOpen: 1484,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-07-22",
-        audienceReachOpen: 3201,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-07-23",
-        audienceReachOpen: 3584,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-07-24",
-        audienceReachOpen: 3769,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-07-25",
-        audienceReachOpen: 2735,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-07-26",
-        audienceReachOpen: 1267,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-07-27",
-        audienceReachOpen: 2015,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-07-28",
-        audienceReachOpen: 1579,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-07-29",
-        audienceReachOpen: 2396,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-07-30",
-        audienceReachOpen: 3940,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-07-31",
-        audienceReachOpen: 3819,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-01",
-        audienceReachOpen: 1731,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-02",
-        audienceReachOpen: 882,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-08-03",
-        audienceReachOpen: 3034,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-08-04",
-        audienceReachOpen: 1025,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-08-05",
-        audienceReachOpen: 643,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-08-06",
-        audienceReachOpen: 2343,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-07",
-        audienceReachOpen: 2710,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-08",
-        audienceReachOpen: 3349,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-09",
-        audienceReachOpen: 3062,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-10",
-        audienceReachOpen: 2978,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-11",
-        audienceReachOpen: 2555,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-12",
-        audienceReachOpen: 824,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-08-13",
-        audienceReachOpen: 613,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-14",
-        audienceReachOpen: 1801,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-08-15",
-        audienceReachOpen: 3249,
+        audienceReachOpen: 33,
       },
       {
         date: "2024-08-16",
-        audienceReachOpen: 230,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-17",
-        audienceReachOpen: 1043,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-08-18",
-        audienceReachOpen: 2343,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-08-19",
-        audienceReachOpen: 708,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-08-20",
-        audienceReachOpen: 3526,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-08-21",
-        audienceReachOpen: 569,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-08-22",
-        audienceReachOpen: 1000,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-23",
-        audienceReachOpen: 757,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-08-24",
-        audienceReachOpen: 1567,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-08-25",
-        audienceReachOpen: 3672,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-08-26",
-        audienceReachOpen: 1823,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-08-27",
-        audienceReachOpen: 367,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-28",
-        audienceReachOpen: 1631,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-08-29",
-        audienceReachOpen: 3152,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-08-30",
-        audienceReachOpen: 1346,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-08-31",
-        audienceReachOpen: 405,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-09-01",
-        audienceReachOpen: 205,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-09-02",
-        audienceReachOpen: 2778,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-09-03",
-        audienceReachOpen: 3261,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-09-04",
-        audienceReachOpen: 1828,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-09-05",
-        audienceReachOpen: 1969,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-09-06",
-        audienceReachOpen: 3465,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-07",
-        audienceReachOpen: 2980,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-09-08",
-        audienceReachOpen: 488,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-09-09",
-        audienceReachOpen: 3975,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-09-10",
-        audienceReachOpen: 3450,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-09-11",
-        audienceReachOpen: 2484,
+        audienceReachOpen: 44,
       },
       {
         date: "2024-09-12",
-        audienceReachOpen: 1631,
+        audienceReachOpen: 38,
       },
       {
         date: "2024-09-13",
-        audienceReachOpen: 2242,
+        audienceReachOpen: 45,
       },
       {
         date: "2024-09-14",
-        audienceReachOpen: 2751,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-09-15",
-        audienceReachOpen: 3263,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-09-16",
-        audienceReachOpen: 3103,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-09-17",
-        audienceReachOpen: 1796,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-09-18",
-        audienceReachOpen: 1973,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-19",
-        audienceReachOpen: 2896,
+        audienceReachOpen: 47,
       },
       {
         date: "2024-09-20",
-        audienceReachOpen: 1450,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-09-21",
-        audienceReachOpen: 959,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-09-22",
-        audienceReachOpen: 3319,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-09-23",
-        audienceReachOpen: 765,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-09-24",
-        audienceReachOpen: 3545,
+        audienceReachOpen: 35,
       },
       {
         date: "2024-09-25",
-        audienceReachOpen: 2224,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-09-26",
-        audienceReachOpen: 2653,
+        audienceReachOpen: 29,
       },
       {
         date: "2024-09-27",
-        audienceReachOpen: 3663,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-09-28",
-        audienceReachOpen: 2814,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-09-29",
-        audienceReachOpen: 3206,
+        audienceReachOpen: 42,
       },
       {
         date: "2024-09-30",
-        audienceReachOpen: 3090,
+        audienceReachOpen: 31,
       },
       {
         date: "2024-10-01",
-        audienceReachOpen: 3910,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-10-02",
-        audienceReachOpen: 3077,
+        audienceReachOpen: 36,
       },
       {
         date: "2024-10-03",
-        audienceReachOpen: 996,
+        audienceReachOpen: 34,
       },
       {
         date: "2024-10-04",
-        audienceReachOpen: 3060,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-10-05",
-        audienceReachOpen: 2313,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-10-06",
-        audienceReachOpen: 2007,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-10-07",
-        audienceReachOpen: 1771,
+        audienceReachOpen: 43,
       },
       {
         date: "2024-10-08",
-        audienceReachOpen: 3403,
+        audienceReachOpen: 37,
       },
       {
         date: "2024-10-09",
-        audienceReachOpen: 1387,
+        audienceReachOpen: 28,
       },
       {
         date: "2024-10-10",
-        audienceReachOpen: 2794,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-10-11",
-        audienceReachOpen: 856,
+        audienceReachOpen: 40,
       },
       {
         date: "2024-10-12",
-        audienceReachOpen: 729,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-10-13",
-        audienceReachOpen: 1751,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-10-14",
-        audienceReachOpen: 1330,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-10-15",
-        audienceReachOpen: 1124,
+        audienceReachOpen: 50,
       },
       {
         date: "2024-10-16",
-        audienceReachOpen: 3018,
+        audienceReachOpen: 48,
       },
       {
         date: "2024-10-17",
-        audienceReachOpen: 1125,
+        audienceReachOpen: 25,
       },
       {
         date: "2024-10-18",
-        audienceReachOpen: 2662,
+        audienceReachOpen: 39,
       },
       {
         date: "2024-10-19",
-        audienceReachOpen: 1623,
+        audienceReachOpen: 26,
       },
       {
         date: "2024-10-20",
-        audienceReachOpen: 844,
+        audienceReachOpen: 46,
       },
       {
         date: "2024-10-21",
-        audienceReachOpen: 3762,
+        audienceReachOpen: 27,
       },
       {
         date: "2024-10-22",
-        audienceReachOpen: 3432,
+        audienceReachOpen: 32,
       },
       {
         date: "2024-10-23",
-        audienceReachOpen: 758,
+        audienceReachOpen: 29,
+      },
+      {
+        date: "2024-10-24",
+        audienceReachOpen: 30,
+      },
+      {
+        date: "2024-10-25",
+        audienceReachOpen: 30,
+      },
+      {
+        date: "2024-10-26",
+        audienceReachOpen: 26,
+      },
+      {
+        date: "2024-10-27",
+        audienceReachOpen: 41,
+      },
+      {
+        date: "2024-10-28",
+        audienceReachOpen: 43,
+      },
+      {
+        date: "2024-10-29",
+        audienceReachOpen: 34,
+      },
+      {
+        date: "2024-10-30",
+        audienceReachOpen: 38,
       },
     ],
   },

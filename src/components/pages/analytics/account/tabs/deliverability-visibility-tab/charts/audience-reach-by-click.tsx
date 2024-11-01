@@ -47,7 +47,7 @@ export const AudienceReachByClickChart = () => {
           month: "MMM",
         },
         periodChangeDateFormats: {
-          month: "MMM YYYY"
+          month: "MMM YYYY",
         },
         baseInterval: { timeUnit: "day", count: 1 },
         renderer: am5xy.AxisRendererX.new(root, {
@@ -133,6 +133,9 @@ export const AudienceReachByClickChart = () => {
 
     const yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
+        numberFormat: `0 '%'`,
+        extraMax: 0.25,
+        // extraMin: 0.2,
         min: 0,
         strictMinMax: true,
         renderer: am5xy.AxisRendererY.new(root, {}),
@@ -145,17 +148,16 @@ export const AudienceReachByClickChart = () => {
     function setSeries() {
       data.forEach((seriesData) => {
         const series = chart.series.push(
-          am5xy.ColumnSeries.new(root, {
+          am5xy.LineSeries.new(root, {
             name: providerLabel(seriesData.provider),
             xAxis,
             yAxis,
-            stacked: true,
             valueYField: "audienceReachClick",
             valueXField: "date",
-            valueYGrouped: "sum",
+            valueYGrouped: "average",
             tooltip: am5.Tooltip.new(root, {
               labelText:
-                "[fontSize: 14px]{name}: [bold, fontSize: 14px]{valueY}",
+                "[fontSize: 14px]{name}: [bold, fontSize: 14px]{valueY.formatNumber('0.0')}%",
             }),
           })
         );
@@ -165,9 +167,18 @@ export const AudienceReachByClickChart = () => {
           fill: am5.color(chartColor.provider[seriesData.provider]),
         });
 
-        series.columns.template.setAll({
-          cornerRadiusTL: 2,
-          cornerRadiusTR: 2,
+        series.strokes.template.setAll({
+          strokeWidth: 2,
+        });
+
+        series.bullets.push(function () {
+          var bulletCircle = am5.Circle.new(root, {
+            radius: 4,
+            fill: series.get("fill"),
+          });
+          return am5.Bullet.new(root, {
+            sprite: bulletCircle,
+          });
         });
 
         series.data.processor = am5.DataProcessor.new(root, {
@@ -194,8 +205,8 @@ export const AudienceReachByClickChart = () => {
 
     chart.appear(1000, 100);
 
-    createRange(0, 14, "#F93232", true);
-    createRange(14, 24, "#FFB82E", true);
+    createRange(0, 2, "#F93232", true);
+    createRange(2, 4, "#FFB82E", true);
 
     function createRange(
       lower: number,
