@@ -7,6 +7,8 @@ import { Box } from "@chakra-ui/react";
 
 const chartId = "latency-first-hour";
 
+const BASE_VALUE = 28;
+
 export const LatencyFirstHour = () => {
   const chartRef = useRef<am5xy.XYChart>();
 
@@ -41,7 +43,7 @@ export const LatencyFirstHour = () => {
           minGridDistance: 10,
         }),
         dateFormats: {
-          month: "MMMM",
+          month: "MMM",
         },
         tooltip: am5.Tooltip.new(root, {}),
         paddingBottom: 32,
@@ -52,18 +54,45 @@ export const LatencyFirstHour = () => {
       fontSize: 12,
     });
 
-    var yAxis = chart.yAxes.push(
-      am5xy.ValueAxis.new(root, {
-        renderer: am5xy.AxisRendererY.new(root, {}),
+    const range = xAxis.createAxisRange(
+      xAxis.makeDataItem({
+        value: new Date("2024-05-01").getTime(),
       })
     );
+
+    range.get("grid")?.setAll({
+      stroke: am5.color("#000"),
+      strokeWidth: 4,
+      strokeDasharray: [4, 4],
+    });
+
+    var yAxis = chart.yAxes.push(
+      am5xy.ValueAxis.new(root, {
+        baseValue: BASE_VALUE,
+        renderer: am5xy.AxisRendererY.new(root, {
+          minGridDistance: 30,
+        }),
+      })
+    );
+
+    yAxis
+      .createAxisRange(
+        yAxis.makeDataItem({
+          value: 28,
+        })
+      )
+      .get("grid")
+      ?.setAll({
+        stroke: am5.color("#000"),
+        strokeWidth: 2,
+      });
 
     var series = chart.series.push(
       am5xy.ColumnSeries.new(root, {
         name: "Latency",
         xAxis: xAxis,
         yAxis: yAxis,
-        valueYField: "value",
+        valueYField: "latency",
         valueXField: "date",
         tooltip: am5.Tooltip.new(root, {
           labelText: "{valueY}%",
@@ -79,19 +108,29 @@ export const LatencyFirstHour = () => {
     });
 
     var data = [
-      { date: new Date(2024, 1, 0, 0, 0, 0, 0).getTime(), value: -2 },
-      { date: new Date(2024, 2, 0, 0, 0, 0, 0).getTime(), value: -11 },
-      { date: new Date(2024, 3, 0, 0, 0, 0, 0).getTime(), value: -8 },
-      { date: new Date(2024, 4, 0, 0, 0, 0, 0).getTime(), value: -4 },
-      { date: new Date(2024, 5, 0, 0, 0, 0, 0).getTime(), value: 2 },
-      { date: new Date(2024, 6, 0, 0, 0, 0, 0).getTime(), value: 7 },
-      { date: new Date(2024, 7, 0, 0, 0, 0, 0).getTime(), value: 14 },
-      { date: new Date(2024, 8, 0, 0, 0, 0, 0).getTime(), value: 21 },
+      { date: "2023-11-01", latency: BASE_VALUE + -2 },
+      { date: "2023-12-01", latency: BASE_VALUE + -11 },
+      { date: "2024-01-01", latency: BASE_VALUE + -8 },
+      { date: "2024-02-01", latency: BASE_VALUE + -4 },
+      { date: "2024-03-01", latency: BASE_VALUE + -10 },
+      { date: "2024-04-01", latency: BASE_VALUE + -8 },
+      { date: "2024-05-01", latency: BASE_VALUE + 2 },
+      { date: "2024-06-01", latency: BASE_VALUE + 7 },
+      { date: "2024-07-01", latency: BASE_VALUE + 14 },
+      { date: "2024-08-01", latency: BASE_VALUE + 21 },
+      { date: "2024-09-01", latency: BASE_VALUE + 15 },
+      { date: "2024-10-01", latency: BASE_VALUE + 17 },
     ];
+
+    series.data.processor = am5.DataProcessor.new(root, {
+      dateFields: ["date"],
+      dateFormat: "yyyy-MM-dd",
+    });
+
     series.data.setAll(data);
 
     series.columns.template.adapters.add("fill", (_, target) => {
-      return (target.dataItem?.dataContext as { value: number }).value > 0
+      return (target.dataItem?.dataContext as { latency: number }).latency > 28
         ? am5.color("#9DDFA7")
         : am5.color("#FF9E99");
     });
