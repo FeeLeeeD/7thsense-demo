@@ -19,9 +19,9 @@ const color = new Map([
 
 const label = new Map([
   ["total", "Total sent"],
-  ["people", "Unique contacts sent"],
-  ["opened", "Unique contacts opened"],
-  ["clicked", "Unique contacts clicked"],
+  ["people", "People sent"],
+  ["opened", "People opened"],
+  ["clicked", "People clicked"],
 ]);
 
 export const AudienceReachByEngagementNumbers = () => {

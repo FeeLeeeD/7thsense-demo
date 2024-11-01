@@ -17,7 +17,10 @@ export const AudienceReachTab = () => {
   return (
     <Stack spacing="xxlarge">
       <Grid gridTemplateColumns="1fr 1fr" gridGap="xxlarge">
-        <ChartWrapper title="Audience reach by open" description="This month">
+        <ChartWrapper
+          title="Audience reach by open"
+          description="What percentage of people have opened an email this month from our email program"
+        >
           <AudienceReachChart
             value={43}
             ranges={[
@@ -28,7 +31,10 @@ export const AudienceReachTab = () => {
           />
         </ChartWrapper>
 
-        <ChartWrapper title="Audience reach by open" description="Last month">
+        <ChartWrapper
+          title="Audience reach by open"
+          description="What percentage of people have opened an email last month from our email program"
+        >
           <AudienceReachChart
             value={11}
             ranges={[
@@ -39,7 +45,10 @@ export const AudienceReachTab = () => {
           />
         </ChartWrapper>
 
-        <ChartWrapper title="Audience reach by click" description="This month">
+        <ChartWrapper
+          title="Audience reach by click"
+          description="What percentage of people have clicked on a link in an email this month from our email program"
+        >
           <AudienceReachChart
             isClickReact
             value={12}
@@ -51,7 +60,10 @@ export const AudienceReachTab = () => {
           />
         </ChartWrapper>
 
-        <ChartWrapper title="Audience reach by click" description="Last month">
+        <ChartWrapper
+          title="Audience reach by click"
+          description="What percentage of people have clicked on a link in an email last month from our email program"
+        >
           <AudienceReachChart
             isClickReact
             value={3}
@@ -78,8 +90,8 @@ export const AudienceReachTab = () => {
         v1: <></>,
         v2: (
           <ChartWrapper
-            title="Average number of emails received per person"
-            description="Description?"
+            title="What was the average number of emails I've sent to each person?"
+            description="Displays the average number of emails each person received from your email program"
           >
             <AverageEmailsPerPerson />
           </ChartWrapper>
@@ -102,12 +114,10 @@ const audienceReach_options = [
   {
     value: "audience-reach-by-engagement-type-numbers" as const,
     label: "By counts",
-    description: "Description (counts)?",
   },
   {
     value: "audience-reach-by-engagement-type-percentages" as const,
     label: "By percentages",
-    description: "Description (percentages)?",
   },
 ];
 
@@ -118,10 +128,11 @@ const AudienceReachByEngagementType = () => {
 
   return (
     <ChartWrapperWithDropdown
-      title="Audience reach by engagement type"
+      title="How much of my audience have I reached? What was the engagement type?"
+      description="This displays the number of total emails sent, the number of total people you delivered emails to, the number of people that opened an email from you, the number of people that clicked an email from you"
       options={audienceReach_options}
       optionValue={option}
-      selectProps={{ w: "200px" }}
+      selectProps={{ w: "260px" }}
       onOptionValueChange={(o) =>
         setOption(o as (typeof audienceReach_options)[number]["value"])
       }
@@ -142,12 +153,10 @@ const emailsReceived_options = [
   {
     value: "emails-received-counts" as const,
     label: "By counts",
-    description: "Description (counts)?",
   },
   {
     value: "emails-received-percentages" as const,
     label: "By percentages",
-    description: "Description (percentages)?",
   },
 ];
 
@@ -158,7 +167,7 @@ const EmailsReceivedCharts = () => {
 
   return (
     <ChartWrapperWithDropdown
-      title="Number of people received x emails"
+      title="How many emails did each person receive?"
       options={emailsReceived_options}
       optionValue={option}
       selectProps={{ w: "200px" }}
@@ -166,9 +175,7 @@ const EmailsReceivedCharts = () => {
         setOption(o as (typeof emailsReceived_options)[number]["value"])
       }
     >
-      {option === "emails-received-counts" && (
-        <EmailsReceivedNumbers />
-      )}
+      {option === "emails-received-counts" && <EmailsReceivedNumbers />}
       {option === "emails-received-percentages" && (
         <EmailsReceivedPercentages />
       )}

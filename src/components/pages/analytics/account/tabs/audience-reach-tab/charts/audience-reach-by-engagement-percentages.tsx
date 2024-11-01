@@ -16,8 +16,8 @@ const color = new Map([
 ]);
 
 const label = new Map([
-  ["open_rate", "Unique contacts opened"],
-  ["click_rate", "Unique contacts clicked"],
+  ["open_rate", "People opened"],
+  ["click_rate", "People clicked"],
 ]);
 
 export const AudienceReachByEngagementPercentages = () => {
@@ -178,7 +178,8 @@ export const AudienceReachByEngagementPercentages = () => {
           valueXField: "date",
           valueYGrouped: "average",
           tooltip: am5.Tooltip.new(root, {
-            labelText: "[fontSize: 14px]{name}: [bold, fontSize: 14px]{valueY.formatNumber('0.0')}%",
+            labelText:
+              "[fontSize: 14px]{name}: [bold, fontSize: 14px]{valueY.formatNumber('0.0')}%",
           }),
         })
       );
