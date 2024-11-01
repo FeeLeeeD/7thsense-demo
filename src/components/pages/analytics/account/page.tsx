@@ -70,7 +70,7 @@ export const AccountAnalyticsPage = () => {
       },
       {
         key: "individual-engagement",
-        title: "Individual Engagement",
+        title: "Engagement insights",
         body: <ContactsEngagementTab />,
       },
       {

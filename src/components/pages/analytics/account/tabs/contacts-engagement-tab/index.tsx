@@ -10,15 +10,15 @@ export const ContactsEngagementTab = () => {
   return (
     <Stack spacing="xxlarge">
       <ChartWrapper
-        title="Engagement over time"
+        title="Based on Seventh Sense's engagement score, when do people engage in my emails?"
         description="This chart displays your email engagement scores, based on a proprietary scoring system, for every hour of the week. It highlights how likely your contacts are to engage with emails at different times"
       >
         <ContactsEngagementChart />
       </ChartWrapper>
 
       <ChartWrapper
-        title="Engagement by location"
-        description="This map highlights regions where recipients are clicking links and opening emails, providing a visual representation of engagement levels by location"
+        title="Where are people engaging with my emails?"
+        description="This map highlights regions where recipients are clicking links and opening emails, providing a visual representation of engagement levels by location. Some email providers hide where their users are. We use the IP address location which may not be accurate"
       >
         <WorldMap />
       </ChartWrapper>
@@ -28,15 +28,15 @@ export const ContactsEngagementTab = () => {
         gridGap="xxlarge"
       >
         <ChartWrapper
-          title="Opened latency"
-          description="This chart shows the monthly percentage change in the time it takes for recipients to open an email after it has been delivered, compared to the average latency"
+          title="What is the time to emails first being opened"
+          description="The longer your emails sit in people's inboxes, the less likely they are to be seen, let alone engage with. This displays the average amount of time your emails are sitting in inboxes before they are first opened compared to your average. Having a lower percentage is good and means your emails aren't sitting there getting piled on top of"
         >
           <LatencyDeliveredOpenedChart />
         </ChartWrapper>
 
         <ChartWrapper
-          title="First-hour email opens"
-          description="This chart displays the percentage change in the number of contacts who opened an email within the first hour of delivery, compared to the average"
+          title="What percentage of people are opening my email within the first hour of being delivered?"
+          description="The length of time your emails sit in inboxes can determine whether your emails are seen, lest alone engaged with. This compares time average time your emails are sitting in inboxes"
         >
           <LatencyFirstHour />
         </ChartWrapper>
