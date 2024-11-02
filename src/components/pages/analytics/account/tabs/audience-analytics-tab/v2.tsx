@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Grid, Stack } from "@chakra-ui/react";
-import { ChartWrapper } from "~components/charts/chart-wrapper";
-import { InitiationRatesChart } from "./charts/initiation-rates";
+import {
+  ChartWrapper,
+  ChartWrapperWithDropdown,
+} from "~components/charts/chart-wrapper";
 import { PredictedEnrollmentRateChart } from "./charts/predicted-enrollment-rate";
-import { EngagementSegmentsChart } from "./charts/engagement-segments";
 import { ContactEngagementProbabilityChart } from "./charts/contact-engagement-probability";
+import { EngagementConversionOpenNumbersChart } from "./charts/engagement-conversion/engagement-converison-open-numbers";
+import { EngagementConversionOpenPercentagesChart } from "./charts/engagement-conversion/engagement-converison-open-percentages";
+import { EngagementConversionClickNumbersChart } from "./charts/engagement-conversion/engagement-converison-click-numbers";
+import { EngagementConversionClickPercentagesChart } from "./charts/engagement-conversion/engagement-converison-click-percentages";
 
 export const AudienceAnalyticsTab_v2 = () => {
   return (
     <Stack spacing="xxlarge">
-      <ChartWrapper
-        title="Initiation rates"
-        description="The likelihood that a recipient will open an email, given that they have not opened any previous emails"
-      >
-        <InitiationRatesChart />
-      </ChartWrapper>
+      <EngagementConversionByOpenChart />
+
+      <EngagementConversionByClickChart />
 
       <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
         <ChartWrapper
@@ -32,5 +34,83 @@ export const AudienceAnalyticsTab_v2 = () => {
         </ChartWrapper>
       </Grid>
     </Stack>
+  );
+};
+
+/*  Engagement conversion charts */
+
+const open_options = [
+  {
+    value: "engagement-conversion-open-numbers" as const,
+    label: "By counts",
+    description: "Description?",
+  },
+  {
+    value: "engagement-conversion-open-percentages" as const,
+    label: "By percentages",
+    description: "Description?",
+  },
+];
+
+const EngagementConversionByOpenChart = () => {
+  const [option, setOption] = useState<(typeof open_options)[number]["value"]>(
+    "engagement-conversion-open-numbers"
+  );
+
+  return (
+    <ChartWrapperWithDropdown
+      title="Initial engagement conversion by open"
+      options={open_options}
+      optionValue={option}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof open_options)[number]["value"])
+      }
+      selectProps={{ w: "200px" }}
+    >
+      {option === "engagement-conversion-open-numbers" && (
+        <EngagementConversionOpenNumbersChart />
+      )}
+      {option === "engagement-conversion-open-percentages" && (
+        <EngagementConversionOpenPercentagesChart />
+      )}
+    </ChartWrapperWithDropdown>
+  );
+};
+
+const click_options = [
+  {
+    value: "engagement-conversion-click-numbers" as const,
+    label: "By counts",
+    description: "Description?",
+  },
+  {
+    value: "engagement-conversion-click-percentages" as const,
+    label: "By percentages",
+    description: "Description?",
+  },
+];
+
+const EngagementConversionByClickChart = () => {
+  const [option, setOption] = useState<(typeof click_options)[number]["value"]>(
+    "engagement-conversion-click-numbers"
+  );
+
+  return (
+    <ChartWrapperWithDropdown
+      title="Initial engagement conversion by click"
+      options={click_options}
+      optionValue={option}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof click_options)[number]["value"])
+      }
+      selectProps={{ w: "200px" }}
+    >
+      {option === "engagement-conversion-click-numbers" && (
+        <EngagementConversionClickNumbersChart />
+      )}
+      {option === "engagement-conversion-click-percentages" && (
+        <EngagementConversionClickPercentagesChart />
+      )}
+    </ChartWrapperWithDropdown>
   );
 };
