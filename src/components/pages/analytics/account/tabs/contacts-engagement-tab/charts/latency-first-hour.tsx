@@ -4,10 +4,9 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import * as am5 from "@amcharts/amcharts5";
 import { Box } from "@chakra-ui/react";
+import { chartColor } from "~data/shared";
 
 const chartId = "latency-first-hour";
-
-const BASE_VALUE = 28;
 
 export const LatencyFirstHour = () => {
   const chartRef = useRef<am5xy.XYChart>();
@@ -28,6 +27,32 @@ export const LatencyFirstHour = () => {
     );
     chartRef.current = chart;
 
+    /* Labels */
+
+    chart.plotContainer.children.push(
+      am5.Label.new(root, {
+        opacity: 0.8,
+        text: "Before Seventh Sense",
+        fontSize: 12,
+        fill: am5.color(chartColor.dark),
+        x: am5.p50,
+        y: -26,
+        centerX: am5.percent(101),
+        centerY: am5.p0,
+      })
+    );
+
+    chart.plotContainer.children.push(
+      am5.Label.new(root, {
+        text: "After Seventh Sense",
+        fontSize: 12,
+        fill: am5.color(chartColor.dark),
+        x: am5.p50,
+        y: -26,
+        centerY: am5.p0,
+      })
+    );
+
     const cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
     cursor.lineY.set("visible", false);
 
@@ -46,7 +71,7 @@ export const LatencyFirstHour = () => {
           month: "MMM",
         },
         tooltip: am5.Tooltip.new(root, {}),
-        paddingBottom: 32,
+        paddingBottom: 12,
       })
     );
 
@@ -68,23 +93,36 @@ export const LatencyFirstHour = () => {
 
     var yAxis = chart.yAxes.push(
       am5xy.ValueAxis.new(root, {
-        baseValue: BASE_VALUE,
         renderer: am5xy.AxisRendererY.new(root, {
-          minGridDistance: 30,
+          minGridDistance: 25,
         }),
       })
     );
 
+    yAxis.get("renderer").labels.template.setAll({ fontSize: "12px" });
+
+    yAxis.get("renderer").labels.template.adapters.add("text", (value) => {
+      if (!value) return value;
+
+      const numberValue = Number.parseInt(value);
+      if (numberValue === 0) return `28%`;
+
+      return `${numberValue > 0 ? "+" : ""}${numberValue}%`;
+    });
+
     yAxis
-      .createAxisRange(
-        yAxis.makeDataItem({
-          value: 28,
-        })
-      )
-      .get("grid")
-      ?.setAll({
-        stroke: am5.color("#000"),
-        strokeWidth: 2,
+      .get("renderer")
+      .labels.template.adapters.add("fontSize", (value, target) => {
+        const text = target.text._getText();
+
+        return text === "28%" ? 16 : value;
+      });
+    yAxis
+      .get("renderer")
+      .labels.template.adapters.add("fontWeight", (value, target) => {
+        const text = target.text._getText();
+
+        return text === "28%" ? "bold" : value;
       });
 
     var series = chart.series.push(
@@ -101,25 +139,24 @@ export const LatencyFirstHour = () => {
     );
 
     series.columns.template.setAll({
-      fill: am5.color("#6699FF"),
       strokeOpacity: 0,
       cornerRadiusTL: 8,
       cornerRadiusTR: 8,
     });
 
     var data = [
-      { date: "2023-11-01", latency: BASE_VALUE + -2 },
-      { date: "2023-12-01", latency: BASE_VALUE + -11 },
-      { date: "2024-01-01", latency: BASE_VALUE + -8 },
-      { date: "2024-02-01", latency: BASE_VALUE + -4 },
-      { date: "2024-03-01", latency: BASE_VALUE + -10 },
-      { date: "2024-04-01", latency: BASE_VALUE + -8 },
-      { date: "2024-05-01", latency: BASE_VALUE + 2 },
-      { date: "2024-06-01", latency: BASE_VALUE + 7 },
-      { date: "2024-07-01", latency: BASE_VALUE + 14 },
-      { date: "2024-08-01", latency: BASE_VALUE + 21 },
-      { date: "2024-09-01", latency: BASE_VALUE + 15 },
-      { date: "2024-10-01", latency: BASE_VALUE + 17 },
+      { date: "2023-11-01", latency: -2 },
+      { date: "2023-12-01", latency: -11 },
+      { date: "2024-01-01", latency: -8 },
+      { date: "2024-02-01", latency: -4 },
+      { date: "2024-03-01", latency: -10 },
+      { date: "2024-04-01", latency: -8 },
+      { date: "2024-05-01", latency: 2 },
+      { date: "2024-06-01", latency: 7 },
+      { date: "2024-07-01", latency: 14 },
+      { date: "2024-08-01", latency: 21 },
+      { date: "2024-09-01", latency: 15 },
+      { date: "2024-10-01", latency: 17 },
     ];
 
     series.data.processor = am5.DataProcessor.new(root, {
@@ -130,7 +167,7 @@ export const LatencyFirstHour = () => {
     series.data.setAll(data);
 
     series.columns.template.adapters.add("fill", (_, target) => {
-      return (target.dataItem?.dataContext as { latency: number }).latency > 28
+      return (target.dataItem?.dataContext as { latency: number }).latency > 0
         ? am5.color("#9DDFA7")
         : am5.color("#FF9E99");
     });
