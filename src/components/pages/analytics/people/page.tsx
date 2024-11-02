@@ -60,22 +60,6 @@ export const AnalyticsPeoplePage = () => {
         </WrapItem>
 
         <WrapItem>
-          <Tag variant="filter">
-            <TagLeftIcon as={GlobalIcon} />
-            <TagLabel>Domains: Telephdata</TagLabel>
-            <TagCloseButton />
-          </Tag>
-        </WrapItem>
-
-        <WrapItem>
-          <Tag variant="filter">
-            <TagLeftIcon as={SignPostIcon} />
-            <TagLabel>Providers: gmail, google workspace and more</TagLabel>
-            <TagCloseButton />
-          </Tag>
-        </WrapItem>
-
-        <WrapItem>
           <Button
             variant="unstyled"
             h="fit-content"
