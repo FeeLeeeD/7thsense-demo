@@ -10,6 +10,8 @@ import { EngagementConversionOpenNumbersChart } from "./charts/engagement-conver
 import { EngagementConversionOpenPercentagesChart } from "./charts/engagement-conversion/engagement-converison-open-percentages";
 import { EngagementConversionClickNumbersChart } from "./charts/engagement-conversion/engagement-converison-click-numbers";
 import { EngagementConversionClickPercentagesChart } from "./charts/engagement-conversion/engagement-converison-click-percentages";
+import { EmailsSinceLastEngagementOpenChart } from "./charts/emails-since-last-engagement-open";
+import { EmailsSinceLastEngagementClickChart } from "./charts/emails-since-last-engagement-click";
 
 export const AudienceAnalyticsTab_v2 = () => {
   return (
@@ -33,6 +35,8 @@ export const AudienceAnalyticsTab_v2 = () => {
           <ContactEngagementProbabilityChart />
         </ChartWrapper>
       </Grid>
+
+      <EmailsSinceLastEngagement />
     </Stack>
   );
 };
@@ -110,6 +114,46 @@ const EngagementConversionByClickChart = () => {
       )}
       {option === "engagement-conversion-click-percentages" && (
         <EngagementConversionClickPercentagesChart />
+      )}
+    </ChartWrapperWithDropdown>
+  );
+};
+
+/* EmailsSinceLastEngagementChart */
+
+const emailsSinceLast_options = [
+  {
+    value: "emails-since-last-engagement-open" as const,
+    label: "By open",
+    description: "Description?",
+  },
+  {
+    value: "emails-since-last-engagement-click" as const,
+    label: "By click",
+    description: "Description?",
+  },
+];
+
+const EmailsSinceLastEngagement = () => {
+  const [option, setOption] = useState<
+    (typeof emailsSinceLast_options)[number]["value"]
+  >("emails-since-last-engagement-open");
+
+  return (
+    <ChartWrapperWithDropdown
+      title="Emails delivered since last engagement"
+      options={emailsSinceLast_options}
+      optionValue={option}
+      onOptionValueChange={(o) =>
+        setOption(o as (typeof emailsSinceLast_options)[number]["value"])
+      }
+      selectProps={{ w: "200px" }}
+    >
+      {option === "emails-since-last-engagement-open" && (
+        <EmailsSinceLastEngagementOpenChart />
+      )}
+      {option === "emails-since-last-engagement-click" && (
+        <EmailsSinceLastEngagementClickChart />
       )}
     </ChartWrapperWithDropdown>
   );
