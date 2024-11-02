@@ -1,35 +1,22 @@
 import React from "react";
-import { Grid, Stack } from "@chakra-ui/react";
-import { ChartWrapper } from "~components/charts/chart-wrapper";
-import { InitiationRatesChart } from "./charts/initiation-rates";
-import { PredictedEnrollmentRateChart } from "./charts/predicted-enrollment-rate";
-import { EngagementSegmentsChart } from "./charts/engagement-segments";
+import { Grid, Skeleton, Stack } from "@chakra-ui/react";
+import { ConditionalComponent } from "~components/conditional-component";
+import { AudienceAnalyticsTab_v1 } from "./v1";
+import { AudienceAnalyticsTab_v2 } from "./v2";
 
-export const AudienceAnalyticsTab = () => {
-  return (
-    <Stack spacing="xxlarge">
-      <ChartWrapper
-        title="Initiation rates"
-        description="The likelihood that a recipient will open an email, given that they have not opened any previous emails"
-      >
-        <InitiationRatesChart />
-      </ChartWrapper>
+export const AudienceAnalyticsTab_conditional = () => {
+  return ConditionalComponent({
+    v1: <AudienceAnalyticsTab_v1 />,
+    v2: <AudienceAnalyticsTab_v2 />,
+    fallback: (
+      <Stack spacing="xxlarge">
+        <Skeleton w="full" h="420px" borderRadius="24px" />
 
-      <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
-        <ChartWrapper
-          title="Predicted enrollment rate with recycling"
-          description="This chart shows the estimated number of contacts who will be enrolled in an email campaign when using an AI algorithm to recycle contacts by targeting more engaged recipients"
-        >
-          <PredictedEnrollmentRateChart />
-        </ChartWrapper>
-
-        <ChartWrapper
-          title="Distribution by Engagement Segment"
-          description="This pie chart illustrates the distribution of engagement levels within your audience"
-        >
-          <EngagementSegmentsChart />
-        </ChartWrapper>
-      </Grid>
-    </Stack>
-  );
+        <Grid gridTemplateColumns={{ lg: "1fr 1fr" }} gridGap="xxlarge">
+          <Skeleton w="full" h="460" borderRadius="24px" />
+          <Skeleton w="full" h="460" borderRadius="24px" />
+        </Grid>
+      </Stack>
+    ),
+  });
 };

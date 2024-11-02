@@ -45,7 +45,7 @@ import { useTabs } from "~hooks/useTabs";
 import { DeliverabilityVisibilityTab_conditional } from "./tabs/deliverability-visibility-tab";
 import { ContactsEngagementTab } from "./tabs/contacts-engagement-tab";
 import { AudienceReachTab } from "./tabs/audience-reach-tab";
-import { AudienceAnalyticsTab } from "./tabs/audience-analytics-tab";
+import { AudienceAnalyticsTab_conditional } from "./tabs/audience-analytics-tab";
 import { GlobalIcon } from "~components/icons/global";
 import { SignPostIcon } from "~components/icons/sign-post";
 import { PlusIcon } from "~components/icons/plus";
@@ -75,8 +75,8 @@ export const AccountAnalyticsPage = () => {
       },
       {
         key: "audience-analytics",
-        title: "Audience analytics",
-        body: <AudienceAnalyticsTab />,
+        title: "Audience conversion",
+        body: <AudienceAnalyticsTab_conditional />,
       },
     ],
   });
